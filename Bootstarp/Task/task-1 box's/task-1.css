@@ -1,0 +1,45 @@
+.container
+{
+   border: 2px solid grey;
+}
+.col-2
+{
+    height: 35PX;
+    border-radius: 10PX;
+    background-color: greenyellow;   
+}
+.col-4
+{
+    height: 40PX;
+    border-radius: 10PX;
+    background-color: greenyellow;   
+}
+.div-2 .row 
+{
+   position: relative;
+   margin-left: 0px;
+}
+.div-3 .row
+{
+  padding-left: 30%;
+}
+.div-4 .row .col-2
+{
+  margin-right: 16.00%;
+}
+.div-5 .row .col-2
+{
+}
+.div-6 .row 
+{
+   
+}
+.div-7 .row
+{
+    
+}
+.div-8 .row .col-2
+{
+   
+}
+
