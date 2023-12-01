@@ -16,30 +16,27 @@
 }
 .div-2 .row 
 {
-   position: relative;
-   margin-left: 0px;
+   justify-content: end;
 }
 .div-3 .row
 {
-  padding-left: 30%;
+   justify-content: center;
 }
-.div-4 .row .col-2
+.div-4 .row
 {
-  margin-right: 16.00%;
+  justify-content: space-between;
 }
-.div-5 .row .col-2
+.div-5 .row 
 {
+  justify-content: space-around;
 }
 .div-6 .row 
 {
-   
+   justify-content: space-around;
 }
-.div-7 .row
+
+.div-8 .row 
 {
-    
-}
-.div-8 .row .col-2
-{
-   
+   justify-content: space-evenly;
 }
 

@@ -1,0 +1,63 @@
+@media (max-width :1200px)
+{
+    body{
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        .browser i
+        {
+          
+
+        }
+      
+    }
+}
+/* laptop :992px up */
+@media (max-width :992px) 
+{
+    body{
+
+
+    }
+}
+
+/* tablets :768px up */
+@media (max-width :768px) 
+{
+    body{
+
+    }
+}
+
+/* large phone  :600px up */
+@media (max-width :600px) 
+{
+    body{
+
+    }
+}
+
+/* phone 320px down */
+@media (max-width :320px) 
+{
+    body
+    {
+      .bg-top-color
+      {
+        display: none;
+      }
+    }
+}

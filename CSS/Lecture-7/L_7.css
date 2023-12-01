@@ -117,17 +117,17 @@ body{
 
 .filter{
   
-    filter: blur(20px); 
+    /* filter: blur(20px);  */
     /* filter: brightness(100%); */
-    /* filter: contrast(60%); */
-    /* filter: grayscale(90%); */
+    /* filter: contrast(70%); */
+    /* filter: grayscale(50%); */
     /* filter: hue-rotate(360deg); */
-    /* filter: invert(100%); */
-    /* filter: saturate(0%); */
+    /* filter: invert(20%); */
+    /* filter: saturate(50%); */
     /* filter: opacity(0.7); */
     /* filter: sepia(50%); */
     /* filter: none; */
-    /* filter: drop-shadow(40px 40px 5px gray); */
+    filter: drop-shadow(40px 40px 5px gray);
 
 }
 
