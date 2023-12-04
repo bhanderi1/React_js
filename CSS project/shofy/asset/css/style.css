@@ -1,147 +1,160 @@
-*
-{
-    box-sizing:border-box;
-    margin: 0;
-    padding:0;        
-    text-decoration: none;                              
-    font-family: 'Roboto', sans-serif;      
-   }
-.container
-{
-      max-width: 1160px;
-      margin:auto;  
-      position:relative;            
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+   max-width: 1160px;
+   margin: auto;
+   position: relative;
+}
+
 /*  HEADER PART -srarting */
-.bg-top-color
-{
-    background-color: black;
+.bg-top-color {
+   background-color: black;
 }
-.topbar
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 10px 0px;
+
+.topbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0px;
 }
-.topbar-text p{
-    color: #ffffff;
+
+.topbar-text p {
+   color: #ffffff;
 }
-.topbar-text p i{
+
+.topbar-text p i {
    color: orange;
 }
-.top-select 
-{
+
+.top-select {
    display: flex;
-   border:0;
+   border: 0;
 }
+
 /* NAVIGATION START */
-.border
-{
+.border {
    border-bottom: 1px solid grey;
 }
-.navigation
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 27px;
-    padding-bottom: 27px;
+
+.navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 27px;
+   padding-bottom: 27px;
 }
+
 /* USER ID*/
-.user-image
-{
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: 2px solid rgb(232, 226, 226);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.user-image {
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   border: 2px solid rgb(232, 226, 226);
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.user-image i{
-    font-size: 25px;
-    color: gray;
+
+.user-image i {
+   font-size: 25px;
+   color: gray;
 }
-.user-info{
-    display: flex;
-    align-items: center;
+
+.user-info {
+   display: flex;
+   align-items: center;
 }
-.user-text
-{
-    margin-left: 10px;   
+
+.user-text {
+   margin-left: 10px;
 }
 
 /* SERACH botton */
-.search-input
-{
-    border:2px solid #0989ff;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    /* font-size:30px; */
+.search-input {
+   border: 2px solid #0989ff;
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+   /* font-size:30px; */
 }
-.text-input input
-{
-    border: 0;
-    border-right : 2px solid gray;
-    padding: 8px 55px 8px 20px;
+
+.text-input input {
+   border: 0;
+   border-right: 2px solid gray;
+   padding: 8px 55px 8px 20px;
 }
-.text-input:focus-within input{
-    border:0;
-    outline: none;
+
+.text-input:focus-within input {
+   border: 0;
+   outline: none;
 }
-.navi-select select
-{
-    border: 0;
-    border:none;
-    padding: 10px 15px;
+
+.navi-select select {
+   border: 0;
+   border: none;
+   padding: 10px 15px;
 }
-.search-icon
-{
+
+.search-icon {
    background-color: #0989ff;
    color: #ffffff;
-    padding: 12px 28px;
-    font-size: 25px;
-    font-weight: -200;
+   padding: 12px 28px;
+   font-size: 25px;
+   font-weight: -200;
 }
-.icon span{
-      font-size: 20px;
-      margin: 8px; 
+
+.icon span {
+   font-size: 20px;
+   margin: 8px;
 }
-.icon span:hover
-{
-    color: #0989ff;
+
+.icon span:hover {
+   color: #0989ff;
 }
+
 /* NAVBAR */
-#inherhead2
-{
-   display:flex;
+#inherhead2 {
+   display: flex;
    justify-content: space-between;
    position: relative;
 }
-.head2-dropdown
-{
+
+.head2-dropdown {
    padding: 8px;
    font-size: 14px;
    transition: all 0.3s;
    font-weight: bold;
    position: relative;
 }
-.head2-dropdown:hover{
+
+.head2-dropdown:hover {
    color: #0989ff;
    cursor: pointer;
 }
-.allcata
-{
+
+.allcata {
    display: flex;
 }
-.nav-item
-{
+
+.nav-item {
    display: flex;
    margin: auto;
+   position: relative;
+   left: -150px;
 }
-.allcatachild{
+
+.fa-solid {
+   position: relative;
+   top: 2px;
+}
+
+.allcatachild {
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -149,61 +162,61 @@
    transition: all 0.3s;
    position: relative;
 }
-.button
-{
+
+.button {
    padding: 11px 39px;
    color: white;
    background-color: #0989ff;
    display: flex;
    font-size: 15px;
 }
-.button ul
-{
+
+.button ul {
    margin-right: 60px;
    margin-left: 12px;
 }
-.button:hover
-{
+
+.button:hover {
    background-color: black;
    color: white;
    cursor: pointer;
 }
-.head2-contact
-{
+
+.head2-contact {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
-.head2-contact div p
-{
+
+.head2-contact div p {
    font-size: 10px;
 }
-.head2-contact i
-{
+
+.head2-contact i {
    position: relative;
    margin-right: 10px;
 }
-.head2-contact p:hover
-{
-   color:#0989ff;
+
+.head2-contact p:hover {
+   color: #0989ff;
 }
-.allcata:hover .head2drop
-{
+
+.allcata:hover .head2drop {
    display: block;
 }
-.head2drop
-{
+
+.head2drop {
    display: none;
    position: absolute;
    background-color: white;
    padding: 15px;
    width: 257px;
    border: 1px solid black;
-   top:40px;
+   top: 40px;
    z-index: 10;
 }
-.allCataList
-{
+
+.allCataList {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
@@ -213,13 +226,13 @@
    padding: 10px 0px;
    cursor: pointer;
 }
-.allCataList img
-{
+
+.allCataList img {
    width: 30px;
    height: 30px;
 }
-.sideList
-{
+
+.sideList {
    position: absolute;
    left: 100%;
    top: 0;
@@ -229,92 +242,91 @@
    border: 1px solid black;
    display: none;
 }
-.sideList li
-{
+
+.sideList li {
    font-size: 20px;
    padding: 5px;
 }
-.allCataList:hover .sideList
-{
+
+.allCataList:hover .sideList {
    display: block;
 }
 
 /* main header part */
-.best-bg
-{
-    background-color: #115061;
-    height: 500px;
-    position: relative;
+.best-bg {
+   background-color: #115061;
+   height: 500px;
+   position: relative;
 }
-.mainpart
-{
-    position: relative;
+
+.mainpart {
+   position: relative;
 }
-.bg-desing img
-{
-    mix-blend-mode: luminosity;
-    opacity: 0.1;
-    position: absolute;
-    right: 0;
+
+.bg-desing img {
+   mix-blend-mode: luminosity;
+   opacity: 0.1;
+   position: absolute;
+   right: 0;
 }
-.bg-text 
-{
+
+.bg-text {
    color: white;
    position: relative;
    top: 100px;
 }
-.bg-text span
-{
+
+.bg-text span {
    font-size: 18px;
 }
-.bg-text h1 b
-{
+
+.bg-text h1 b {
    font-size: 65px;
    font-weight: 900;
 }
-.bg-text h2
-{
+
+.bg-text h2 {
    margin-top: 20px;
    font-family: 'Oregano', cursive;
    margin-bottom: 40px;
 }
-.mainpart{
+
+.mainpart {
    position: relative;
 }
-.watch
-{
-    position: absolute;
-    right: 0;
-    margin-top:-250px;
+
+.watch {
+   position: absolute;
+   right: 0;
+   margin-top: -250px;
 }
-.other-images-1
-{
-    position: absolute;
-    left: 750px;
-    top:-250px
-    
+
+.other-images-1 {
+   position: absolute;
+   left: 750px;
+   top: -250px
 }
-.other-image-2
-{
+
+.other-image-2 {
    position: relative;
    top: -210px;
    left: -20px;
 }
-.bg-text a
-{
+
+.bg-text a {
    padding: 12px 25px;
    background: white;
    border-radius: 8px;
    color: black;
 }
-.bg-text a:hover
-{
-    border: 0.5px solid white;
-    color: white;
-    background-color: #115061;
+
+.bg-text a:hover {
+   border: 0.5px solid white;
+   color: white;
+   background-color: #115061;
 }
-.shop-text i
-{
+
+.shop-text i {
    margin-left: 5px;
    position: relative;
    top: 3px;
@@ -322,359 +334,366 @@
 }
 
 /*  MAIN PAR-1   (SECTION-1  ,SECTIONN-2) */
-.part-1
-{
-    height:500px;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 70px; 
-    justify-content: space-evenly;
+.part-1 {
+   width: auto;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 70px;
+   justify-content: space-evenly;
 }
-.section-1
-{
-    height: 180px;
-    width: 180px;
-    border: 1px solid rgb(181, 223, 240);
-    display:flex;
-    flex-flow: wrap;
-    background-color: rgb(223, 235, 241);
-    border-radius: 100%;
-    flex-direction: row;
-    margin-bottom: 60px;
+
+.section-1 {
+   height: 180px;
+   width: 180px;
+   border: 1px solid rgb(181, 223, 240);
+   display: flex;
+   flex-flow: wrap;
+   background-color: rgb(223, 235, 241);
+   border-radius: 100%;
+   flex-direction: row;
+   margin-bottom: 100px;
 }
-.star
-{
-   color:#ffc107;
+
+.star {
+   color: #ffc107;
    font-size: 12px;
    font-weight: 500;
 }
-.line{
+
+.line {
    font-size: 12px;
    text-decoration: line-through;
 }
-.rate
-{
+
+.rate {
    font-size: 15px;
    color: #0989ff;
    font-weight: 700;
    letter-spacing: 0.2pxlhjlp;
-}    
- /* headphone */
-.headphone-image 
-{
-        margin: 46px;
-        object-fit: cover;
-        position:relative; 
 }
-.headphone-image:hover img
-{
+
+/* headphone */
+.headphone-image {
+   margin: 46px;
+   object-fit: cover;
+   position: relative;
+}
+
+.headphone-image:hover img {
    transform: scale(1.2);
    transition: 0.3s;
 }
-.headphone-text
-{
-    text-align: center;
+
+.headphone-text {
+   text-align: center;
 }
-.headphone-text h3:hover{
-    color:#0989ff;
+
+.headphone-text h3:hover {
+   color: #0989ff;
 }
+
 /* Moblie-tablests  */
-.Mobile-1-image 
-{
-    margin: 50px;
-    margin-top: 40px;
-    object-fit: cover;
-    position: relative;
+.Mobile-1-image {
+   margin: 50px;
+   margin-top: 40px;
+   object-fit: cover;
+   position: relative;
 }
-.Mobile-1-image:hover img
-{
+
+.Mobile-1-image:hover img {
    transform: scale(1.2);
    transition: 0.3s;
 }
-.Moblie-1-text
-{
+
+.Moblie-1-text {
    text-align: center;
 }
-.Moblie-1-text h3:hover{
-    color: #0989ff
+
+.Moblie-1-text h3:hover {
+   color: #0989ff
 }
+
 /* CPU Heat Pipes */
-.Pipes-1-image 
-{
-    margin: 47px;
-    margin-top: 38px;
-    object-fit: cover;
-    position: relative;
+.Pipes-1-image {
+   margin: 47px;
+   margin-top: 38px;
+   object-fit: cover;
+   position: relative;
 }
-.Pipes-1-image:hover img
-{
+
+.Pipes-1-image:hover img {
    transform: scale(1.2);
    transition: 0.3s;
 }
-.Pipes-1-text
-{
+
+.Pipes-1-text {
    text-align: center;
 }
-.Pipes-1-text h3:hover{
-    color: #0989ff;
+
+.Pipes-1-text h3:hover {
+   color: #0989ff;
 }
+
 /* CPU Heat Pipes */
-.SmartWatch-1-image 
-{
-    margin: 50px;
-    object-fit: cover;
-    position: relative;
+.SmartWatch-1-image {
+   margin: 50px;
+   object-fit: cover;
+   position: relative;
 }
-.SmartWatch-1-image:hover img
-{
+
+.SmartWatch-1-image:hover img {
    transform: scale(1.2);
    transition: 0.3s;
 }
-.SmartWatch-1-text
-{
+
+.SmartWatch-1-text {
    text-align: center;
 }
-.SmartWatch-1-text h3:hover
-{
-    color: #0989ff;
+
+.SmartWatch-1-text h3:hover {
+   color: #0989ff;
 }
+
 /* Bluetooth */
-.Bluetooth-1-image 
-{
-    margin: 50px;
-    margin-top: 15px;
-    object-fit: cover;
-    position: relative;
+.Bluetooth-1-image {
+   margin: 50px;
+   margin-top: 15px;
+   object-fit: cover;
+   position: relative;
 }
-.Bluetooth-1-image:hover img
-{
+
+.Bluetooth-1-image:hover img {
    transform: scale(1.1);
    transition: 0.1s;
 }
-.Bluetooth-1-text
-{
+
+.Bluetooth-1-text {
    text-align: center;
 }
-.Bluetooth-1-text h3:hover
-{
-    color: #0989ff;
+
+.Bluetooth-1-text h3:hover {
+   color: #0989ff;
 }
+
 /* ICON (SECTION-2)*/
-.section-2
-{
+.section-2 {
    height: 100px;
-   width: 265px;
+   width: 23%;
    display: flex;
-   background-color:rgb(236, 239, 241) ;
+   background-color: rgb(236, 239, 241);
    align-items: center;
    flex-wrap: wrap;
+   margin-bottom: 50px;
 }
+
 /* Free Delivary */
-.shipping-delivery-image i
-{
-    color: red;
-    font-size: 20px;
-    margin:15px;
+.shipping-delivery-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
 }
-.shipping-delivery-text
-{
-    margin-left: 10px;
+
+.shipping-delivery-text {
+   margin-left: 10px;
 }
-.shipping-delivery
-{
-    display: flex;
-    align-items: center;
+
+.shipping-delivery {
+   display: flex;
+   align-items: center;
 }
+
 /* Return & Refunf */
-.Return-image i
-{
-    color: red;
-    font-size: 20px;
-    align-items: flex-start;
-    margin:15px;
+.Return-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
 }
-.Return-text
-{
-    margin-left: 15px;
+
+.Return-text {
+   margin-left: 15px;
 }
-.Return
-{
-    display: flex;
-    align-items: center;
+
+.Return {
+   display: flex;
+   align-items: center;
 }
+
 /* Member Discount*/
-.Discount-image i
-{
-    color: red;
-    font-size: 20px;
-    align-items: flex-start;
-    margin:15px;
+.Discount-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
 }
-.Discount-text
-{
-    margin-left: 15px;
+
+.Discount-text {
+   margin-left: 15px;
 }
-.Discount
-{
-    display: flex;
-    align-items: center;
+
+.Discount {
+   display: flex;
+   align-items: center;
 }
+
 /* support 24/7 */
-.Support-image i
-{
-    color: red;
-    font-size: 20px;
-    align-items: flex-start;
-    margin:15px;
+.Support-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
 }
-.Support-text
-{
-    margin-left: 15px;
+
+.Support-text {
+   margin-left: 15px;
 }
-.Support
-{
-    display: flex;
-    align-items: center;
+
+.Support {
+   display: flex;
+   align-items: center;
 }
- /* Trending Products - MAIN SECTION-2 (secion-3 , section-4)*/
-.main_part_name
-{
+
+/* Trending Products - MAIN SECTION-2 (secion-3 , section-4)*/
+.main_part_name {
    display: flex;
 }
-.asset{
+
+.asset {
    display: inline;
    position: relative;
    font-size: 20px;
    left: 430px;
 }
-.asset a
-{
+
+.asset a {
    position: relative;
    top: 20px;
    padding: 20px 30px;
 }
-.asset .Featured
-{
+
+.asset .Featured {
    color: rgb(201, 200, 200);
-}
-.asset .Top-seller
-{
-   color: rgb(201, 200, 200);
-}
- .main_part_name h1{
-    color: black;
-    font-size: 40px;
-    margin-bottom: 40px;
- }
- .main_part_name img
- {
-    color: red;
-    position: relative;
-    bottom: 60px;   
- }
-/* 1. headphone wireless */ 
-.part-2
-{
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;   
-        justify-content: space-evenly;
-}
-.section-3
- {
-        height: 375px;
-        width: 250px;
-        border: 1px solid rgb(229, 233, 233); 
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        border-radius: 5px;
-        margin-bottom: 100px;
- }
- .section-3:hover
-{
-  box-shadow: 1px 1px 3px rgb(176, 174, 174);
 }
 
-.wireless-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .wireless-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .wireless-image
- {
-    position: relative;
- }
- /* Hover */
- .hover-open-content
- {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 50px;
-    transition: 1.5s;
- }
- .wireless-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .wireless-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /*2.  Gaming Headphone  */
-.Gaming-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Gaming-image:hover:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Gaming-image
- {
-    position: relative;
- }
- /* Hover */
- .Gaming-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Gaming-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
+.asset .Top-seller {
+   color: rgb(201, 200, 200);
+}
+
+.main_part_name h1 {
+   color: black;
+   font-size: 40px;
+   margin-bottom: 40px;
+}
+
+.main_part_name img {
+   color: red;
+   position: relative;
+   bottom: 60px;
+}
+
+/* 1. headphone wireless */
+.part-2 {
+   width: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.section-3 {
+   height: 375px;
+   width: 250px;
+   border: 1px solid rgb(229, 233, 233);
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-between;
+   border-radius: 5px;
+   margin-bottom: 100px;
+}
+
+.section-3:hover {
+   box-shadow: 1px 1px 3px rgb(176, 174, 174);
+}
+
+.wireless-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.wireless-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.wireless-image {
+   position: relative;
+}
+
+/* Hover */
+.hover-open-content {
+   display: none;
+   position: absolute;
+   right: 20px;
+   bottom: 50px;
+   transition: 1.5s;
+}
+
+.wireless-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.wireless-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*2.  Gaming Headphone  */
+.Gaming-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Gaming-image:hover:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Gaming-image {
+   position: relative;
+}
+
+/* Hover */
+.Gaming-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Gaming-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
 /*3. Headphone with Mic*/
-.Mic-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Mic-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Mic-image
- {
-    position: relative;
- }
- .out-stock
- {
+.Mic-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Mic-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Mic-image {
+   position: relative;
+}
+
+.out-stock {
    position: absolute;
    margin: 5px 5px 5px 150px;
    padding: 3px 3px;
@@ -683,233 +702,244 @@
    border-radius: 5px;
    z-index: 1;
    background-color: crimson;
- } 
- /* Hover */
- .Mic-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Mic-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- 
-/*4.Galaxy Android Tablet*/
-.Galaxy-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Galaxy-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Galaxy-image
- {
-    position: relative;
- }
- /* Hover */
- .Galaxy-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Galaxy-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233);  
- }
- /*5. iPhone 14 Pro */
-.iphone-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .iphone-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .iphone-image
- {
-    position: relative;
- }
- /* Hover */
- .iphone-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .iphone-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /*6. Apple iPad Air*/
-.Apple-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Apple-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Apple-image
- {
-    position: relative;
- }
- /* Hover */
- .Apple-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Apple-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /*7.DeepCool Air Cooler*/
-.Deepcool-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .DeepCool-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .DeepCool-image
- {
-    position: relative;
- }
- /* Hover */
- .DeepCool-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .DeepCool-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /*8. Antec Air Cooler*/
-.Air-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Air-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Air-image
- {
-    position: relative;
- }
- /* Hover */
- .Air-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Air-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
-/* Section-4 add */
-.section-4
-{
-    display: flex;
-    justify-content: space-between;  
 }
-.add-1
-{
+
+/* Hover */
+.Mic-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Mic-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*4.Galaxy Android Tablet*/
+.Galaxy-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Galaxy-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Galaxy-image {
+   position: relative;
+}
+
+/* Hover */
+.Galaxy-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Galaxy-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*5. iPhone 14 Pro */
+.iphone-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.iphone-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.iphone-image {
+   position: relative;
+}
+
+/* Hover */
+.iphone-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.iphone-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*6. Apple iPad Air*/
+.Apple-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Apple-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Apple-image {
+   position: relative;
+}
+
+/* Hover */
+.Apple-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Apple-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*7.DeepCool Air Cooler*/
+.Deepcool-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.DeepCool-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.DeepCool-image {
+   position: relative;
+}
+
+/* Hover */
+.DeepCool-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.DeepCool-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*8. Antec Air Cooler*/
+.Air-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Air-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Air-image {
+   position: relative;
+}
+
+/* Hover */
+.Air-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Air-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/* Section-4 add */
+.section-4 {
+   display: flex;
+   justify-content: space-between;
+}
+
+.add-1 {
    overflow: hidden;
    position: relative;
    width: 680px;
    height: 250px;
    border-radius: 10px;
-  margin-right: 20px;
+   margin-right: 20px;
 }
-.add-2
-{
+
+.add-2 {
    overflow: hidden;
    position: relative;
    width: 400px;
    height: 250px;
    border-radius: 10px;
 }
-.add-image-1
-{
-    position: absolute;
+
+.add-image-1 {
+   position: absolute;
 }
-.add-image-1:hover
-{
+
+.add-image-1:hover {
    transform: scale(1.1);
    transition: 1s;
 }
-.add-image-1 img{
+
+.add-image-1 img {
    object-fit: cover;
    object-position: right;
 
 }
-.add-image-2 img{
+
+.add-image-2 img {
    object-fit: cover;
    object-position: right;
 }
-.add-text-1{
+
+.add-text-1 {
    position: absolute;
    padding: 50px;
    font-size: 18px;
    line-height: 1.5;
 }
-.add-text-1 h1:hover
-{
-    color: #0989ff;
+
+.add-text-1 h1:hover {
+   color: #0989ff;
 }
-.add-1 button{
+
+.add-1 button {
    border: none;
    outline: none;
    margin-left: 60px;
    margin-top: 20px;
 }
+
 /* add 2 */
-.add-image-2{
+.add-image-2 {
    position: absolute;
 }
-.add-text-2
-{
+
+.add-text-2 {
    position: absolute;
    padding: 50px;
    font-size: 18px;
    /* line-height: 1.3; */
 }
-.add-image-2:hover{
+
+.add-image-2:hover {
    transform: scale(1.1);
    transition: 1s;
 }
-.add-text-2 h1:hover
-{
+
+.add-text-2 h1:hover {
    color: #0989ff;
 }
-.add-2 button
-{
+
+.add-2 button {
    background-color: transparent;
    border: none;
    outline: none;
@@ -917,35 +947,38 @@
    margin-top: 20px;
    z-index: 1;
 }
+
 /* MAIN PART-3 (Section-5 , section-6*/
-.bg-color-part-3
-{
-    height: 680px;
-    background-color:rgb(236, 239, 241) ;
-    opacity: 0.9;
-    margin-bottom: 50px;
+.bg-color-part-3 {
+   padding: 50px;
+   background-color: rgb(236, 239, 241);
+   opacity: 0.9;
+   margin-bottom: 50px;
 }
-.main_part_name-1{
+
+.main_part_name-1 {
    position: relative;
    margin-bottom: 50px;
 }
-.main_part_name-1 h1{
-    position: relative;
-    margin-top: 150px;
-    padding-bottom: 30px;
-    top:40px;
-    color: black;
-    font-size: 40px;   
- }
- .main_part_name-1 img{
-    position: absolute;
-    top: 65px;
-    left: 0;
-    z-index: -1;
- }
- .bg-text-1 a
-{
-   padding: 12px 25px;
+
+.main_part_name-1 h1 {
+   position: relative;
+   margin-top: 150px;
+   padding-bottom: 30px;
+   top: 40px;
+   color: black;
+   font-size: 40px;
+}
+
+.main_part_name-1 img {
+   position: absolute;
+   top: 65px;
+   left: 0;
+   z-index: -1;
+}
+
+.bg-text-1 a {
+   padding: 12px 20px;
    background: #0989ff;
    border-radius: 8px;
    color: white;
@@ -953,316 +986,344 @@
    position: absolute;
    top: 50px;
 }
-.bg-text-1 a:hover
-{
-    border: 0.5px solid white;
-    color: white;
-    background-color: black;
+
+.bg-text-1 a:hover {
+   border: 0.5px solid white;
+   color: white;
+   background-color: black;
 }
-.shop-text-1 i
-{
+
+.shop-text-1 i {
    margin-left: 5px;
    position: relative;
    top: 3px;
    font-size: 20px;
 }
+
 /* section-5 */
-.section-5
- {
-        height: 450px;
-        width: 318px;
-        border: 1px solid rgb(229, 233, 233); 
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        border-radius: 10px;
-        background-color: white;  
- }
- .section-5:hover
- {
+.Gaming_headphone{
+   height: 450px;
+   width: 315px;
+   border: 1px solid rgb(229, 233, 233);
+   justify-content: space-between;
+   border-radius: 10px;
+   background-color: white;
+}
+
+.section-5:hover {
    box-shadow: 2px 2px 5px rgb(176, 174, 174);
- }
- /*1. Gaming_headphone */
- .Gaming_headphone-image img
+}
+
+/*1. Gaming_headphone */
+.Gaming_headphone-image img {
+   object-fit: cover;
+   overflow: hidden;
+   height: 315px;
+   width: 315px;
+}
+
+.Gaming_headphone-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Gaming_headphone-image {
+   position: relative;
+}
+
+/* Hover */
+.Gaming_headphone-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Gaming_headphone-text {
+   padding: 25px;
+   border-top: 2px solid rgb(229, 233, 233);
+}
+
+/* 2.antec_air_cooler */
+.antec_air_cooler
 {
-        object-fit: cover;
-        overflow: hidden;
- }
- .Gaming_headphone-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Gaming_headphone-image
- {
-    position: relative;
- }
- /* Hover */
- .Gaming_headphone-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Gaming_headphone-text
- {
-    padding: 25px;
-    border-top: 2px solid rgb(229, 233, 233); 
- }
- /* 2.antec_air_cooler */
- .antec_air_cooler-image img
+   height: 450px;
+   width: 315px;
+   border: 1px solid rgb(229, 233, 233);
+   justify-content: space-between;
+   border-radius: 10px;
+   background-color: white;
+}
+.antec_air_cooler-image img {
+   object-fit: cover;
+   overflow: hidden;
+   height: 315px;
+   width: 315px;
+}
+
+.antec_air_cooler-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.antec_air_cooler-image {
+   position: relative;
+}
+
+/* Hover */
+.antec_air_cooler-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.antec_air_cooler-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*3.Sony_Lady_fitness_watch*/
+.Sony_Lady_fitness_watch
 {
-        object-fit: cover;
-        overflow: hidden;
- }
- .antec_air_cooler-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .antec_air_cooler-image
- {
-    position: relative;
- }
- /* Hover */
- .antec_air_cooler-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .antec_air_cooler-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /*3.Sony_Lady_fitness_watch*/
- .Sony_Lady_fitness_watch-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Sony_Lady_fitness_watch-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Sony_Lady_fitness_watch-image
- {
-    position: relative;
- }
- /* Hover */
- .Sony_Lady_fitness_watch-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Sony_Lady_fitness_watch-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /* section-6 */
-.wrap_contain
-{
+   height: 450px;
+   width: 315px;
+   border: 1px solid rgb(229, 233, 233);
+   justify-content: space-between;
+   border-radius: 10px;
+   background-color: white;
+}
+.Sony_Lady_fitness_watch-image img {
+   object-fit: cover;
+   overflow: hidden;
+   height: 315px;
+   width: 315px;
+}
+
+.Sony_Lady_fitness_watch-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Sony_Lady_fitness_watch-image {
+   position: relative;
+}
+
+/* Hover */
+.Sony_Lady_fitness_watch-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Sony_Lady_fitness_watch-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/* section-6 */
+.wrap_contain {
    width: 30%;
    height: 720px;
 }
-.sticky
-{
+
+.sticky {
    position: sticky;
    top: 73px;
 }
+
 /* GADGETS */
-.Gadgets{
+.Gadgets {
    height: 350px;
    width: 350px;
    padding: 30px;
    border: 3px solid rgb(252, 34, 70);
    border-radius: 10px;
    overflow: hidden;
-
    margin-left: -9px;
    display: flex;
    flex-wrap: wrap;
 }
 
-.Girl_image{
+.Girl_image {
    position: relative;
    bottom: -31px;
    left: 140px;
 }
-.Gadgets-text
-{
+
+.Gadgets-text {
    position: relative;
-   top:-290px
+   top: -290px
 }
-.Gadgets-text h3
-{
+
+.Gadgets-text h3 {
    position: relative;
    margin-bottom: 15px;
    padding-bottom: 10px;
    border-bottom: 2px solid rgb(45, 45, 204);
 }
-.Gadgets span
-{
+
+.Gadgets span {
    font-size: 14px;
 }
-.Gadgets span i
-{
+
+.Gadgets span i {
    margin-left: 5px;
 }
-.list{
+
+.list {
    font-size: 15px;
    list-style-type: disc;
    margin-left: 10px;
    line-height: 2;
    margin-bottom: 10px;
 }
-li:hover
-{
+
+li:hover {
    color: blue;
 }
-.arrow
-{
+
+.arrow {
    font-size: 15px;
-   font-weight:600;
+   font-weight: 600;
    margin-top: 30px;
 }
+
 /* NOVELTY */
-.novelty
-{
+.novelty {
    position: sticky;
-   right: 10px; 
+   right: 10px;
 }
-.novelty-image
-{
+
+.novelty-image {
    height: 150px;
    width: 300px;
    object-fit: cover;
    position: absolute;
    left: -10px;
 }
-.novelty-text
-{
+
+.novelty-text {
    z-index: 1;
    font-size: 22px;
    color: white;
    position: relative;
    padding: 30px;
-} 
-.part-3
-{
-        display: flex;
-        flex-wrap: wrap;   
-        justify-content: space-evenly;  
-        margin-bottom: 50px;
 }
-.section-6
- {
-        height: 375px;
-        width: 235px;
-        border: 1px solid rgb(229, 233, 233); 
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        border-radius: 5px;
-       margin-bottom: 10px;
- }
- .part-3-fix
- {
+
+.part-3 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-bottom: 50px;
+}
+
+.section-6 {
+   height: 375px;
+   width: 235px;
+   border: 1px solid rgb(229, 233, 233);
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-between;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.part-3-fix {
    width: 70%;
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
- }
- .section-3:hover
-{
-  box-shadow: 1px 1px 3px rgb(176, 174, 174);
 }
-.wireless-image-1 img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .wireless-image-1:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .wireless-image-1
- {
-    position: relative;
- }
- .section-6:hover
- {
+
+.section-3:hover {
+   box-shadow: 1px 1px 3px rgb(176, 174, 174);
+}
+
+.wireless-image-1 img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.wireless-image-1:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.wireless-image-1 {
+   position: relative;
+}
+
+.section-6:hover {
    box-shadow: 2px 2px 5px rgb(176, 174, 174);
- }
- /* Hover */
- .hover-open-content-1
- {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 50px;
-    transition: 1.5s;
- }
- .wireless-image-1:hover .hover-open-content-1{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .wireless-text-1
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /*2.  Gaming Headphone  */
-.Gaming-image-1 img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Gaming-image-1:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Gaming-image-1
- {
-    position: relative;
- }
- /* Hover */
- .Gaming-image-1:hover .hover-open-content-1{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Gaming-text-1
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
+}
+
+/* Hover */
+.hover-open-content-1 {
+   display: none;
+   position: absolute;
+   right: 20px;
+   bottom: 50px;
+   transition: 1.5s;
+}
+
+.wireless-image-1:hover .hover-open-content-1 {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.wireless-text-1 {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*2.  Gaming Headphone  */
+.Gaming-image-1 img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Gaming-image-1:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Gaming-image-1 {
+   position: relative;
+}
+
+/* Hover */
+.Gaming-image-1:hover .hover-open-content-1 {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Gaming-text-1 {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
 /*3. Headphone with Mic*/
-.Mic-image-1 img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Mic-image-1:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Mic-image-1
- {
-    position: relative;
- }
- .out-stock
- {
+.Mic-image-1 img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Mic-image-1:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Mic-image-1 {
+   position: relative;
+}
+
+.out-stock {
    position: absolute;
    margin: 5px 5px 5px 150px;
    padding: 3px 3px;
@@ -1271,114 +1332,116 @@ li:hover
    border-radius: 5px;
    z-index: 1;
    background-color: crimson;
- } 
- /* Hover */
- .Mic-image-1:hover .hover-open-content-1{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Mic-text-1
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- 
+}
+
+/* Hover */
+.Mic-image-1:hover .hover-open-content-1 {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Mic-text-1 {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
 /*4.Galaxy Android Tablet*/
-.Galaxy-image-1 img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Galaxy-image-1:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Galaxy-image-1
- {
-    position: relative;
- }
- /* Hover */
- .Galaxy-image-1:hover .hover-open-content-1{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Galaxy-text-1
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233);  
- }
- /*5. iPhone 14 Pro */
-.iphone-image-1 img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .iphone-image-1:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .iphone-image-1
- {
-    position: relative;
- }
- /* Hover */
- .iphone-image-1:hover .hover-open-content-1{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .iphone-text-1
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /*6. Apple iPad Air*/
-.Apple-image-1 img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Apple-image-1:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Apple-image-1
- {
-    position: relative;
- }
- /* Hover */
- .Apple-image-1:hover .hover-open-content-1{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Apple-text-1
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
+.Galaxy-image-1 img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Galaxy-image-1:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Galaxy-image-1 {
+   position: relative;
+}
+
+/* Hover */
+.Galaxy-image-1:hover .hover-open-content-1 {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Galaxy-text-1 {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*5. iPhone 14 Pro */
+.iphone-image-1 img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.iphone-image-1:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.iphone-image-1 {
+   position: relative;
+}
+
+/* Hover */
+.iphone-image-1:hover .hover-open-content-1 {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.iphone-text-1 {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/*6. Apple iPad Air*/
+.Apple-image-1 img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Apple-image-1:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Apple-image-1 {
+   position: relative;
+}
+
+/* Hover */
+.Apple-image-1:hover .hover-open-content-1 {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Apple-text-1 {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
 
 /* MAIN PART-4  (Section-7)*/
-.part-4
- {
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;   
-  justify-content: space-evenly;
-  flex-flow: row;
-  margin-top: 100px;
-}   
-.section-7
-{
+.part-4 {
+   width: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   flex-flow: row;
+   margin-top: 100px;
+}
+
+.section-7 {
    width: 1130px;
    height: 450px;
    background-color: #0989ff;
@@ -1386,463 +1449,475 @@ li:hover
    border-radius: 8px;
 }
 
-.background-text
-{
+.background-text {
    color: white;
    padding: 70px 0 70px 70px;
 }
-.background-text h1
-{
+
+.background-text h1 {
    font-size: 50px;
    font-weight: 900px;
    margin-bottom: 20px;
 }
-.background-text h2
-{
+
+.background-text h2 {
    font-size: 40px;
 }
-.old_price
-{
+
+.old_price {
    font-size: 18px;
    text-decoration: line-through;
 }
-.shop-botton 
-{
-    margin-top: 50px;
+
+.shop-botton {
+   margin-top: 50px;
 }
-.shop-botton a
-{
+
+.shop-botton a {
    color: white;
    background-color: black;
    border-radius: 8px;
    padding: 15px 45px;
 }
-.shop-botton a:hover
-{
-  color: black;
-  background-color: white;
+
+.shop-botton a:hover {
+   color: black;
+   background-color: white;
 }
-.back-image-1
-{
+
+.back-image-1 {
    position: absolute;
    top: 25px;
    right: 100px;
    z-index: 2;
 }
-.back-image-2
-{
+
+.back-image-2 {
    position: absolute;
    top: 10px;
    right: 400px;
    z-index: 2;
 }
-/* Main Part-5 (section-8 , section-9)*/
- .part-5
- {
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;   
-        justify-content: space-evenly;
-        margin-top: 50px;
-        margin-bottom: 50px;
-}
-.section-8
- {
-        height: 375px;
-        width: 250px;
-        border: 1px solid rgb(229, 233, 233); 
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        border-radius: 5px;
- }
- .section-8:hover
-{
-  box-shadow: 2px 2px 5px rgb(176, 174, 174);
-}
- .main_part_name-2 h1{
-    position: relative;
-    top:50px;
-    color: black;
-    font-size: 45px;
- }
- .main_part_name-2 img{
-    position: relative;
-    top:25px
- }
 
- /* 1.Apple_watch */
- .Apple_watch-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Apple_watch-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Apple_watch-image
- {
-    position: relative;
- }
- /* Hover */
- .hover-open-content
- {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 50px;
-    transition: 1.5s;
- }
- .Apple_watch-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Apple_watch-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /* 2. Sony_Smart_Watch  */
-.Sony_Smart_Watch img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Sony_Smart_Watch-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Sony_Smart_Watch-image
- {
-    position: relative;
- }
- /* Hover */
- .Sony_Smart_Watch-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Sony_Smart_Watch-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
+/* Main Part-5 (section-8 , section-9)*/
+.part-5 {
+   width: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.section-8 {
+   height: 375px;
+   width: 250px;
+   border: 1px solid rgb(229, 233, 233);
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-between;
+   border-radius: 5px;
+}
+
+.section-8:hover {
+   box-shadow: 2px 2px 5px rgb(176, 174, 174);
+}
+
+.main_part_name-2 h1 {
+   position: relative;
+   top: 50px;
+   color: black;
+   font-size: 45px;
+}
+
+.main_part_name-2 img {
+   position: relative;
+   top: 25px
+}
+
+/* 1.Apple_watch */
+.Apple_watch-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Apple_watch-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Apple_watch-image {
+   position: relative;
+}
+
+/* Hover */
+.hover-open-content {
+   display: none;
+   position: absolute;
+   right: 20px;
+   bottom: 50px;
+   transition: 1.5s;
+}
+
+.Apple_watch-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Apple_watch-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/* 2. Sony_Smart_Watch  */
+.Sony_Smart_Watch img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Sony_Smart_Watch-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Sony_Smart_Watch-image {
+   position: relative;
+}
+
+/* Hover */
+.Sony_Smart_Watch-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Sony_Smart_Watch-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
 /* 3. Sony Lady Fitness Watch */
-.Sony_Lady_Fitness_Watch-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Sony_Lady_Fitness_Watch-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Sony_Lady_Fitness_Watch-image
- {
-    position: relative;
- }
- /* Hover */
- .Sony_Lady_Fitness_Watch-image:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Sony_Lady_Fitness_Watch-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
+.Sony_Lady_Fitness_Watch-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Sony_Lady_Fitness_Watch-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Sony_Lady_Fitness_Watch-image {
+   position: relative;
+}
+
+/* Hover */
+.Sony_Lady_Fitness_Watch-image:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Sony_Lady_Fitness_Watch-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
 /*4. Lenova */
- .Lenova-image img
-{
-        object-fit: cover;
-        overflow: hidden;
- }
- .Lenova-image:hover img
- {
-    transform: scale(1.1);
-    transition: 1s;
- }
- .Lenova-image
- {
-    position: relative;
- }
- /* Hover */
- .Lenova:hover .hover-open-content{
-    display:block;
-    transform: translate(30px);
-    transform: scale(1.3);
-    transition: 2s;
- }
- .Lenova-text
- {
-    padding: 20px;
-    border-top: 1px solid rgb(229, 233, 233); 
- }
- /* section-9 */
-.main_part_name-3 
-{
+.Lenova-image img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.Lenova-image:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.Lenova-image {
+   position: relative;
+}
+
+/* Hover */
+.Lenova:hover .hover-open-content {
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+
+.Lenova-text {
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/* section-9 */
+.main_part_name-3 {
    display: grid;
    grid-template-columns: auto auto auto;
    padding: 10px;
    margin-bottom: 50px;
 }
-.main_part_name-3 h3{
+
+.main_part_name-3 h3 {
    position: relative;
-   top:50px;
+   top: 50px;
    color: black;
    font-size: 25px;
 }
-.main_part_name-3 img{
+
+.main_part_name-3 img {
    position: relative;
-   top:25px;
+   top: 25px;
    border-radius: 10px;
 }
-.part-6
-{
+
+.part-6 {
    display: grid;
    grid-template-columns: auto auto auto;
    grid-template-rows: auto auto auto;
 }
+
 /* Section-9 */
-.section-9
-{
+.section-9 {
    border-bottom: 1px solid rgb(199, 199, 199);
    margin-right: 30px;
 }
-.grid-part-1
-{
-   display: flex; 
+
+.grid-part-1 {
+   display: flex;
    padding: 12px;
 }
-.grid-part-image
-{
+
+.grid-part-image {
    height: 120px;
    width: 100px;
-   background-color:rgb(227, 224, 224);
+   background-color: rgb(227, 224, 224);
    border-radius: 8px;
-   margin-right: 20px; 
+   margin-right: 20px;
 }
-.grid-part-image img:hover
-{
+
+.grid-part-image img:hover {
    transform: scale(1.2);
    transition: 0.3s;
 }
-.grid-text p:hover
-{
+
+.grid-text p:hover {
    color: #0989ff;
 }
-.grid-text h5:hover
-{
+
+.grid-text h5:hover {
    color: #0989ff;
 }
-.grid-text
-{
+
+.grid-text {
    padding: 10px;
    line-height: 1.4;
 }
-.grid-text p
-{
+
+.grid-text p {
    font-size: 12px;
 }
-.grid-text h5
-{
+
+.grid-text h5 {
    padding-bottom: 8px;
 }
-.width
-{
+
+.width {
    font-size: 12px;
 }
+
 /* MAIN PART-7 (section-10 , section-11)*/
- .part-7
- {
+.part-7 {
    width: auto;
    display: flex;
-   flex-wrap: wrap;   
+   flex-wrap: wrap;
    justify-content: space-evenly;
    margin-bottom: 50px;
 }
+
 /* section-10 */
-.section-10
-  {
-        height: 500px;
-        width: 320px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 50px;
-        object-fit: cover;
- }
-.main_part_name-4 h1{
+.section-10 {
+   height: 500px;
+   width: 320px;
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 50px;
+   object-fit: cover;
+}
+
+.main_part_name-4 h1 {
    position: relative;
-   top:50px;
+   top: 50px;
    color: black;
    font-size: 45px;
 }
-.main_part_name-4 img{
+
+.main_part_name-4 img {
    position: relative;
-   top:25px;
+   top: 25px;
    border-radius: 10px;
 }
-.bg-text-2
-{
+
+.bg-text-2 {
    margin-top: 25px;
 }
-.bg-text-2 a
-{
+
+.bg-text-2 a {
    padding: 10px 20px;
    border: 1px solid gray;
    border-radius: 8px;
 }
-.bg-text-2 a:hover
-{
+
+.bg-text-2 a:hover {
    color: white;
-   background-color:#0989ff;
+   background-color: #0989ff;
 }
-.shop-text-2 i
-{
+
+.shop-text-2 i {
    margin-left: 5px;
    position: relative;
    top: 3px;
    font-size: 20px;
 }
-.ceramics-text 
-{
+
+.ceramics-text {
    margin-top: 20px;
    line-height: 1.5;
 }
-.climates-text
-{
+
+.climates-text {
    margin-top: 20px;
    line-height: 1.5;
 }
-.colthes-text
-{
-   margin-top: 20px ;
+
+.colthes-text {
+   margin-top: 20px;
    line-height: 1.5;
 }
-.ceramics-text  h3
-{
+
+.ceramics-text h3 {
    margin-bottom: 5px;
 }
-.climates-text h3
-{
+
+.climates-text h3 {
    margin-bottom: 5px;
 }
-.colthes-text h3
-{
+
+.colthes-text h3 {
    margin-bottom: 5px;
 }
-.ceramics-text  h3:hover
-{
-  color: #0989ff;
-}
-.climates-text h3:hover
-{
+
+.ceramics-text h3:hover {
    color: #0989ff;
 }
-.colthes-text h3:hover
-{
+
+.climates-text h3:hover {
    color: #0989ff;
 }
-.ceramics-text  h5:hover
-{
-  color: #0989ff;
-}
-.climates-text h5:hover
-{
+
+.colthes-text h3:hover {
    color: #0989ff;
 }
-.colthes-text h5:hover
-{
+
+.ceramics-text h5:hover {
    color: #0989ff;
 }
-.ceramics-text p
-{
+
+.climates-text h5:hover {
+   color: #0989ff;
+}
+
+.colthes-text h5:hover {
+   color: #0989ff;
+}
+
+.ceramics-text p {
    margin-top: 8px;
    padding-bottom: 12px;
    font-size: 12px;
 }
-.climates-text p
-{
+
+.climates-text p {
    margin-top: 8px;
    padding-bottom: 12px;
    font-size: 12px;
 }
-.colthes-text p
-{
+
+.colthes-text p {
    margin-top: 8px;
    padding-bottom: 12px;
    font-size: 12px;
 }
-.ceramics-image a
-{
+
+.ceramics-image a {
    padding: 8px 15px;
    color: white;
    background-color: black;
-   position: relative; 
+   position: relative;
    top: -245px;
 }
-.climates-image a
-{
+
+.climates-image a {
    padding: 8px 15px;
    color: white;
    background-color: black;
-   position: relative; 
+   position: relative;
    top: -245px;
 }
-.clothes-image a
-{
+
+.clothes-image a {
    padding: 8px 15px;
    color: white;
    background-color: black;
-   position: relative; 
+   position: relative;
    top: -245px;
 }
+
 /* section-11 */
-.section-11
-{
+.section-11 {
    display: flex;
    justify-content: space-between;
    padding-bottom: 70px;
    width: auto;
 }
-.img-1{
+
+.img-1 {
    position: absolute;
    background-color: black;
 }
-.images-1
-{
+
+.images-1 {
    height: 230px;
    width: 230px;
    position: relative;
    border-radius: 10px;
    overflow: hidden;
 }
-.overlay{
+
+.overlay {
    height: 100%;
-   width : 100%;
+   width: 100%;
    background-color: rgba(9, 9, 9, 0.299);
    position: absolute;
    display: none;
 }
-.images-1:hover .instagram-icon-1{
-   display: block;
-}
-.images-1:hover .overlay{
+
+.images-1:hover .instagram-icon-1 {
    display: block;
 }
 
-.instagram-icon-1{
+.images-1:hover .overlay {
+   display: block;
+}
+
+.instagram-icon-1 {
    width: 45px;
    height: 45px;
    position: absolute;
@@ -1855,56 +1930,60 @@ li:hover
    /* top: 50%;
    left: 40%; */
 }
-.instagram-icon-1 a i{
-   color:white;
+
+.instagram-icon-1 a i {
+   color: white;
    border: 1px solid rgb(127, 127, 127);
    padding: 8px;
    font-size: 25px;
    border-radius: 5px;
 }
-.instagram-icon-1 a i:hover
-{
+
+.instagram-icon-1 a i:hover {
    background-color: white;
    color: black;
 }
+
 /* Footer part */
-footer
-{
+footer {
    margin-top: 80px;
    background-color: #e8e9ea;
 }
-.Newsletter
-{
+
+.Newsletter {
    background-color: #0989ff;
    height: 190px;
 }
-.News-text{
+
+.News-text {
    position: relative;
    z-index: 1;
    font-size: 20px;
    color: white;
    top: 50px;
 }
-.News-text span
-{
+
+.News-text span {
    font-size: 15px;
 }
-.Newsletter .men-image{
+
+.Newsletter .men-image {
    position: absolute;
    z-index: 4;
    right: 150px;
 }
-.plane
-{
+
+.plane {
    position: absolute;
    z-index: 3;
    right: 400px;
 }
-.submit
-{
+
+.submit {
    position: relative;
 }
-.submit input{
+
+.submit input {
    left: 700px;
    display: flex;
    position: relative;
@@ -1917,8 +1996,8 @@ footer
    width: 350px;
    z-index: 5;
 }
-button
-{
+
+button {
    background-color: black;
    border-radius: 0 8px 8px 0;
    color: white;
@@ -1928,51 +2007,50 @@ button
    top: -40px;
    z-index: 5;
 }
-.Newsdesing-1
-{
+
+.Newsdesing-1 {
    mix-blend-mode: luminosity;
    opacity: 0.4;
    position: absolute;
    left: 0;
 }
-footer .Newsdesing-2
-{
+
+footer .Newsdesing-2 {
    mix-blend-mode: luminosity;
    opacity: 0.4;
    position: absolute;
-   left: 200px; 
+   left: 200px;
 }
-.Newsdesing-3
-{
+
+.Newsdesing-3 {
    mix-blend-mode: luminosity;
    opacity: 0.4;
    position: absolute;
    left: 280px;
 }
 
-.all_div
-{
+.all_div {
    display: flex;
-   justify-content:space-between;
+   justify-content: space-between;
    margin-top: 30px;
 }
-.div-1
-{
+
+.div-1 {
    padding: 60px 60px 60px 0;
    width: 30%;
    line-height: 1.5;
    margin-bottom: 40px;
 }
-.div-1 img
-{
+
+.div-1 img {
    margin-bottom: 20px;
 }
-.div-1 p
-{
+
+.div-1 p {
    margin-bottom: 20px;
 }
-.browser i
-{
+
+.browser i {
    background-color: white;
    border-radius: 8px;
    display: inline;
@@ -1984,83 +2062,83 @@ footer .Newsdesing-2
    color: rgb(48, 48, 48);
    box-shadow: 0 1px 1px rgb(159, 158, 158);
 }
-.browser i:hover
-{
+
+.browser i:hover {
    color: white;
    background-color: #0989ff;
 }
-.div-2
-{
+
+.div-2 {
    padding: 40px;
    width: 20%;
    line-height: 2;
 }
-.div-2 ul li
-{
+
+.div-2 ul li {
    list-style-type: disc;
    font-size: 13px;
    line-height: 2.5;
    color: rgb(60, 59, 59);
 }
-.div-2 h4
-{
+
+.div-2 h4 {
    position: relative;
    right: 12px;
 }
-.div-3 ul li
-{
+
+.div-3 ul li {
    list-style-type: disc;
    font-size: 13px;
    line-height: 2.5;
    color: rgb(60, 59, 59);
 }
-.div-3 h4
-{
+
+.div-3 h4 {
    position: relative;
    right: 12px;
 }
-.div-3
-{
+
+.div-3 {
    padding: 40px;
    width: 25%;
    line-height: 2;
 }
-.div-4
-{
+
+.div-4 {
    padding: 40px;
    width: 25%;
    line-height: 1.3;
 }
-.div-4 h4
-{
+
+.div-4 h4 {
    margin-bottom: 10px;
 }
-.div-4 h2
-{
+
+.div-4 h2 {
    margin-bottom: 12px;
 }
-.div-4 span
-{ 
+
+.div-4 span {
    font-size: 13px;
 }
-.div-4 a
-{
+
+.div-4 a {
    color: inherit;
    font-size: 13px;
 }
-.last_part
-{
+
+.last_part {
    border-top: 1px solid rgb(204, 201, 201);
    padding-bottom: 80px;
    font-size: 13px;
 }
-.last_part img
-{
+
+.last_part img {
    position: relative;
    top: 15px;
    left: 535px;
 }
-.last_part span span
-{
+
+.last_part span span {
    color: #0989ff
 }
