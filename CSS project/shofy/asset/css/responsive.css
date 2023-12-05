@@ -8,6 +8,10 @@
            height: 100px;
            width: 48%;
         }
+        .bg-text-1 a
+        {
+            margin-left: 850px;
+        }
         /* gaming headphone */
         .Gaming_headphone
         {
@@ -90,6 +94,35 @@
       .bg-top-color
       {
         display: none;
+      }
+      .border
+      {
+        display: none;
+      }
+      #inherhead2
+      {
+        display: none;
+      } 
+      .best-bg
+      {
+        height: 650px;
+      }
+      .bg-text span{
+        font-size: 12px;
+      }
+      .bg-text h1 b{
+        font-size: 30px;
+      }
+      .other-iamges-1
+      {
+        display: none;
+      }
+      .bg-text h2{
+        font-size: 12px;
+      }
+      .watch{
+        height: 50px;
+        width: 80px;
       }
     }
 }
