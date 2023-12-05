@@ -298,7 +298,7 @@
 .watch {
    position: absolute;
    right: 0;
-   /* margin-top: -250px; */
+   margin-top: -250px;
    height: 360px;
    width: 400px;
 }
@@ -565,7 +565,7 @@
    display: inline;
    position: relative;
    font-size: 20px;
-   left: 430px;
+   /* left: 430px; */
 }
 
 .asset a {
@@ -863,6 +863,7 @@
 .section-4 {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 .add-1 {
@@ -894,12 +895,16 @@
 .add-image-1 img {
    object-fit: cover;
    object-position: right;
+   height: 250px;
+   width: 680px;
 
 }
 
 .add-image-2 img {
    object-fit: cover;
    object-position: right;
+   height: 250PX;
+   width: 400px;
 }
 
 .add-text-1 {
@@ -1444,7 +1449,7 @@ li:hover {
 }
 
 .section-7 {
-   width: 1130px;
+   /* width: 1130px; */
    height: 450px;
    background-color: #0989ff;
    margin-bottom: 50px;
@@ -2015,6 +2020,7 @@ button {
    opacity: 0.4;
    position: absolute;
    left: 0;
+   height: 160px;
 }
 
 footer .Newsdesing-2 {
@@ -2022,13 +2028,14 @@ footer .Newsdesing-2 {
    opacity: 0.4;
    position: absolute;
    left: 200px;
+   height: 20px;
 }
 
 .Newsdesing-3 {
    mix-blend-mode: luminosity;
    opacity: 0.4;
    position: absolute;
-   left: 280px;
+   /* left: 280px; */
 }
 
 .all_div {

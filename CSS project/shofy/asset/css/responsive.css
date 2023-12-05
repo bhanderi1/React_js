@@ -91,6 +91,10 @@
 {
     body
     {
+      .containerwi
+      {
+        max-width: 320px;
+      }
       .bg-top-color
       {
         display: none;
@@ -105,7 +109,7 @@
       } 
       .best-bg
       {
-        height: 650px;
+        height: 750px;
       }
       .bg-text span{
         font-size: 12px;
@@ -113,16 +117,74 @@
       .bg-text h1 b{
         font-size: 30px;
       }
-      .other-iamges-1
+      .other-images-1 
       {
-        display: none;
+        position: absolute;
+        left: 200px;
+        top: -150px;
       }
+      .other-image-2 {
+        position: relative;
+        top: -10px;
+        left: 20px;
+     }
       .bg-text h2{
         font-size: 12px;
       }
       .watch{
-        height: 50px;
-        width: 80px;
+        /* height: 50px;
+        width: 80px; */
+        position: absolute;
+        top: 400px;
       }
+
+      /* section-2 */
+     .section-2{
+      width: 100%;
+     }
+     /* MAin part-3 */
+     .bg-color-part-3{
+      padding: 0;
+     }
+     .antec_air_cooler
+     {
+      display: none;
+     }
+     .wrap_contain
+     {
+      width: 100%;
+      height: 550px;
+     }
+     .sticky {
+      position: relative;
+      top: 0;
+     }
+    /* section-7 */
+    .section-7
+    {
+      height: 700px;
+    }
+    .background-text h1 
+    {
+      font-size: 20px;
+    }
+    .background-text h2
+    {
+      font-size: 15px;
+    }
+    .back-image-1
+    {
+      position: absolute;
+      top: 300px;
+      right: 5px;
+    }
+    .add-image-1 img
+    {
+      width: 100%;
+    }
+    .add-image-2 img
+    {
+      width: 100%;
+    } 
     }
 }
