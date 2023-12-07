@@ -989,9 +989,9 @@
    background: #0989ff;
    border-radius: 8px;
    color: white;
-   margin-left: 930px;
    position: absolute;
    top: 50px;
+   right: 0;
 }
 
 .bg-text-1 a:hover {
@@ -1449,7 +1449,7 @@ li:hover {
 }
 
 .section-7 {
-   /* width: 1130px; */
+   width: 100%;
    height: 450px;
    background-color: #0989ff;
    margin-bottom: 50px;
@@ -1891,65 +1891,99 @@ li:hover {
 .section-11 {
    display: flex;
    justify-content: space-between;
-   padding-bottom: 70px;
+   padding-bottom: 50px;
    width: auto;
 }
 
-.img-1 {
-   position: absolute;
-   background-color: black;
+
+.images-1{
+    height: 230px;
+    width: 230px;
+    position: relative;
+    border-radius: 20px;    
+    overflow: hidden;
 }
 
-.images-1 {
-   height: 230px;
-   width: 230px;
-   position: relative;
-   border-radius: 10px;
-   overflow: hidden;
+.images-1 img{
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
 }
 
-.overlay {
-   height: 100%;
-   width: 100%;
-   background-color: rgba(9, 9, 9, 0.299);
-   position: absolute;
-   display: none;
+.instagram-icon-1{
+    height: 230px;
+    width: 230px;
 }
 
-.images-1:hover .instagram-icon-1 {
-   display: block;
+.overlay{
+    height: 230px;
+    width: 230px;
+    background-color: black;
+    opacity: 0.5;   
+    position: absolute;
+    top:0;  
+    display: none;
+}
+.instagram-icon-1{
+    display: none;
 }
 
-.images-1:hover .overlay {
-   display: block;
+.images-1:hover .instagram-icon-1{
+    display: block;
+}
+.images-1:hover .overlay{
+    display: block;
 }
 
-.instagram-icon-1 {
-   width: 45px;
-   height: 45px;
-   position: absolute;
-   right: 0;
-   left: 0;
-   top: 0;
-   bottom: 0;
-   margin: auto;
-   display: none;
-   /* top: 50%;
-   left: 40%; */
+.instagram-icon-1 span{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.instagram-icon-1 a i {
-   color: white;
-   border: 1px solid rgb(127, 127, 127);
-   padding: 8px;
-   font-size: 25px;
-   border-radius: 5px;
+.instagram-icon-1 span a i{   
+    border:1px solid rgb(104, 99, 99);
+    font-size: 20px;
+    color:white;
+    padding: 8px;
+    border-radius: 8px; 
 }
 
-.instagram-icon-1 a i:hover {
-   background-color: white;
-   color: black;
+
+.images-1:hover .instagram-icon-1 span{
+    animation-duration: 0.8s;
+    animation-name: slide;
 }
+
+@keyframes slide {
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer part */
 footer {
@@ -1991,17 +2025,17 @@ footer {
 }
 
 .submit input {
-   left: 700px;
    display: flex;
-   position: relative;
+   position: absolute;
    padding-right: 100px;
    padding-left: 20px;
    background-color: white;
    border: 0;
    border-radius: 8px 0 0 8px;
    height: 40px;
-   width: 350px;
+   width: 320px;
    z-index: 5;
+   right: 120px;
 }
 
 button {
@@ -2009,9 +2043,9 @@ button {
    border-radius: 0 8px 8px 0;
    color: white;
    padding: 11px 30px;
-   position: relative;
-   left: 1050px;
-   top: -40px;
+   position: absolute;
+   right: 0;
+   top: 0;
    z-index: 5;
 }
 
@@ -2035,7 +2069,7 @@ footer .Newsdesing-2 {
    mix-blend-mode: luminosity;
    opacity: 0.4;
    position: absolute;
-   /* left: 280px; */
+   left: 280px;
 }
 
 .all_div {
@@ -2145,7 +2179,7 @@ footer .Newsdesing-2 {
 .last_part img {
    position: relative;
    top: 15px;
-   left: 535px;
+   right: 0;
 }
 
 .last_part span span {

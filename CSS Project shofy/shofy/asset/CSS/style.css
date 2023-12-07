@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+ }
+ .container {
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+ }
+ /*  HEADER PART -srarting */
+ .bg-top-color {
+    background-color: black;
+ }
+ .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    /* margin: 0px 30px; */
+ }
+ .topbar-text p {
+    color: #ffffff;
+ }
+ .topbar-text p i {
+    color: orange;
+ }
+ .top-select {
+    display: flex;
+    border: 0;
+ }
+
+ /* NAVIGATION START */
+ /* Navbar */
+.border {
+   border-bottom: 1px solid grey;
+}
+.navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 27px;
+   padding-bottom: 27px;
+   /* margin: 0px 19px; */
+}
+/* 1.logo */
+.logo
+{
+   width: 15%;
+}
+/*2. SERACH botton */
+.search-input {
+   width: 44%;
+   border: 2px solid #0989ff;
+   display: flex;
+   font-size:25px;
+   align-items: center;
+}
+.text-input input {
+   width: 100%;
+   border: 0;
+   padding: 5px 50px 5px 20px;
+}
+.text-input:focus-within input {
+   border: 0;
+   outline: none;
+}
+.navi-select
+{
+   width: 40%;
+    border-left: 2px solid rgb(188, 185, 185);
+    margin-right: 10px;
+    padding-right: 8%;
+}
+.navi-select select {
+   border: 0;
+   border: none;
+   padding: 0px 20px;
+}
+.search-icon {
+   background-color: #0989ff;
+   color: #ffffff;
+   padding: 12px 28px;
+   font-size: 25px;
+}
+/* 3.USER ID*/
+.user-info{
+   width: 15%;
+}
+.user-image {
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   border: 2px solid rgb(232, 226, 226);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.user-image i {
+   font-size: 25px;
+   color: gray;
+}
+.user-info {
+   display: flex;
+   align-items: center;
+}
+.user-text {
+   margin-left: 10px;
+}
+.hello
+{
+   color: rgb(165, 162, 162);
+   font-size: 12px;
+}
+.Account
+{
+   font-size: 15px;
+}
+/* 4.icon */
+.icon{
+   width: 15%;
+   right: 0;
+   position: relative;
+}
+.icon-1{
+   font-size: 20px;
+   margin: 10px;
+}
+.icon-2{
+   font-size: 20px;
+   margin: 10px;
+}
+.icon-3{
+   font-size: 20px;
+   margin: 10px;
+}
+.icon span i:hover {
+   color: #0989ff;
+}
+.red{
+   position: absolute;
+   background-color:crimson;
+   height: 23px;
+   width: 23px;
+   border-radius: 100%;
+   color: white;
+   font-size: 15px;
+   border: 2px solid white;
+   align-items: center;
+   text-align: center;
+   display: inline-block;
+   top:-13px;
+}
+/* NAVBAR */
+#inherhead2 {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+/* 1.drop down box */
+.allcata {
+   display: flex;
+   width: 30%;
+}
+.fa-solid {
+   position: relative;
+   top: 2px;
+}
+.allcatachild {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+   transition: all 0.3s;
+   position: relative;
+}
+.button {
+   padding: 11px 39px;
+   color: white;
+   background-color: #0989ff;
+   display: flex;
+   font-size: 15px;
+}
+.button ul {
+   margin-right: 60px;
+   margin-left: 12px;
+}
+.button:hover {
+   background-color: black;
+   color: white;
+   cursor: pointer;
+}
+.allcata:hover .head2drop {
+   display: block;
+}
+.head2drop {
+   display: none;
+   position: absolute;
+   background-color: white;
+   padding: 15px;
+   width: 257px;
+   border: 1px solid black;
+   top: 40px;
+   z-index: 10;
+}
+.allCataList {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 15px;
+   font-weight: 500;
+   padding: 10px 0px;
+   cursor: pointer;
+}
+.allCataList img {
+   width: 30px;
+   height: 30px;
+}
+.sideList {
+   position: absolute;
+   left: 100%;
+   top: 0;
+   width: 200px;
+   background-color: white;
+   padding: 10px;
+   border: 1px solid black;
+   display: none;
+}
+.sideList li {
+   font-size: 20px;
+   padding: 5px;
+}
+.allCataList:hover .sideList {
+   display: block;
+}
+/*2. Nav item */
+.nav-item {
+   width: 50%;
+   display: flex;
+   margin: auto;
+   position: relative;
+}
+.head2-dropdown {
+   padding: 8px;
+   font-size: 14px;
+   transition: all 0.3s;
+   font-weight: bold;
+   position: relative;
+   flex-wrap: wrap;
+}
+.head2-dropdown:hover {
+   color: #0989ff;
+   cursor: pointer;
+}
+/* 3.contact number */
+.head2-contact {
+   width: 16%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.head2-contact div p {
+   font-size: 10px;
+}
+.head2-contact i {
+   position: relative;
+   margin-right: 10px;
+}
+.head2-contact p:hover {
+   color: #0989ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main header part */
+.best-bg {
+   background-color: #115061;
+   height: 500px;
+   position: relative;
+}
+.bg-desing img {
+   mix-blend-mode: luminosity;
+   opacity: 0.1;
+   position: absolute;
+   right: 0;
+}
+.bg-text {
+   color: white;
+   position: relative;
+   top: 70px;
+   width: 55%;
+}
+.bg-text span {
+   font-size: 15px;
+}
+.bg-text h1 b {
+   font-size: 55px;
+   font-weight: 900;
+   flex-wrap: wrap;
+}
+.bg-text h2 {
+   margin-top: 20px;
+   font-family: 'Oregano', cursive;
+   margin-bottom: 20px;
+}
+.watch {
+   position: absolute;
+   right: 0;
+   margin-top: -250px;
+   height: 360px;
+   width: 340px;
+}
+
+.other-images-1 {
+   position: absolute;
+   right: 33%;
+   top: 10%;
+}
+
+.other-image-2 {
+   position: relative;
+   top: -210px;
+   left: -20px;
+}
+
+.bg-text a {
+   padding: 12px 25px;
+   background: white;
+   border-radius: 8px;
+   color: black;
+}
+
+.bg-text a:hover {
+   border: 0.5px solid white;
+   color: white;
+   background-color: #115061;
+}
+
+.shop-text i {
+   margin-left: 5px;
+   position: relative;
+   top: 3px;
+   font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

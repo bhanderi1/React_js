@@ -1,0 +1,299 @@
+@media (max-width :1400px) {
+    body {
+        .container
+        {
+            max-width: 1140px;
+        }
+        /* user text */
+        .user-text {
+            display: none;
+        }
+
+        /* user info */
+        .user-info {
+            width: 10%;
+        }
+    }
+}
+
+
+
+
+/* laptop :992px up */
+@media (max-width :992px) {
+    body {
+        .container{
+           max-width: 720px;
+        }
+        /* secrch-button */
+        .search-input {
+            display: none;
+        }
+
+        /*  USER ID */
+        .user-info {
+            display: none;
+        }
+
+        /* icon  */
+        .icon-1 {
+            display: none;
+        }
+
+        .icon-2 {
+            display: none;
+        }
+         /* Navbar */
+         #inherhead2 {
+            display: none;
+        }
+        /* main part */
+        .best-bg
+        {
+            height: 600px;
+        }
+        .bg-text
+        {
+            width: 50%;
+        }
+        /* watch */
+        .watch{
+            margin-top: -280px;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablets :768px up */
+@media (max-width :768px) {
+    body {
+        .container{
+            max-width: 680px;
+         }
+        /* topbar */
+        .topbar {
+            display: none;
+        }
+
+        /* secrch-button */
+        .search-input {
+            display: none;
+        }
+
+        /*  USER ID */
+        .user-info {
+            display: none;
+        }
+
+        /* icon  */
+        .icon-1 {
+            display: none;
+        }
+
+        .icon-2 {
+            display: none;
+        }
+
+        /* Navbar */
+        #inherhead2 {
+            display: none;
+        }
+         /* main part */
+         .best-bg
+         {
+             height: 700px;
+         }
+         .bg-text
+         {
+            position: relative;
+            top: 0;
+         }
+         .bg-text h1 b
+         {
+            font-size: 50px;
+         }
+         /* watch */
+         .watch{
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            top: 280px;
+         }
+         .watch img{
+            height:320px;
+            width: 300px;
+         }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* large phone  :600px up */
+@media (max-width :600px) {
+    body {
+        body {
+            .container{
+               max-width: 540px;
+            }
+        /* topbar */
+        .topbar {
+            display: none;
+        }
+
+        /* secrch-button */
+        .search-input {
+            display: none;
+        }
+
+        /*  USER ID */
+        .user-info {
+            display: none;
+        }
+
+        /* icon  */
+        .icon-1 {
+            display: none;
+        }
+
+        .icon-2 {
+            display: none;
+        }
+
+        /* Navbar */
+        #inherhead2 {
+            display: none;
+        }
+        /* main part */
+        .best-bg
+        {
+            height: 700px;
+        }
+        .bg-text
+        {
+           position: relative;
+           top: 0;
+        }
+        .bg-text h1 b
+        {
+           font-size: 50px;
+        }
+        /* watch */
+        .watch{
+           width: 100%;
+           position: relative;
+           display: flex;
+           flex-wrap: wrap;
+           top: 280px;
+        }
+        .watch img{
+           height:320px;
+           width: 300px;
+        }
+       
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone 320px down */
+@media (max-width :320px) {
+    body {
+
+        /* topbar */
+        .topbar {
+            display: none;
+        }
+
+        /* secrch-button */
+        .search-input {
+            display: none;
+        }
+
+        /*  USER ID */
+        .user-info {
+            display: none;
+        }
+
+        /* icon  */
+        .icon-1 {
+            display: none;
+        }
+
+        .icon-2 {
+            display: none;
+        }
+
+        /* Navbar */
+        #inherhead2 {
+            display: none;
+        }
+        /* main part */
+        .best-bg
+        {
+            height: 700px;
+        }
+        .bg-text {
+            position: relative;
+            top: 70px;
+            width: 100%;
+         }
+       .bg-text span
+       {
+          font-size: 13px;
+       }
+       .bg-text h1 b {
+        font-size: 35px;
+        font-weight: 900;
+        flex-wrap: wrap;
+     }
+     .bg-text h2
+     {
+        font-size: 13px;
+     }
+     .watch {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        top: 380px;
+     }
+     .watch img{
+        height: 280px;
+        width: 280px;
+     }
+    }
+}
