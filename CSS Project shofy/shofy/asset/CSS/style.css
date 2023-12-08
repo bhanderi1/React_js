@@ -1,42 +1,50 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
- }
- .container {
-    max-width: 1140px;
-    margin: auto;
-    position: relative;
- }
- /*  HEADER PART -srarting */
- .bg-top-color {
-    background-color: black;
- }
- .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    /* margin: 0px 30px; */
- }
- .topbar-text p {
-    color: #ffffff;
- }
- .topbar-text p i {
-    color: orange;
- }
- .top-select {
-    display: flex;
-    border: 0;
- }
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+}
 
- /* NAVIGATION START */
- /* Navbar */
+.container {
+   max-width: 1140px;
+   margin: auto;
+   position: relative;
+   height: inherit;
+}
+
+/*  HEADER PART -srarting */
+.bg-top-color {
+   background-color: black;
+}
+
+.topbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0px;
+   /* margin: 0px 30px; */
+}
+
+.topbar-text p {
+   color: #ffffff;
+}
+
+.topbar-text p i {
+   color: orange;
+}
+
+.top-select {
+   display: flex;
+   border: 0;
+}
+
+/* NAVIGATION START */
+/* Navbar */
 .border {
    border-bottom: 1px solid grey;
 }
+
 .navigation {
    display: flex;
    justify-content: space-between;
@@ -45,50 +53,57 @@
    padding-bottom: 27px;
    /* margin: 0px 19px; */
 }
+
 /* 1.logo */
-.logo
-{
+.logo {
    width: 15%;
 }
+
 /*2. SERACH botton */
 .search-input {
    width: 44%;
    border: 2px solid #0989ff;
    display: flex;
-   font-size:25px;
+   font-size: 25px;
    align-items: center;
 }
+
 .text-input input {
    width: 100%;
    border: 0;
    padding: 5px 50px 5px 20px;
 }
+
 .text-input:focus-within input {
    border: 0;
    outline: none;
 }
-.navi-select
-{
+
+.navi-select {
    width: 40%;
-    border-left: 2px solid rgb(188, 185, 185);
-    margin-right: 10px;
-    padding-right: 8%;
+   border-left: 2px solid rgb(188, 185, 185);
+   margin-right: 10px;
+   padding-right: 8%;
 }
+
 .navi-select select {
    border: 0;
    border: none;
    padding: 0px 20px;
 }
+
 .search-icon {
    background-color: #0989ff;
    color: #ffffff;
    padding: 12px 28px;
    font-size: 25px;
 }
+
 /* 3.USER ID*/
-.user-info{
+.user-info {
    width: 15%;
 }
+
 .user-image {
    height: 50px;
    width: 50px;
@@ -98,50 +113,59 @@
    align-items: center;
    justify-content: center;
 }
+
 .user-image i {
    font-size: 25px;
    color: gray;
 }
+
 .user-info {
    display: flex;
    align-items: center;
 }
+
 .user-text {
    margin-left: 10px;
 }
-.hello
-{
+
+.hello {
    color: rgb(165, 162, 162);
    font-size: 12px;
 }
-.Account
-{
+
+.Account {
    font-size: 15px;
 }
+
 /* 4.icon */
-.icon{
+.icon {
    width: 15%;
    right: 0;
    position: relative;
 }
-.icon-1{
+
+.icon-1 {
    font-size: 20px;
    margin: 10px;
 }
-.icon-2{
+
+.icon-2 {
    font-size: 20px;
    margin: 10px;
 }
-.icon-3{
+
+.icon-3 {
    font-size: 20px;
    margin: 10px;
 }
+
 .icon span i:hover {
    color: #0989ff;
 }
-.red{
+
+.red {
    position: absolute;
-   background-color:crimson;
+   background-color: crimson;
    height: 23px;
    width: 23px;
    border-radius: 100%;
@@ -151,23 +175,27 @@
    align-items: center;
    text-align: center;
    display: inline-block;
-   top:-13px;
+   top: -13px;
 }
+
 /* NAVBAR */
 #inherhead2 {
    display: flex;
    justify-content: space-between;
    position: relative;
 }
+
 /* 1.drop down box */
 .allcata {
    display: flex;
    width: 30%;
 }
+
 .fa-solid {
    position: relative;
    top: 2px;
 }
+
 .allcatachild {
    display: flex;
    justify-content: space-around;
@@ -176,6 +204,7 @@
    transition: all 0.3s;
    position: relative;
 }
+
 .button {
    padding: 11px 39px;
    color: white;
@@ -183,18 +212,22 @@
    display: flex;
    font-size: 15px;
 }
+
 .button ul {
    margin-right: 60px;
    margin-left: 12px;
 }
+
 .button:hover {
    background-color: black;
    color: white;
    cursor: pointer;
 }
+
 .allcata:hover .head2drop {
    display: block;
 }
+
 .head2drop {
    display: none;
    position: absolute;
@@ -205,6 +238,7 @@
    top: 40px;
    z-index: 10;
 }
+
 .allCataList {
    display: flex;
    flex-direction: row;
@@ -215,10 +249,12 @@
    padding: 10px 0px;
    cursor: pointer;
 }
+
 .allCataList img {
    width: 30px;
    height: 30px;
 }
+
 .sideList {
    position: absolute;
    left: 100%;
@@ -229,13 +265,16 @@
    border: 1px solid black;
    display: none;
 }
+
 .sideList li {
    font-size: 20px;
    padding: 5px;
 }
+
 .allCataList:hover .sideList {
    display: block;
 }
+
 /*2. Nav item */
 .nav-item {
    width: 50%;
@@ -243,6 +282,7 @@
    margin: auto;
    position: relative;
 }
+
 .head2-dropdown {
    padding: 8px;
    font-size: 14px;
@@ -250,96 +290,94 @@
    font-weight: bold;
    position: relative;
    flex-wrap: wrap;
+   padding-right: 15px;
 }
+
 .head2-dropdown:hover {
    color: #0989ff;
    cursor: pointer;
 }
+
 /* 3.contact number */
 .head2-contact {
-   width: 16%;
+   width: 20%;
    display: flex;
+   align-items: center;
    justify-content: space-between;
    align-items: center;
 }
+
 .head2-contact div p {
    font-size: 10px;
 }
+
 .head2-contact i {
-   position: relative;
    margin-right: 10px;
 }
+
 .head2-contact p:hover {
    color: #0989ff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* main header part */
 .best-bg {
    background-color: #115061;
-   height: 500px;
+   height: auto;
    position: relative;
 }
+
 .bg-desing img {
    mix-blend-mode: luminosity;
    opacity: 0.1;
    position: absolute;
    right: 0;
+   top: 0;
 }
+
 .bg-text {
    color: white;
    position: relative;
-   top: 70px;
-   width: 55%;
+   top: 30px;
+   align-items: center;
+   width: 50%;
+   display: flex;
+   flex-wrap: wrap;
 }
+
 .bg-text span {
-   font-size: 15px;
+   font-size: 16px;
 }
+
 .bg-text h1 b {
-   font-size: 55px;
+   font-size: 56px;
    font-weight: 900;
    flex-wrap: wrap;
 }
+
 .bg-text h2 {
-   margin-top: 20px;
+   margin-top: 15px;
    font-family: 'Oregano', cursive;
    margin-bottom: 20px;
-}
-.watch {
-   position: absolute;
-   right: 0;
-   margin-top: -250px;
-   height: 360px;
-   width: 340px;
 }
 
 .other-images-1 {
    position: absolute;
    right: 33%;
-   top: 10%;
+   top: 7%;
+   z-index: 0;
 }
 
 .other-image-2 {
-   position: relative;
-   top: -210px;
+   position: absolute;
    left: -20px;
+   top: 40%;
+}
+
+.other-image-3 {
+   position: absolute;
+   bottom: 13%;
+   right: 28%;
+   z-index: -1;
 }
 
 .bg-text a {
@@ -355,31 +393,262 @@
    background-color: #115061;
 }
 
+.shop-text {
+   display: block;
+   position: absolute;
+   top: 100%;
+}
+
 .shop-text i {
    margin-left: 5px;
    position: relative;
    top: 3px;
    font-size: 20px;
+}
 
+.banner {
+   display: flex;
+   height: inherit;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 20px;
+}
+
+.watch {
+   width: 50%;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   display: flex;
+   right: 0;
+}
+
+.watch img {
+   max-width: 360px;
+   height: auto;
 }
 
 
+/*  MAIN PAR-1   (SECTION-1  ,SECTIONN-2) */
+.main-part-1 {
+   width: auto;
+   margin-top: 70px;
+}
 
+.part-1 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
 
+.section-1 {
+   height: 220px;
+   width: 220px;
+   border: 1px solid rgb(181, 223, 240);
+   display: flex;
+   flex-flow: wrap;
+   background-color: rgb(223, 235, 241);
+   border-radius: 100%;
+   flex-direction: row;
+   margin-bottom: 100px;
+}
 
+.star {
+   color: #ffc107;
+   font-size: 12px;
+   font-weight: 500;
+}
 
+.line {
+   font-size: 12px;
+   text-decoration: line-through;
+}
 
+.rate {
+   font-size: 15px;
+   color: #0989ff;
+   font-weight: 700;
+   letter-spacing: 0.2pxlhjlp;
+}
 
+/* headphone */
+.headphone-image {
+   margin: 60px;
+   object-fit: cover;
+   position: relative;
+   align-items: center;
+}
 
+.headphone-image:hover img {
+   transform: scale(1.2);
+   transition: 0.3s;
+}
 
+.headphone-text {
+   text-align: center;
+}
 
+.headphone-text h3:hover {
+   color: #0989ff;
+}
 
+/* Moblie-tablests  */
+.Mobile-1-image {
+   margin: 65px;
+   margin-top: 50px;
+   object-fit: cover;
+   position: relative;
+}
 
+.Mobile-1-image:hover img {
+   transform: scale(1.2);
+   transition: 0.3s;
+}
 
+.Moblie-1-text {
+   text-align: center;
+}
 
+.Moblie-1-text h3:hover {
+   color: #0989ff
+}
 
+/* CPU Heat Pipes */
+.Pipes-1-image {
+   margin: 60px;
+   margin-top: 48px;
+   object-fit: cover;
+   position: relative;
+}
 
+.Pipes-1-image:hover img {
+   transform: scale(1.2);
+   transition: 0.3s;
+}
 
+.Pipes-1-text {
+   text-align: center;
+}
 
+.Pipes-1-text h3:hover {
+   color: #0989ff;
+}
 
+/* CPU Heat Pipes */
+.SmartWatch-1-image {
+   margin: 60px;
+   object-fit: cover;
+   position: relative;
+}
 
+.SmartWatch-1-image:hover img {
+   transform: scale(1.2);
+   transition: 0.3s;
+}
+
+.SmartWatch-1-text {
+   text-align: center;
+}
+
+.SmartWatch-1-text h3:hover {
+   color: #0989ff;
+}
+
+/* Bluetooth */
+.Bluetooth-1-image {
+   margin: 65px 65px 50px 65px;
+   margin-top: 30px;
+   object-fit: cover;
+   position: relative;
+}
+
+.Bluetooth-1-image:hover img {
+   transform: scale(1.1);
+   transition: 0.1s;
+}
+
+.Bluetooth-1-text {
+   text-align: center;
+}
+
+.Bluetooth-1-text h3:hover {
+   color: #0989ff;
+}
+
+/* ICON (SECTION-2)*/
+.section-2 {
+   height: 100px;
+   width: 23%;
+   display: flex;
+   background-color: rgb(236, 239, 241);
+   align-items: center;
+   flex-wrap: wrap;
+   margin-bottom: 50px;
+}
+
+/* Free Delivary */
+.shipping-delivery-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
+}
+
+.shipping-delivery-text {
+   margin-left: 10px;
+}
+
+.shipping-delivery {
+   display: flex;
+   align-items: center;
+}
+
+/* Return & Refunf */
+.Return-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
+}
+
+.Return-text {
+   margin-left: 15px;
+}
+
+.Return {
+   display: flex;
+   align-items: center;
+}
+
+/* Member Discount*/
+.Discount-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
+}
+
+.Discount-text {
+   margin-left: 15px;
+}
+
+.Discount {
+   display: flex;
+   align-items: center;
+}
+
+/* support 24/7 */
+.Support-image i {
+   color: red;
+   font-size: 20px;
+   align-items: flex-start;
+   margin: 15px;
+}
+
+.Support-text {
+   margin-left: 15px;
+}
+
+.Support {
+   display: flex;
+   align-items: center;
+}
