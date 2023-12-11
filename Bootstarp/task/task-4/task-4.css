@@ -1,6 +1,6 @@
 .box
 {
-    height: 500px;
+    height: auto;
     width: 600px;
     border: 2px solid white;
     color: white;

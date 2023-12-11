@@ -17,8 +17,8 @@
 
   <!-- Icon link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="../shofy/asset/CSS/responsive.css" />
   <link rel="stylesheet" href="../shofy/asset/CSS/style.css" />
+  <link rel="stylesheet" href="../shofy/asset/CSS/responsive.css" />
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                 <option value="">Portuguese</option>
               </select>
             </div>
-            <div>
+            <div class="selected">
               <select name="" id="">
                 <option value="">USD</option>
                 <option value="">EUR</option>
@@ -51,7 +51,7 @@
                 <option value="">KWD</option>
               </select>
             </div>
-            <div>
+            <div class="selected">
               <select name="" id="">
                 <option value="">Setting</option>
                 <option value="">My Profile</option>
@@ -77,7 +77,7 @@
           <!-- search button -->
           <div class="search-input">
             <div class="text-input">
-              <input type="text" placeholder="search for product..." />
+              <input type="text" placeholder="Search for Product..." />
             </div>
             <div class="navi-select">
               <select name="" id="">
@@ -100,7 +100,7 @@
               </div>
             </div>
             <div class="user-text">
-              <p class="hello">Hello,Sing In</p>
+              <p class="hello">Hello,Sign In</p>
               <p class="Account">Your Account</p>
             </div>
           </div>
@@ -118,7 +118,7 @@
             </span>
             <!-- cart-shipping -->
             <span class="icon-3">
-              <span class="red">0</span>
+              <span class="red1">0</span>
               <i class="fa-solid fa-bag-shopping"></i>
             </span>
           </div>
@@ -194,15 +194,13 @@
           <p class="head2-dropdown">
             Bolg<i class="fa-solid fa-angle-down"></i>
           </p>
-          <p class="head2-dropdown">contact</p>
+          <p class="head2-dropdown">Contact</p>
         </div>
         <!-- 3.contact number  -->
         <div class="head2-contact">
           <i class="fa-solid fa-phone-volume" style="color: #0989ff"></i>
-          <p>
-            Hotline<br />
-            +(402) 763 282 46
-          </p>
+          <p> <span>Hotline:</span><br>
+            +(402) 763 282 46</p>
         </div>
       </div>
     </div>
@@ -243,7 +241,7 @@
   <!-- MAIN PAR-1   (SECTION-1  ,SECTIONN-2) -->
   <section>
     <div class="container">
-      <div class="main-part-1">
+      <div class="main-section-1">
         <div class="part-1">
           <div class="section-1">
             <!-- headphone -->
@@ -308,66 +306,356 @@
         </div>
         <!-- section-2 -->
         <!-- delivery/return /discount /support -->
-        <div class="part-1">
-          <div class="section-2">
-            <div class="shipping-delivery">
-              <div>
-                <div class="shipping-delivery-image">
-                  <i class="fa-solid fa-truck"></i>
+        <div class="main-section-2">
+          <div class="part-1">
+            <div class="section-2">
+              <div class="shipping-delivery">
+                <div>
+                  <div class="shipping-delivery-image">
+                    <i class="fa-solid fa-truck"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="shipping-delivery-text">
-                <h4>Free Delivary</h4>
-                <p>Orders from all item</p>
+                <div class="shipping-delivery-text">
+                  <h4>Free Delivary</h4>
+                  <p>Orders from all item</p>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Return & Refunf -->
-          <div class="section-2">
-            <div class="Return">
-              <div>
-                <div class="Return-image">
-                  <i class="fa-solid fa-dollar-sign"></i>
+            <!-- Return & Refunf -->
+            <div class="section-2">
+              <div class="Return">
+                <div>
+                  <div class="Return-image">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="Return-text">
-                <h4>Return & Refunf</h4>
-                <p>Maney back guarantee</p>
+                <div class="Return-text">
+                  <h4>Return & Refunf</h4>
+                  <p>Maney back guarantee</p>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Member Discount -->
-          <div class="section-2">
-            <div class="Discount">
-              <div>
-                <div class="Discount-image">
-                  <i class="fa-solid fa-disease"></i>
+            <!-- Member Discount -->
+            <div class="section-2">
+              <div class="Discount">
+                <div>
+                  <div class="Discount-image">
+                    <i class="fa-solid fa-disease"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="Discount-text">
-                <h4>Member Discount</h4>
-                <p>One very order over $140.00</p>
+                <div class="Discount-text">
+                  <h4>Member Discount</h4>
+                  <p>One very order over $140.00</p>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Support 24/7-->
-          <div class="section-2">
-            <div class="Support">
-              <div>
-                <div class="Support-image">
-                  <i class="fa-solid fa-headphones"></i>
+            <!-- Support 24/7-->
+            <div class="section-2">
+              <div class="Support">
+                <div>
+                  <div class="Support-image">
+                    <i class="fa-solid fa-headphones"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="Support-text">
-                <h4>Support 24/7</h4>
-                <p>Contact us 24 hours a day</p>
+                <div class="Support-text">
+                  <h4>Support 24/7</h4>
+                  <p>Contact us 24 hours a day</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- MAIN SECTION-2 (secion-3 , section-4)--
+    <!-- MAIN SECTION-2 (secion-3 , section-4)-->
+
+    <div class="container">
+      <div class="main_part_name">
+        <a href="">
+          <h1>Trending Products</h1>
+          <img src="../shofy/asset/image/asset 79.svg">
+        </a>
+        <div class="asset">
+          <a class="New">New</a>
+          <a class="Featured">Featured</a>
+          <a class="Top-seller">Top Seller</a>
+        </div>
+      </div>
+      <div class="part-2">
+        <div class="section-3">
+          <!--1. headphone wireless -->
+          <div class="wireless">
+            <div class="wireless-image">
+              <img src="../shofy/asset/image/asset 22.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="wireless-text">
+              <p>Headphones</p>
+              <h3>Headphones Wireless.</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span> (3 Reviwe) </span><br>
+              <span class="line">$120</span>
+              <span class="rate"> $103.20</p>
+            </div>
+          </div>
+        </div>
+        <!--2. Gaming Headphone -->
+        <div class="section-3">
+          <div class="Gaming">
+            <div class="Gaming-image">
+              <img src="../shofy/asset/image/asset 23.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="Gaming-text">
+              <p>Headphones</p>
+              <h3>Gaming Headphone</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <span>(2 Reviwe)</span><br>
+              <span class="line">$130</span>
+              <span class="rate"> $123.50</p>
+            </div>
+          </div>
+        </div>
+        <!--3. Headphone with Mic -->
+        <div class="section-3">
+          <div class="Mic">
+            <div class="Mic-image">
+              <div class="out-stock">
+                Out-Of-Stock
+              </div>
+              <img src="../shofy/asset/image/asset 24.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="Mic-text">
+              <p>Headphones</p>
+              <h3> Headphone with Mic</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span>
+                <span> (3 Reviwe) </span>
+              </span><br>
+              <span class="rate"> $110.00</p>
+            </div>
+          </div>
+        </div>
+        <!--4. Galaxy Android Tablet -->
+        <div class="section-3">
+          <div class="Galaxy">
+            <div class="Galaxy-image">
+              <img src="../shofy/asset/image/asset 25.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="Galaxy-text">
+              <p>Mobile Tablets</p>
+              <h3>Galaxy Android Tablet</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span>(2 Reviwe) </span><br>
+              <span class="line">$320</span>
+              <span class="rate"> $288.00</p>
+            </div>
+          </div>
+        </div>
+        <!--5. iPhone 14 Pro -->
+        <div class="section-3">
+          <div class="iphone">
+            <div class="iphone-image">
+              <img src="../shofy/asset/image/asset 26.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="iphone-text">
+              <p>Mobile Tablets</p>
+              <h3>iPhone 14 Pro</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <span>(2 Reviwe) </span><br>
+              <span class="line">$1199</span>
+              <span class="rate"> $1019.15</p>
+            </div>
+          </div>
+        </div>
+        <!--6.Apple iPad Air  -->
+        <div class="section-3">
+          <div class="Apple">
+            <div class="Apple-image">
+              <img src="../shofy/asset/image/asset 27.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="Apple-text">
+              <p>Mobile Tablets</p>
+              <h3>Apple iPad Air</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <span>(2 Reviwe) </span><br>
+              <span class="line">$999</span>
+              <span class="rate"> $949.05</p>
+            </div>
+          </div>
+        </div>
+        <!-- 7.DeepCool Air Cooler -->
+        <div class="section-3">
+          <div class="DeepCool">
+            <div class="DeepCool-image">
+              <img src="../shofy/asset/image/asset 28.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="DeepCool-text">
+              <p>CPU Heat Pipes</p>
+              <h3>DeepCool Air Cooler</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <span>(2 Reviwe) </span><br>
+              <span class="rate"> $80.00</p>
+            </div>
+          </div>
+        </div>
+        <!-- 8. Antec Air Cooler-->
+        <div class="section-3">
+          <div class="Air">
+            <div class="Air-image">
+              <img src="../shofy/asset/image/asset 29.png" alt="" height="250px" width="250px">
+              <div class="hover-open-content">
+                <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="Air-text">
+              <p>CPU Heat Pipes</p>
+              <h3>Galaxy Android Tablet</h3>
+              <span class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <span>(2 Reviwe) </span><br>
+              <span class="rate"> $80.00</p>
+            </div>
+          </div>
+        </div>
+
+  <!-- section-4 add -->
+  <div class="section-4">
+    <div class="add-1">
+      <div class="add-image-1">
+        <img src="../shofy/asset/image/asset 57.jpeg" >
+      </div>
+      <div class="add-text-1">
+        <span>Sale 20% off all store</span>
+        <h1>Smartphone<br>
+          BLU G91 Pro 202</h1>
+      </div>
+      <!-- <button>
+        Shop Now <i class="fa-solid fa-arrow-right"></i>
+      </button> -->
+    </div>
+    <!-- add-2 -->
+    <div class="section-4">
+      <div class="add-2">
+        <div class="add-image-2">
+          <img src="../shofy/asset/image/asset 58.jpeg">
+        </div>
+        <div class="add-text-2">
+          <h1> HyperX Cloud II<br>
+            Wireless</h1>
+          <span>Sale 35% off</span>
+        </div>
+        <!-- <button>
+          Shop Now<i class="fa-solid fa-arrow-right"></i>
+        </button> -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
 
@@ -400,6 +688,6 @@
 
 
 
+</body>
 
-  </body>
 </html>

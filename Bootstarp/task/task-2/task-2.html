@@ -30,17 +30,19 @@
     <!-- Validation  -->
     <h1 class=" text-center">Validation from (broweser defalut)</h1>
 
-    <div class="one">
+    <div class="one needs-validation" validate>
         <h4 class="text-center">Contact us</h4>
         <div class="row mb-5">
             <input type="text" class="form-control" id="validationDefault01" value="Name" required>
         </div>
+
         <div class="row mb-5">
-          <input type="email" class="form-control" id="validationCustom03" placeholder="Email" required>
-          <div class="invalid-feedback">
-            Please provide a valid emil.
-          </div>
+            <input type="email" class="form-control" id="validationCustom03" placeholder="Enter your email." required>
+            <div class="invalid-feedback">
+              Please provide a valid emil.
+            </div>
         </div>
+        
         <div class="row-5 mb-5">
             <input type="text" class="form-control" id="validationDefault05" placeholder="Message" required>
         </div>

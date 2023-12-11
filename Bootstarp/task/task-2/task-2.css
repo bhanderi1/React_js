@@ -6,12 +6,11 @@ h4
     margin: 30px 0;
 }
 .one{
-    height: 450px;
+    height: auto;
     width: 500px;
     border: 2px solid white;
     background-color: white;
     margin: auto;
-    margin-top: 130px;
     padding: 20px;
 }
 
