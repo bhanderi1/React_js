@@ -1,0 +1,24 @@
+body
+{
+    background-color: coral;
+}
+.container
+{
+    margin-top: 50px;
+}
+.box-1
+{
+   height: 520px;
+   width: auto;
+   margin: 30px;
+   padding: 40px;
+}
+.box-2
+{
+    height: 580px;
+    padding: 40px;
+}
+.button-2
+{
+    border-radius: 30px;
+}
