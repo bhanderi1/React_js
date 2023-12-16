@@ -1,24 +1,37 @@
-body
-{
+body {
     background-color: coral;
 }
-.container
-{
+
+.container {
     margin-top: 50px;
 }
-.box-1
-{
-   height: 520px;
-   width: auto;
-   margin: 30px;
-   padding: 40px;
-}
-.box-2
-{
-    height: 580px;
+
+.box-1 {
+    height: 520px;
+    width: auto;
+    margin: 30px;
     padding: 40px;
 }
-.button-2
-{
+.box-2 {
+    height: 580px;
+}
+
+.button-2 {
     border-radius: 30px;
+}
+
+big {
+    font-size: 40px;
+}
+
+sup {
+    top: -2em;
+}
+
+.lebal {
+    position: absolute;
+    left: 36%;
+    top: 10%;
+    transform: rotate(-45deg);
+    padding: 5px 33px 5px 30px;
 }

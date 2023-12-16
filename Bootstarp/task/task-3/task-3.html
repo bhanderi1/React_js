@@ -72,22 +72,25 @@
   </form>
 
 
-  <form>
+
+
+  <form novalidate class="needs-validation">
     <h1 class="text-center">Custom sytle</h1>
-    <div class="box g-3 was-validated" novalidate>
+    <div class="box">
       <h3 class="form-label">Registration From</h3>
+
       <div class="row">
         <div class="col">
           <label  class="form-label">First name</label>
-          <input type="text" class="form-control is-valid"  value="Mark" required>
-          <div class="valid-feedback">
+          <input type="text" class="form-control"  value="Mark" required>
+          <div class="invalid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col">
           <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control is-valid"  value="Otto" required>
-          <div class="valid-feedback">
+          <input type="text" class="form-control"  value="Otto" required>
+          <div class="invalid-feedback">
             Looks good!
           </div>
         </div>
@@ -95,7 +98,7 @@
       <div class="row">
         <div class="col">
           <label  class="form-label">Birthday</label>
-          <input type="date" class="form-control is-valid" required>
+          <input type="date" class="form-control" required>
        <div class="invalid-feedback">
         Please provide a valid date.
        </div>
@@ -106,14 +109,14 @@
       <div class="row">
         <div class="col">
           <label  class="form-label">Email</label>
-          <input type="email" class="form-control is-valid"  required>
+          <input type="email" class="form-control"  required>
           <div class="invalid-feedback">
             Please provide a valid email.
           </div>
         </div>
         <div class="col">
           <label  class="form-label">Phone Number</label>
-          <input type="number" class="form-control is-valid"  required>
+          <input type="number" class="form-control"  required>
           <div class="invalid-feedback">
             Please provide a valid Phone number.
           </div>
@@ -129,7 +132,6 @@
             Please select a valid .
           </div>
         </div>
-    
       <button type="submit" class="btn btn-primary mb-3">Subject</button>
     </form>
     <script>
