@@ -40,3 +40,8 @@
 .accordion-button:focus{
     box-shadow: 0;
 }
+
+.accordion-button::after
+{
+    color: white;
+}

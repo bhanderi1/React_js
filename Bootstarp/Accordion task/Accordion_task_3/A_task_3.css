@@ -1,7 +1,7 @@
 .box
 {
-    width: 900px;
-    height: 600px;
+    width: 90%;
+    height: 60%;
     margin: auto;
     position: relative;
     top: 200px;
@@ -23,10 +23,7 @@
 {
     background-color: white;
 }
-/* .accordion-button::before {
-   
-}
- */
+
 
 .accordion-button:not(.collapsed) {
     background-color: none;
@@ -38,10 +35,11 @@
     padding: 50px;
 }
 
-.accordion-button:not(.collapsed)
+.accordion-button:not(.collapsed)::after
 {
-    background-image: url("dash");
+    background-image: url(imge/dash.svg);
+}
+.accordion-button::after{
+    background-image: url("imge/plus.svg");
 }
 
-
- 
