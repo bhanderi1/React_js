@@ -1,9 +1,11 @@
-/* /* 
-body
+.box
 {
     height: 100vh;
     width: 100vw;
-} */
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
 i
 {
     margin-left: 100px;
