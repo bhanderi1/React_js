@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>componat-6</title>
+    <title>venice-card</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-gray-600 flex justify-center items-center h-screen w-full ">
-   
+
+<body>
 
 
-    <div class="relative h-5/6 w-2/6 flex items-center rounded-lg overflow-hidden">
-        <div class="object-cover relative">
-            <img src="../src/imge/All_images/img/card-4.jpg" alt="">
-            <div class="absolute bottom-5 text-white">
-                <div class="inline">
-                    <h1 class="font-bold inline">Venice, Italy
-                    </h1>
-                    <span class="bg-slate-400 text-xs text-black rounded-lg px-3">Saint Paul</span>
+    <div class="relative w-full h-screen">
+        <div class="w-screen h-screen bg-[url('../src/component/venice-card.png')] bg-cover bg-center blur-lg"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+
+            <div class="relative h-[400px] w-[550px] flex items-center rounded-lg overflow-hidden">
+                <div class="object-cover relative ">
+                    <img src="../src/imge/All_images/img/card-4.jpg" alt="venice-card image">
+                    <div class="absolute bottom-5 text-white p-2">
+                        <div class="inline">
+                            <h1 class="font-bold inline">Venice, Italy
+                            </h1>
+                            <span class="bg-slate-400 text-xs text-black rounded-lg px-3">Saint Paul</span>
+                        </div>
+                        <span class="text-sm block pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+                            facilis deserunt vero obcaecati ducimus perferendis labore </span>
+                    </div>
                 </div>
-                <span class="text-sm block pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni facilis deserunt vero obcaecati ducimus perferendis labore </span>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
