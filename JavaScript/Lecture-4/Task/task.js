@@ -24,8 +24,6 @@
 // }
 
 
-
-
 // 2.sum of numbers form 1 to 10 using a while loop
 // 1.while
 //  let a=1
@@ -57,8 +55,6 @@
 // document.write(sum2+"<br>")
 
 
-
-
 // 3. multiplication table for a given number using a while loop
 // 1.while
 // let n1=6
@@ -86,10 +82,8 @@
 //      document.write(n + "*" + i + "=" +n*i +"<br>")
 // }
 
+
 // 4.Guess the number game using a while loop
-
-
-
 
 
 // 5.Generate the fibonacci sequence using a while loop
@@ -132,9 +126,6 @@
 //      n2=next_num
 // }
 
-
-
-
 // 6.calculate factorial of a number using a while loop
 // 1.while
 // let n=7, i=1
@@ -160,24 +151,10 @@
 // {
 //      i*=n
 // }
-// document.write(i) 
-
-
-
+// document.write(i)
 
 // 7.Cheack if a word is a palindrome using a while loop
 // 1.while
-
-
-
-
-
-
-
-
-
-
-
 
 // 8.calculate the power of a number using a while loop
 // 1.while
@@ -212,22 +189,120 @@
 //      num*=a
 // }
 
-
-
-
 // 9.print  a pattern using a while loop
+// 1.while
+// let n=5 ,b
+// let a=1
+// while(a<=n)
+// {
+//      b=1
+//      while(b<=a)
+//      {
+//           document.write(" * ")
+//           b+=1
+//      }
+//      document.write("<br>")
+//      a+=1
+// }
+
+// 2.do while
+// let n = 5, b;
+// let a = 1;
+// do {
+//   b = 1;
+//   do {
+//      document.write(" * ");
+//      b += 1;
+//   } while (b <= a);
+//    document.write("<br>");
+//    a += 1;
+// } while (a <= n);
+
+// 3.for
+// let n=5
+// for(let a=1; a<=n; a++)
+// {
+//      for(let b=1; b<=a; b++)
+//      {
+//           document.write(" * ")
+//      }
+//      document.write("<br>")
+// }
 
 
-let n=5 ,j
-let i=1
-while(i<=n)
-{
-     j=1
-     while(j<=i)
-     {
-          document.write("* ")
-          j+=1
-     }
-     document.write()
-     i+=1
-}
+
+/* break statement */
+// 10.serch for a specific number using a for loop and break statement
+// let a=[0,1,2,3,4,5,6,7,8,9]
+// let user_number =5
+// for(let i=1; i<=a.length; i++)
+// {
+//      if(a[i] === user_number)
+//      {
+//           document.write("number index:",i)
+//           break;
+//      }
+// }
+
+
+
+// 11.find the first odd number in a sequence using a while loop and break statement
+
+// 12.cheack if a number is prime using a for loop and break statment
+// {
+//      let number =29;
+//      let i=2
+//         for ( i = 2; i < number; i++) {
+//              if (number % i == 0) {
+//                  document.write(number+" This number is not prime number");
+//                  break;
+//              }
+//          }
+//          if (i == number) {
+//              document.write(number+" This number is a prime number");
+//          }    
+//      }
+     // 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+
+
+// 13.loop with a conditional break statmrnt based on user input
+
+
+/* continue statement */
+// 14. skip printing odd number using a for loop and continue satatment
+// for(let i=0; i<=15; i++)
+// {
+//      if(i %2 != 0)
+//      {
+//           continue
+//      }
+//      document.write(i + "<br>")
+// }
+
+// 15.skip multiples of 3 using a while loop and continue statement
+// let i=0
+// while(i<=21)
+// {
+//      if(i %3 !=0)
+//      {
+//           document.write(i + "<br>")
+//      }
+//      i++
+//      continue
+// }
+
+//16.print even number in a specific range using a for loop and continue statement
+
+
+// /* 17.Skip numbers divisible by 5 using a do-while loop and continue statement */
+// {
+//     let i = 0,number=20
+//     do {
+//          i++;
+//          if (i % 5 == 0) {
+//           continue;
+//       }
+//       document.write(i + "<br>");
+//     } 
+//     while(i<number);
+// }
