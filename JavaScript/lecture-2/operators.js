@@ -2,7 +2,7 @@
 
 /*
  1.Arithmetic operators
- 2.ASsignment  operators
+ 2.Assignment  operators
  3.Comparison (Relational) operators
  4.Logical operators
  5.sepcial operators
@@ -81,4 +81,5 @@
 
 let aggriment = 0;
 let age = aggriment == 0 ? "Login" : "Logout";
-document.write(age);
+document.write(age);                               //true
+// login

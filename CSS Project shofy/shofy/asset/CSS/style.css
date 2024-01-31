@@ -777,6 +777,7 @@
 
 .wireless-image {
    position: relative;
+   width: 100%;
 }
 
 /* Hover */
@@ -814,6 +815,7 @@
 
 .Gaming-image {
    position: relative;
+    width: 100%;
 }
 
 /* Hover */
@@ -842,11 +844,13 @@
 
 .Mic-image {
    position: relative;
+    width: 100%;
 }
 
 .out-stock {
    position: absolute;
-   margin: 5px 5px 5px 150px;
+   display: flex;
+   align-items: end;
    padding: 3px 3px;
    color: white;
    font-size: 12px;
@@ -882,6 +886,7 @@
 
 .Galaxy-image {
    position: relative;
+    width: 100%;
 }
 
 /* Hover */
@@ -911,6 +916,7 @@
 
 .iphone-image {
    position: relative;
+    width: 100%;
 }
 
 /* Hover */
@@ -940,6 +946,7 @@
 
 .Apple-image {
    position: relative;
+    width: 100%;
 }
 
 /* Hover */
@@ -968,6 +975,7 @@
 
 .DeepCool-image {
    position: relative;
+    width: 100%;
 }
 
 /* Hover */
@@ -996,6 +1004,7 @@
 
 .Air-image {
    position: relative;
+    width: 100%;
 }
 
 /* Hover */
@@ -1046,8 +1055,8 @@
 
 .main_part_name img {
    color: red;
-   position: relative;
-   bottom: 60px;
+   /* position: relative;
+   bottom: 60px; */
 }
 
 /* 1. headphone wireless */
@@ -1059,8 +1068,8 @@
 }
 
 .section-3 {
-   height: 375px;
-   width: 250px;
+   /* height: 375px;
+   width: 250px; */
    border: 1px solid rgb(229, 233, 233);
    display: flex;
    flex-flow: wrap;
@@ -1076,6 +1085,8 @@
 .wireless-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .wireless-image:hover img {
@@ -1112,6 +1123,8 @@
 .Gaming-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .Gaming-image:hover:hover img {
@@ -1140,6 +1153,8 @@
 .Mic-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .Mic-image:hover img {
@@ -1179,6 +1194,8 @@
 .Galaxy-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .Galaxy-image:hover img {
@@ -1207,6 +1224,8 @@
 .iphone-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .iphone-image:hover img {
@@ -1235,6 +1254,8 @@
 .Apple-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .Apple-image:hover img {
@@ -1260,9 +1281,11 @@
 }
 
 /*7.DeepCool Air Cooler*/
-.Deepcool-image img {
+.DeepCool-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .DeepCool-image:hover img {
@@ -1272,6 +1295,7 @@
 
 .DeepCool-image {
    position: relative;
+
 }
 
 /* Hover */
@@ -1291,6 +1315,8 @@
 .Air-image img {
    object-fit: cover;
    overflow: hidden;
+   height: 250px;
+   width: 250px;
 }
 
 .Air-image:hover img {
@@ -1320,6 +1346,7 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   margin: auto;
 }
 
 .add-1 {
@@ -1329,6 +1356,7 @@
    height: 250px;
    border-radius: 10px;
    margin-right: 20px;
+   margin-bottom: 20px;;
 }
 
 .add-2 {
@@ -1353,7 +1381,6 @@
    object-position: right;
    height: 250px;
    width: 680px;
-
 }
 
 .add-image-2 img {

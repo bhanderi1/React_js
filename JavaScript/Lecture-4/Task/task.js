@@ -23,7 +23,6 @@
 //   document.write(count2 + "<br>")
 // }
 
-
 // 2.sum of numbers form 1 to 10 using a while loop
 // 1.while
 //  let a=1
@@ -54,7 +53,6 @@
 // }
 // document.write(sum2+"<br>")
 
-
 // 3. multiplication table for a given number using a while loop
 // 1.while
 // let n1=6
@@ -82,9 +80,22 @@
 //      document.write(n + "*" + i + "=" +n*i +"<br>")
 // }
 
-
 // 4.Guess the number game using a while loop
+// while
+// let rendom_number=1
+// let number=5
 
+// while(rendom_number != number)
+// {
+
+//   if(rendom_number == number)
+//   {
+//     document.write(rendom_number + "this is wrong number")
+//   }
+//   else{
+//      document.write(rendom_number + "this is right number")
+//   }
+// }
 
 // 5.Generate the fibonacci sequence using a while loop
 // 1.while
@@ -229,24 +240,30 @@
 //      document.write("<br>")
 // }
 
-
-
 /* break statement */
 // 10.serch for a specific number using a for loop and break statement
 // let a=[0,1,2,3,4,5,6,7,8,9]
-// let user_number =5
-// for(let i=1; i<=a.length; i++)
+// let user_number=9
+// for(let i=0; i<=a.length; i++)
 // {
-//      if(a[i] === user_number)
+//      if(a[i] == user_number)
 //      {
 //           document.write("number index:",i)
 //           break;
 //      }
 // }
 
-
-
 // 11.find the first odd number in a sequence using a while loop and break statement
+//  {
+//     let i = 0;
+//     while (true) {
+//       if (i % 2 !== 0) {
+//         document.write("The first odd number is:"+ i);
+//         break;
+//       }
+//       i++;
+//     }
+//   }
 
 // 12.cheack if a number is prime using a for loop and break statment
 // {
@@ -260,12 +277,14 @@
 //          }
 //          if (i == number) {
 //              document.write(number+" This number is a prime number");
-//          }    
+//          }
 //      }
-     // 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+// 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+
+// 13.loop with a conditional break statment based on user input
 
 
-// 13.loop with a conditional break statmrnt based on user input
+
 
 
 /* continue statement */
@@ -292,9 +311,19 @@
 // }
 
 //16.print even number in a specific range using a for loop and continue statement
+{
+  let m = 1;
+  let n = 40;
 
+  for (let i = m; i <= n; i++) {
+    if (i % 2 !== 0) {
+      continue;
+    }
+    document.write(i + "\n");
+  }
+}
 
-// /* 17.Skip numbers divisible by 5 using a do-while loop and continue statement */
+/* 17.Skip numbers divisible by 5 using a do-while loop and continue statement */
 // {
 //     let i = 0,number=20
 //     do {
@@ -303,6 +332,6 @@
 //           continue;
 //       }
 //       document.write(i + "<br>");
-//     } 
+//     }
 //     while(i<number);
 // }

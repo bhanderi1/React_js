@@ -1,8 +1,8 @@
-// dedclartion var()
+// declartion var()
 
 // Gloabal variables
 
-// var number1 ="10"+20 *2 *5 /2;
+// var number1 ="10"+20 *2 *5 /2 *5;
 // var number2 =20;
 // var total = number1+number2
 // console.log(total);
@@ -42,33 +42,33 @@
 // ------------------------------------------------
 /*Declaration const */
 
-// const box =20;
-// console.log(box);
+const box =20;
+console.log(box);
 
-// {
-//     const emma1 ="this"
-// }
-// {
-//     const emma2 ="this"
-// }
-// console.log(emma1)
+{
+    const emma1 ="this"
+    console.log(emma1)
+}
+{
+    const emma2 ="this"
+}
 
 // ------------------------------------------------
 
 // string with quotes
 {
-    let a = "wor'ld"
-    let b = 'wor"ld'
-    let c = "wor\'ld"
-    let d = 'wor\"ld'
-    let e = 'hello \n world'
-    let f = "he\tllo"
-    console.log(a);
-    console.log(b);
-    console.log(c);
-    console.log(d);
-    console.log(e);
-    console.log(f);
-    document.write(a + "<br>" + b + "<br>" + c)
-    console.log(b + "<br>")
+    // let a = "wor'ld"
+    // let b = 'wor"ld'
+    // let c = "wor\'ld"
+    // let d = 'wor\"ld'
+    // let e = 'hello \n world'
+    // let f = "he\tllo"
+    // console.log(a);
+    // console.log(b);
+    // console.log(c);
+    // console.log(d);
+    // console.log(e);
+    // console.log(f);
+    // document.write(a + "<br>" + b + "<br>" + c)
+    // console.log(b + "<br>")
 }

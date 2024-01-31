@@ -1,75 +1,31 @@
 @media (max-width :1200px) {
-    .container{
+    .container {
         max-width: 1050px;
     }
+
     /* navbar */
     .user-text {
         display: none;
     }
-    .red
-    {
-       right: 40%;
+
+    .red {
+        right: 40%;
     }
-    .red1{
-       right: 14%;
+
+    .red1 {
+        right: 14%;
     }
 
     /* header part */
-    .watch
-    {
+    .watch {
         padding-left: 10%;
     }
+
     .section-2 {
         width: 48%;
     }
 
-    /* Main-part-3 */
-    .Gaming_headphone
-        {
-            width: 42%;
-            height: 570px;
-            border: 1px solid rgb(229, 233, 233);
-            justify-content: space-between;
-            border-radius: 10px;
-            background-color: white;
-        }
-        .Gaming_headphone-image img{
-          display: flex;
-          flex-wrap: wrap;
-          max-height: 400px;
-          max-width: 400px;
-          margin: auto;
-        }
-        .Gaming_headphone-text
-        {
-            padding: 40px;
-        }
 
-        .antec_air_cooler
-        {
-            width: 42%;
-            height: 570px;
-            border: 1px solid rgb(229, 233, 233);
-            justify-content: space-between;
-            border-radius: 10px;
-            background-color: white;
-        }
-        .antec_air_cooler-image img
-        {
-            object-fit: cover;
-            overflow: hidden;
-            max-height: 400px;
-            max-width: 400px; 
-            margin: auto;
-        }
-        .antec_air_cooler-text
-        {
-            padding: 40px;
-        }
-         .Sony_Lady_fitness_watch
-        {
-            display: none;
-        }
 }
 
 
@@ -85,46 +41,111 @@
         width: 50%;
     } */
     /*  USER ID */
-    .search-input
-    {
-        display: none;
-    }
-    .user-info {
-        display: none;
-    }
-    /* icon */
-    .icon{
-        width: 17%;
-    }
-    .icon-1
-    {
+    .search-input {
         display: none;
     }
 
-    .icon-2{
+    .user-info {
         display: none;
     }
-    .red1
-    {
+
+    /* icon */
+    .icon {
+        width: 17%;
+    }
+
+    .icon-1 {
+        display: none;
+    }
+
+    .icon-2 {
+        display: none;
+    }
+
+    .red1 {
         right: 76%;
     }
-    #inherhead2
-    {
+
+    #inherhead2 {
         display: none;
     }
-    .watch
-    {
+
+    .watch {
         padding-left: 0px;
     }
+
     /* part-1 */
     .section-2 {
         width: 48%;
     }
 
     /* part-2 */
-    .section-3
-    {
-        width: 40%;
+    .section-3 {
+        height: 470px;
+        width: 47%;
+        border: 1px solid rgb(229, 233, 233);
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .wireless-image img {
+        height: 335px;
+        width: 330px;
+    }
+
+    .Gaming-image img {
+        height: 335px;
+        width: 330px;
+    }
+
+    .Mic-image img {
+        height: 335px;
+        width: 330px;
+    }
+
+    .Galaxy-image img {
+        height: 335px;
+        width: 330px;
+    }
+
+    .iphone-image img {
+        height: 335px;
+        width: 330px;
+
+    }
+
+    .out-stock {
+        display: flex;
+        align-items: end;
+    }
+
+    .Apple-image img {
+        height: 335px;
+        width: 330px;
+    }
+
+    .DeepCool-image img {
+        height: 335px;
+        width: 330px;
+    }
+
+    .Air-image img {
+        height: 335px;
+        width: 330px;
+    }
+
+    /* section-4 */
+    .add-2 {
+        width: 680px;
+        height: 250px;
+    }
+
+    .add-image-2 img {
+        height: 250PX;
+        width: 680px;
     }
 }
 
@@ -132,14 +153,14 @@
 /* tablets :768px up */
 @media (max-width :767px) {
     .container {
-        max-width: 540px;
+        max-width: 600px;
         height: auto;
     }
 
-    .topbar
-    {
+    .topbar {
         display: none;
     }
+
     /* secrch-button */
     .search-input {
         display: none;
@@ -163,28 +184,105 @@
     #inherhead2 {
         display: none;
     }
+
     .bg-text {
         width: 100%;
     }
+
     .bg-text h1 b {
         font-size: 56px;
         font-weight: 900;
     }
 
-     /* watch */
-     .watch {
+    /* watch */
+    .watch {
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
         margin-left: calc(20vw + 50px);
     }
+
     .banner {
         justify-content: center;
     }
-   
+
+    /* section-3 */
+    .section-3 {
+        height: 400px;
+        width: 48%;
+        border: 1px solid rgb(229, 233, 233);
+        display: flex;
+        flex-flow: wrap;
+        border-radius: 5px;
+        align-items: center;
+        overflow: hidden;
+        margin: 20px 5px;
+    }
+
+    .wireless-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    .Gaming-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    .Mic-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    .out-stock {
+        display: flex;
+        align-items: end;
+    }
+
+    .Galaxy-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    .iphone-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    .Apple-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    .DeepCool-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    .Air-image img {
+        height: 265px;
+        width: 289px;
+    }
+
+    /* add */
+    .add-1 {
+        width: 580px;
+        margin-right: 0px;
+    }
+
+    .add-2 {
+        width: 580px;
+    }
+
+    .add-image-1 img {
+        width: 580px;
+    }
+
+    .add-image-2 img {
+        width: 580px;
+    }
+
 }
-
-
 
 /* large phone  :600px up */
 @media (max-width :576px) {
@@ -215,8 +313,8 @@
     .icon-2 {
         display: none;
     }
-    .red1
-    {
+
+    .red1 {
         right: 49%;
     }
 
@@ -235,11 +333,10 @@
         font-weight: 900;
     }
 
-    .banner
-    {
+    .banner {
         padding: 0;
     }
-  
+
     /* watch */
     .watch {
         max-width: 260px;
@@ -251,13 +348,90 @@
     .banner {
         justify-content: center;
     }
-     /* part-1 */
-     .section-2 {
+
+    /* part-1 */
+    .section-2 {
         width: 97%;
     }
-    .section-3
-    {
-        width: 60%;
+
+    .section-3 {
+        min-height: 500px;
+        width: auto;
+        border: 1px solid rgb(229, 233, 233);
+        display: flex;
+        flex-flow: wrap;
+        border-radius: 5px;
+        align-items: center;
+        overflow: hidden;
+        margin: 20px 5px;
+    }
+
+    .wireless-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    .Gaming-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    .Mic-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    .out-stock {
+        display: flex;
+        align-items: end;
+    }
+
+    .Galaxy-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    .iphone-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    .Apple-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    .DeepCool-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    .Air-image img {
+        min-height: 350px;
+        width: auto;
+    }
+
+    /* add */
+
+    .section-4 {
+        display: block;
+    }
+
+    .add-1 {
+        min-width: 420px;
+        margin-right: 0px;
+    }
+
+    .add-2 {
+        min-width: 420px;
+    }
+
+    .add-image-1 img {
+        min-width: 420px;
+    }
+
+    .add-image-2 img {
+        min-width: 420px;
     }
 
 }
@@ -336,22 +510,27 @@
     .watch img {
         width: calc(100vw - 20px);
     }
-     /* part-1 */
-     .section-2 {
+
+    /* part-1 */
+    .section-2 {
         width: 98%;
     }
 
-    /* Part-2 */
-
-    .add-2
-    {
-        max-width: 320px;
+    .add-1 {
+        min-width: 250px;
     }
 
+    .add-2 {
+        min-width: 250px;
+    }
 
+    .add-image-1 img {
+        min-width: 250px;
+    }
 
-
-
+    .add-image-2 img {
+        min-width: 250px;
+    }
 }
 
 
@@ -368,3 +547,78 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main-part-3 */
+/* .Gaming_headphone {
+        width: 42%;
+        height: 570px;
+        border: 1px solid rgb(229, 233, 233);
+        justify-content: space-between;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .Gaming_headphone-image img {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 400px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .Gaming_headphone-text {
+        padding: 40px;
+    }
+
+    .antec_air_cooler {
+        width: 42%;
+        height: 570px;
+        border: 1px solid rgb(229, 233, 233);
+        justify-content: space-between;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .antec_air_cooler-image img {
+        object-fit: cover;
+        overflow: hidden;
+        max-height: 400px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .antec_air_cooler-text {
+        padding: 40px;
+    }
+
+    .Sony_Lady_fitness_watch {
+        display: none;
+    } */
