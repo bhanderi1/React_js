@@ -81,21 +81,10 @@
 // }
 
 // 4.Guess the number game using a while loop
-// while
-// let rendom_number=1
-// let number=5
 
-// while(rendom_number != number)
-// {
 
-//   if(rendom_number == number)
-//   {
-//     document.write(rendom_number + "this is wrong number")
-//   }
-//   else{
-//      document.write(rendom_number + "this is right number")
-//   }
-// }
+
+
 
 // 5.Generate the fibonacci sequence using a while loop
 // 1.while
