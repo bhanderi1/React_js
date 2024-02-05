@@ -1008,7 +1008,7 @@
 }
 
 /* section-5 */
-.Gaming_headphone{
+.Gaming_headphone {
    height: 450px;
    width: 315px;
    border: 1px solid rgb(229, 233, 233);
@@ -1052,8 +1052,7 @@
 }
 
 /* 2.antec_air_cooler */
-.antec_air_cooler
-{
+.antec_air_cooler {
    height: 450px;
    width: 315px;
    border: 1px solid rgb(229, 233, 233);
@@ -1061,6 +1060,7 @@
    border-radius: 10px;
    background-color: white;
 }
+
 .antec_air_cooler-image img {
    object-fit: cover;
    overflow: hidden;
@@ -1091,8 +1091,7 @@
 }
 
 /*3.Sony_Lady_fitness_watch*/
-.Sony_Lady_fitness_watch
-{
+.Sony_Lady_fitness_watch {
    height: 450px;
    width: 315px;
    border: 1px solid rgb(229, 233, 233);
@@ -1100,6 +1099,7 @@
    border-radius: 10px;
    background-color: white;
 }
+
 .Sony_Lady_fitness_watch-image img {
    object-fit: cover;
    overflow: hidden;
@@ -1897,78 +1897,81 @@ li:hover {
 }
 
 
-.images-1{
-    height: 230px;
-    width: 230px;
-    position: relative;
-    border-radius: 20px;    
-    overflow: hidden;
+.images-1 {
+   height: 230px;
+   width: 230px;
+   position: relative;
+   border-radius: 20px;
+   overflow: hidden;
 }
 
-.images-1 img{
-    height: 230px;
-    width: 230px;
-    object-fit: cover;
+.images-1 img {
+   height: 230px;
+   width: 230px;
+   object-fit: cover;
 }
 
-.instagram-icon-1{
-    height: 230px;
-    width: 230px;
+.instagram-icon-1 {
+   height: 230px;
+   width: 230px;
 }
 
-.overlay{
-    height: 230px;
-    width: 230px;
-    background-color: black;
-    opacity: 0.5;   
-    position: absolute;
-    top:0;  
-    display: none;
-}
-.instagram-icon-1{
-    display: none;
+.overlay {
+   height: 230px;
+   width: 230px;
+   background-color: black;
+   opacity: 0.5;
+   position: absolute;
+   top: 0;
+   display: none;
 }
 
-.images-1:hover .instagram-icon-1{
-    display: block;
-}
-.images-1:hover .overlay{
-    display: block;
+.instagram-icon-1 {
+   display: none;
 }
 
-.instagram-icon-1 span{
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.images-1:hover .instagram-icon-1 {
+   display: block;
 }
 
-.instagram-icon-1 span a i{   
-    border:1px solid rgb(104, 99, 99);
-    font-size: 20px;
-    color:white;
-    padding: 8px;
-    border-radius: 8px; 
+.images-1:hover .overlay {
+   display: block;
+}
+
+.instagram-icon-1 span {
+   height: inherit;
+   width: inherit;
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.instagram-icon-1 span a i {
+   border: 1px solid rgb(104, 99, 99);
+   font-size: 20px;
+   color: white;
+   padding: 8px;
+   border-radius: 8px;
 }
 
 
-.images-1:hover .instagram-icon-1 span{
-    animation-duration: 0.8s;
-    animation-name: slide;
+.images-1:hover .instagram-icon-1 span {
+   animation-duration: 0.8s;
+   animation-name: slide;
 }
 
 @keyframes slide {
-    from{
-        transform: translateY(15px);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+   from {
+      transform: translateY(15px);
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
 }
 
 
