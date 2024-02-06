@@ -53,6 +53,9 @@
 /* Navbar */
 .border {
    border-bottom: 1px solid gray;
+   opacity: 1;
+    top: 0;
+    visibility: visible;
 }
 
 .navigation {
@@ -60,6 +63,7 @@
    justify-content: space-between;
    align-items: center;
    padding: 15px 0;
+
 }
 
 /* 1.logo */
@@ -350,6 +354,7 @@
    background-color: #115061;
    height: auto;
    position: relative;
+   padding-bottom: 2%;
 }
 
 .bg-desing img {
@@ -417,7 +422,10 @@
    color: white;
    background-color: #115061;
 }
-
+.shop
+{
+  margin: 10px;
+}
 .shop-text {
    display: block;
    position: absolute;
@@ -449,7 +457,7 @@
 }
 
 .watch img {
-   max-width: 80%;
+  max-width: 100%;
    height: auto;
 }
 
@@ -1006,11 +1014,8 @@
    border-top: 1px solid rgb(229, 233, 233);
 }
 
-
-
-
 /* Section-4 add */
-.section-4 {
+/* .section-4 {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -1019,16 +1024,15 @@
 .add-1 {
    overflow: hidden;
    position: relative;
-   width: 60%;
+   width: 65%;
    height: 250px;
    border-radius: 10px;
-   margin-right: 20px;
 }
 
 .add-2 {
    overflow: hidden;
    position: relative;
-   width: 40%;
+   width: 30%;
    height: 250px;
    border-radius: 10px;
 }
@@ -1054,7 +1058,7 @@
    object-fit: cover;
    object-position: right;
    height: 250PX;
-   width: 100%;
+   width: auto;
 }
 
 .add-text-1 {
@@ -1073,10 +1077,10 @@
    outline: none;
    margin-left: 60px;
    margin-top: 20px;
-}
+} */
 
 /* add 2 */
-.add-image-2 {
+/* .add-image-2 {
    position: absolute;
 }
 
@@ -1085,7 +1089,7 @@
    padding: 50px;
    font-size: 18px;
    /* line-height: 1.3; */
-}
+ /* } 
 
 .add-image-2:hover {
    transform: scale(1.1);
@@ -1102,8 +1106,9 @@
    outline: none;
    margin-left: 60px;
    margin-top: 20px;
-   z-index: 1;
-}
+   z-index:1;
+} */
+
 
 
 /* * MAIN PART-3 (Section-5, section-6)  */
@@ -1297,37 +1302,37 @@
 /* section-6 */
 .wrap_contain {
    width: 25%;
-   height: 720px;
+   height: auto;
+   padding-bottom: 43px;
 }
 
-.skicky {
+.sticky {
    position: sticky;
-   top: 73px;
+   top: 100px;
 }
 
 /* GADGETS */
 .Gadgets {
    height: 350px;
-   width: 350px;
+   width: auto;
    padding: 30px;
+   padding-bottom: 0;
    border: 3px solid rgb(252, 34, 70);
    border-radius: 10px;
    overflow: hidden;
-   margin-left: -9px;
-   display: flex;
-   flex-wrap: wrap;
    margin-bottom: 10px;
 }
 
 .Girl_image {
    position: relative;
    bottom: -31px;
-   left: 140px;
+   right: -50%;
 }
 
 .Gadgets-text {
    position: relative;
-   top: -290px
+   top: -290px;
+   width: 150px;
 }
 
 .Gadgets-text h3 {
@@ -1365,21 +1370,15 @@ li:hover {
 
 
 /* NOVELTY */
-.novelty {
-   position: sticky;
-   right: 10px;
-}
-
 .novelty-image {
    height: auto;
    width: auto;
    object-fit: cover;
    position: absolute;
-   left: -10px;
 }
 
 .novelty-text {
-   z-index: 1;
+   z-index: 2;
    font-size: 22px;
    color: white;
    position: relative;
@@ -1389,12 +1388,12 @@ li:hover {
 .part-3 {
    display: flex;
    flex-wrap: wrap;
-   /* justify-content: space-evenly; */
    margin-bottom: 50px;
+   margin-top: 50px;
 }
 
 .section-5 {
-   height: 480px;
+   height: 460px;
    width: 30%;
    border: 1px solid rgb(229, 233, 233);
    display: flex;
