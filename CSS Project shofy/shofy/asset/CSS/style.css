@@ -7,7 +7,7 @@
 }
 
 .container {
-   max-width: calc(100% - 10%);
+   max-width: calc(100% - 20%);
    margin: auto;
    position: relative;
    height: inherit;
@@ -1047,13 +1047,14 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   margin: 1%;
    margin-bottom: 50px;
 }
 
 .add-1 {
    overflow: hidden;
    position: relative;
-   width: 60%;
+   width:63%;
    height: 250px;
    border-radius: 10px;
 }
@@ -1061,7 +1062,7 @@
 .add-2 {
    overflow: hidden;
    position: relative;
-   width: 40%;
+   width: 35%;
    height: 250px;
    border-radius: 10px;
 }
@@ -1079,7 +1080,7 @@
    object-fit: cover;
    object-position: right;
    height: 250px;
-   width: 100%;
+   width: 750px;
 
 }
 
@@ -1087,7 +1088,7 @@
    object-fit: cover;
    object-position: right;
    height: 250PX;
-   width: 100%;
+   width: 420px;
 }
 
 .add-text-1 {
@@ -1981,10 +1982,9 @@ li:hover {
    border-bottom: 1px solid rgb(199, 199, 199);
    margin-right: 20px;
 }
-
 .grid-part-1 {
    display: flex;
-   padding: 10%;
+   padding: 7%;
 }
 
 .grid-part-image {
