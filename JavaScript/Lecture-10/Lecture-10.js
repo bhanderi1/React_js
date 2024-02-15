@@ -78,25 +78,25 @@ Array indexes start with 0:
 
 /* popping  ->delete in last          */
 
-// {
-//   const dish = ["panipuri", "aloopuri", "dosa", "machuriyan"];
-//   document.getElementById("demo").innerHTML = dish;
-//   document.getElementById("demo-1").innerHTML = dish.pop();
-//   document.getElementById("demo-2").innerHTML = dish.pop();
-//   console.log(dish);
-//   console.log(dish.length);
-// }
+{
+  // const dish = ["panipuri", "aloopuri", "dosa", "machuriyan"];
+  // document.getElementById("demo").innerHTML = dish;   //panipuri,aloopuri,dosa,machuriyan
+  // document.getElementById("demo-1").innerHTML = dish.pop();//manchutiyan
+  // document.getElementById("demo-2").innerHTML = dish.pop();//dosa
+  // console.log(dish);//panipuri,aloopuri
+  // console.log(dish.length);//2
+}
 
 // pop() 
 // ->using id
 {
-    // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    // document.getElementById("demo").innerHTML = fruits;
-    // document.getElementById("demo-1").innerHTML = fruits.pop();
-    // document.getElementById("demo-2").innerHTML = fruits.pop();
-    // document.getElementById("demo-3").innerHTML = fruits.pop();
+  // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  // document.getElementById("demo").innerHTML = fruits; 
+  // document.getElementById("demo-1").innerHTML = fruits.pop();//mango
+  // document.getElementById("demo-2").innerHTML = fruits.pop();//apple
+  // document.getElementById("demo-3").innerHTML = fruits.pop();//orange
 
-    // console.log(fruits);
+  // console.log(fruits);//banana
 }
 
 
@@ -106,38 +106,294 @@ Array indexes start with 0:
 
 // pushing array   ->add in last
 {
-    // const dish =["panipuri", "aloopuri", "dosa", "machuriyan"];
+  // const dish =["panipuri", "aloopuri", "dosa", "machuriyan"];
 
-    // document.getElementById("demo").innerHTML = dish;
-    // dish.push("pizza");
-    // document.getElementById("demo-1").innerHTML = dish;
-    // console.log(dish);
+  // document.getElementById("demo").innerHTML = dish;//panipuri,aloopuri,dosa,manchuriyan
+  // dish.push("pizza");
+  // document.getElementById("demo-1").innerHTML = dish;//panipuri,aloopuri,dosa,manchuriyan,pizza
+  // console.log(dish);
 }
 // using by id  --> pushing
 {
   // const dish =["panipuri", "aloopuri", "dosa", "machuriyan"];
   // document.getElementById("demo").innerHTML = dish.push("icecrem")
-  // document.getElementById("demo-1").innerHTML = dish.length 
+  // document.getElementById("demo-1").innerHTML = dish.length //5
 }
-
-
-
-
 
 /* Shifting Elements */
+/* The Shift() method remove the first array element and "shifts" all other element to a lower index*/
 
 {
-  let arry = ["S", "R" ,"U" ,"S","H", "T" ,"I"]
-  let arry2 =arry.shift()
-  let arry3 =arry.shift()
-  console.log(arry2)
-  console.log(arry3)
-  console.log(arry)
+  // let arry = ["S", "R" ,"U" ,"S","H", "T" ,"I"]
+  // let arry2 =arry.shift()
+  // let arry3 =arry.shift()
+  // console.log(arry2)//S
+  // console.log(arry3)//R
+  // console.log(arry)//U,S,H,T,I
 }
+
 // shift out
+// /The shift method returns the value that was "shifed out"/
+
 {
-  const name = ["S", "R" ,"U" ,"S","H", "T" ,"I"]
-  console.log(name)
-  document.getElementById("demo").innerHTML = dish.shift()
-  document.getElementById("demo-1")
+  // const name = ["S", "R" ,"U" ,"S","H", "T" ,"I"]
+  // console.log(name)
+  // document.getElementById("demo").innerHTML = name.shift()//S
+  // document.getElementById("demo-1").innerHTML = name//R,U,S,H,T,I
+}
+
+// unshift() -->new element adds 
+/* The unshift() method add a new elementnto an array (at the begning), and "unshifts" older elements*/
+
+{
+  // let arry = ["option-1" , "dosa" , "water" ,"game","10"]
+  // arry.unshift("hyy")
+  // console.log(arry)//'hyy', 'option-1', 'dosa', 'water', 'game', '10'
+}
+
+//using by id
+{
+  // const dish = ["panipuri", "dosa" ,"pizza","water","bread"]
+  // document.getElementById("demo".innerHTML = dish.unshift("chocholet"))
+  // document.getElementById("demo-1").innerHTML=dish
+}
+
+// changing elements
+{
+  // const arry = ["s" ,"r" , "u","s","h","t","i"]
+  // console.log(arry)
+  // arry[10]="a"
+  // console.log(arry)
+}
+
+// add element
+{
+  // const array=["x","y","z","a","b","c"]
+  // document.getElementById("demo").innerHTML=array //x,y,z,a,b,c
+  // array[array.length]="8"
+  // document.getElementById("demo-1").innerHTML=array//x,y,z,a,b,c,8
+}
+
+// merging(concatenating) arrys
+{
+  // let array1 = ["1","2","3","4","5","6","7"]
+  // let array2 = ["8","9","10","11","12","13"]
+  // let array3 = ["14","15","16","17","18","19"]
+  // let array4 = array1.concat(array2 ,array3)
+  // console.log(array4)
+}
+
+
+
+/************************************************************************************************** */
+
+/*splicing and slicing array */
+//javascript array splice()
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2)
+// splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
+{
+  // const months = ["jan","feb","march","april","june","july"]
+  // console.log(months)
+  // let months2 = months.splice(3,3,"aug","sap")
+  // console.log(months2)  //april,june,july
+  // console.log(months) //april,june,july,aug,sap
+}
+
+// javascript array slice
+
+// slice()
+// slice(start)
+// slice(start, end)
+
+
+// let array1 = [80,90,75,60,545,3]
+// console.log(array1)         
+// let array2 =array1.slice(0,4)
+// console.log(array1)
+// console.log(array2)        //80,90,75,60
+
+// Array.isArray
+{
+  console.log(Array.isArray(17)) //false
+}
+
+
+//sorting array
+{
+  // let arry1 = ["java","c","c++","html","css"]
+  // console.log(arry1)
+  // let arry2 = arry1.sort()
+  // console.log(arry2)  //c,c++,css,html,java
+}
+
+// reversing array
+{
+  // let array1 = ["java","c","c++","html","css"]
+  // console.log(array1)
+  // let array2=array1.reverse()
+  // console.log(array2)//css,html,c++,c,java
+}
+
+// number sort
+
+{
+  // let array1 =[189 , 45 , 56 , 128  , 10 , 150 ]
+  // console.log(array1)
+  // let numbersorted =array1.sort((a , b) => a-b)
+  // console.log(numbersorted)// [10, 45, 56, 128, 150, 189]
+}
+
+/*  javascript array map() */
+
+{
+  // const number1 = [56 , 798 , 345  ,35]
+  // console.log(number1)
+  // const number2 = number1.map(myFunction)
+  // const number3 = number2.sort((a,b)=>a-b)
+  // console.log(number2)  // [70, 112, 690, 1596]
+
+  // function myFunction(value){
+  //   return value * 2
+  // }
+}
+{
+  //  let maparry = [20 , 56, 2 , 101 , 50];
+  //  let maparry2 = maparry.map((item) => item*2);
+  //  console.log(maparry);
+  //  console.log(maparry2);
+}
+
+/*  javascript Array flatMap() */
+{
+  // let flatmap=[1,2,3,4]
+  // let flatmap1 = flatmap.flatMap((num)=>num === 3 ? [1,1]:2)
+  // console.log(flatmap1)  //2,2,1,1,2
+}
+
+/* Javascript Array flat() */
+{
+  // let flatarray = [10, 20, [22, 33, [44, 55, [66, 77]]]]
+  // let flatmap2 = flatarray.flat(3)
+  // console.log(flatmap2);// [10, 20, 22, 33, 44, 55, 66, 77]
+}
+
+/* javascript array filter() */
+
+{
+
+  // let filterarry = ["tennis", "baseball", "cricket", "khokho", "vollyball", "chess"]
+  // let filterarry2 = filterarry.filter((word) => word.length < 10)
+  // console.log(filterarry2);
+
+  // let filterarry3 = filterarry2.sort()
+  // console.log(filterarry3);
+
+}
+
+// javascript array fill method
+{
+  // let fillarray = [46,89,101,122,45]
+  // console.log(fillarray)
+  // let fillarray2 = fillarray.fill("none",1)
+  // console.log(fillarray2)// [46, 'none', 'none', 'none', 'none']
+}
+
+/*javascript array copywithin() method */
+
+// copyWithin(target, start)
+// copyWithin(target, start, end)
+{
+  // const abc = ["A","B",'C',"D","E","F"]
+  // console.log(abc)
+  // const newcopy = abc.copyWithin(1,3)
+  // console.log(newcopy)// ['A', 'D', 'E', 'F', 'E', 'F']
+}
+
+/*javascript valueof() method */
+{
+  // let array = [1,2,3,4,5,6,7,8,9]
+  // console.log(array.valueOf())
+}
+
+/*javascript Multidimensional array */
+ /* A multidimensional array is an array that contains another array. */
+
+ {
+     // multidimensional array
+    //  const data = [[1, 2, 3], [1, 3, 4], [4, 5, 6]];
+    // let data1 =data[1][1]
+    // console.log(data1)   //3
+ }
+
+
+  
+ /* Add an Element to a Multidimensional Array */
+ {
+    // Adding Element to the Outer Array
+ 
+    //  let studentsData = [['Jack', 24], ['Sara', 23]];
+    //  studentsData.push(['Peter', 24]);
+    //  let data = studentsData[1][1]
+ 
+    //  console.log(studentsData);
+    //  console.log(data);//23
+ }
+
+//  adding element to the inner array
+{
+    // using index notation
+        //  let studentsData = [['Jack', 24], ['Sara', 23],];
+        //  studentsData[1][2] = 'hello';
+     
+        //  console.log(studentsData);
+}
+
+{
+  // // using push()
+  let studentsData = [['Jack', 24], ['Sara', 23],];
+  studentsData[1].push('hello');
+
+  console.log(studentsData);
+}
+
+{
+  // the Array's splice() method to add an element at a specified index.
+
+  let studentsData = [['Jack', 24], ['Sara', 23],];
+
+  // adding element at 1 index
+  studentsData.splice(0, 2 , ["peter"  , 58]);
+
+  console.log(studentsData);
+}
+
+/*  Remove an Element from a Multidimensional Array */
+ 
+{
+  // remove the array element from outer array
+  let studentsData = [['Jack', 24], ['Sara', 23],];
+  studentsData.pop();
+
+  console.log(studentsData);
+}
+
+{
+   // remove the element from the inner array
+   let studentsData = [['Jack', 24], ['Sara', 23]];
+   studentsData[1].pop();
+
+   console.log(studentsData); // [["Jack", 24], ["Sara"]]
+}
+{
+  //  // the splice() method to remove an element at a specified index.
+   let studentsData = [['Jack', 24], ['Sara', 23],];
+
+   // removing 1 index array item
+   studentsData.splice(0,1);
+   console.log(studentsData);
 }
