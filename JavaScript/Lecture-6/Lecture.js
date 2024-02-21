@@ -8,35 +8,35 @@ console.log(math2)
 
 //math.round()
 let math3 =Math.round(10.9)
-console.log(math3)
+console.log(math3)//11
 
 //Math.ceil()
 let math4 = Math.ceil(10.1)
-console.log(math4);
+console.log(math4);//11
 
 //Math.floor()
 let math5  = Math.floor(-10.9)
-console.log(math5);
+console.log(math5);//-11
 
 //Math.trunc()
 let math6 = Math.trunc(152)
-console.log(math6);
+console.log(math6);//152
 
 //Math.sign()
 let math7  = Math.sign(129059)
-console.log(math7);
+console.log(math7);//1
 
 //Math.pow()
 let math8 = Math.pow(3 , 3)
-console.log(math8);
+console.log(math8);//27
 
 //Math.sqrt()
 let math9 = Math.sqrt(1024)
-console.log(math9);
+console.log(math9);//32
 
 //Math.abs()
 let math10  = Math.abs(20);
-console.log(math10);
+console.log(math10);//20
 
 //Math.min() and Math.max()
 let math11  = Math.min(-10,-25,-90,45,2);
@@ -46,7 +46,7 @@ console.log(math12);
 
 //Math.random()
 let math13  = Math.random()
-console.log(math13);
+console.log("rendom",math13);
 
 //Math.sin()
 let math14 = Math.sin(30*3.14/180)	
