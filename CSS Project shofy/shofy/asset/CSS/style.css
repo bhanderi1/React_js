@@ -2236,8 +2236,8 @@ li:hover {
 
 
 .images-1 {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
    position: relative;
    border-radius: 20px;
    overflow: hidden;
@@ -2245,19 +2245,19 @@ li:hover {
 }
 
 .images-1 img {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
    object-fit: cover;
 }
 
 .instagram-icon-1 {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
 }
 
 .overlay {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
    background-color: black;
    opacity: 0.5;
    position: absolute;
