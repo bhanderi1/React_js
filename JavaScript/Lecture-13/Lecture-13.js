@@ -1,72 +1,72 @@
 /* javascript object */
 
-const dataobject = {}
-console.log(dataobject)
+// const dataobject = {}
+// console.log(dataobject)
 
-const dataobject1 = {
-  key1: "javascript",
-  key2: "reactjs"
-}
+// const dataobject1 = {
+//   key1: "javascript",
+//   key2: "reactjs"
+// }
 
-console.log(dataobject1)
+// console.log(dataobject1)
 
-console.log(dataobject1.key1)
-console.log(dataobject1.key2)
-
-
-console.log(dataobject1["key1"])
-console.log(dataobject1["key2"])
+// console.log(dataobject1.key1)
+// console.log(dataobject1.key2)
 
 
-const dataobject3 = {
-  name: "ram",
-  gender: "male",
-  address: "ayodhya",
-  marks: {
-    maths: 99,
-    english: 90
-  }
-}
-console.log(dataobject3.marks.maths)
-console.log(dataobject3["marks"])
-console.log(dataobject3["marks"]["maths"])
+// console.log(dataobject1["key1"])
+// console.log(dataobject1["key2"])
 
-const dataobject4 = {
-  array: [1, 2, 3, 5, 6, [12, 13]],
-  array2: [11, 12, 13, 14, 15, 16]
-}
+
+// const dataobject3 = {
+//   name: "ram",
+//   gender: "male",
+//   address: "ayodhya",
+//   marks: {
+//     maths: 99,
+//     english: 90
+//   }
+// }
+// console.log(dataobject3.marks.maths)
+// console.log(dataobject3["marks"])
+// console.log(dataobject3["marks"]["maths"])
+
+// const dataobject4 = {
+//   array: [1, 2, 3, 5, 6, [12, 13]],
+//   array2: [11, 12, 13, 14, 15, 16]
+// }
 // console.log(dataobject4.array)
 // console.log(dataobject4.array[5][0])
 
 
-const Array1 = [
-  {
-    id: 1,
-    item: "apple",
-    catagories: "fruits"
-  },
-  {
-    id: 2,
-    item: "banana",
-    catagories: "fruits"
-  },
-  {
-    id: 3,
-    item: "graps",
-    catagories: "fruits"
-  },
-  {
-    id: 4,
-    item: "mango",
-    catagories: "fruits"
-  },
-  {
-    id: 5,
-    item: "watermelon",
-    catagories: "fruits"
-  }
+// const Array1 = [
+//   {
+//     id: 1,
+//     item: "apple",
+//     catagories: "fruits"
+//   },
+//   {
+//     id: 2,
+//     item: "banana",
+//     catagories: "fruits"
+//   },
+//   {
+//     id: 3,
+//     item: "graps",
+//     catagories: "fruits"
+//   },
+//   {
+//     id: 4,
+//     item: "mango",
+//     catagories: "fruits"
+//   },
+//   {
+//     id: 5,
+//     item: "watermelon",
+//     catagories: "fruits"
+//   }
 
-]
+// ]
 
 
 // console.log(Array1[0].id);
@@ -76,13 +76,13 @@ const Array1 = [
 
 //-----------------------------------------------------------------------------------------------
 
-let array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80]
-let array2 = array.filter((word) => word <= 35)
-console.log(array2)
-let array3 = array.filter((word) => word >= 35)
-console.log(array3)
-let array4 = array.filter((word) => word >= 50)
-console.log(array4)
+// let array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80]
+// let array2 = array.filter((word) => word <= 35)
+// console.log(array2)
+// let array3 = array.filter((word) => word >= 35)
+// console.log(array3)
+// let array4 = array.filter((word) => word >= 50)
+// console.log(array4)
 
 
 
@@ -257,11 +257,135 @@ const task = [
 //   console.log('currentTarget = ' + e.currentTarget.dataset.name);
 // },false)
 
-const input =document.querySelector('input')
-const value =document.getElementById('input_values')
-input.addEventListener('input',displayValue)
+// const input =document.querySelector('input')
+// const value =document.getElementById('input_values')
+// input.addEventListener('input',displayValue)
 
-function displayValue(e)
+// function displayValue(e)
+// {
+//   input_value.innerHTML = e.target.value
+// }
+
+// -----------------------------------------------------------------------------------------------
+/* 1.javascript object method*/
+//  1. JavaScript Object.assign()
+
+// assign() Syntax
+
 {
-  input_value.innerHTML = e.target.value
+  // Object.assign(target, ...sources)
+}
+
+// assign() Parameters
+
+// The assign() method takes in:
+
+// target - the target object to which we will copy all the properties of the sources.
+// sources - the source object(s) whose properties we want to copy.
+
+{
+  const obj1 = {num1:"1" , num2 : "2"}
+  const obj2 = {num1:"3" , num2 : "4"}
+  const obj3 = {num1:"5" , num2 : "6"}
+
+  const obj4 =Object.assign(obj1 ,obj1)
+  console.log(obj1)
+  console.log(obj2)
+}
+
+// -----------------------------------------------------------------------------------------
+/*2. assign() Return value*/
+
+// Javascript Object.assign() to Clone Objects
+
+{
+  //create source object
+  let obj1 = {num:"1" , num2:"2"}
+  let obj2 ={num3:"3"}
+  let object3 = Object.assign(obj2 , obj1)
+  let Allobj = obj1 = obj2
+  
+  console.log(object3)
+  console.log(Allobj)
+}
+// ---------------------------------------------------------------------------------------
+{
+  // assign ( to merge objects)
+  const obj1 = {num1:"1" , num2 : "2"}
+  const obj2 = {num3:"3" , num4 : "4"}
+  const obj3 = {num5:"5" , num6 : "6"}
+
+  // Object To Merge In Another Object
+
+  const object4 = Object.assign({},obj1 ,obj2 ,obj3)
+  const Array = object4.num1
+    console.log(Array)
+  console.log(object4);
+}
+
+
+// In the above example, we have used assign() to merge the objects o1, o2, and o3 into a new object o4.
+
+{
+  // const o4 = Object.assign({}, o1, o2, o3);
+}
+
+// Using the empty object {} as a target object ensures that the properties of the other objects are copied to a new object without modifying any of the source objects.
+
+// As can be seen from the output, properties of later objects overwrite that of earlier ones. For example,
+
+// the b key from o1 is overwritten by its counterpart in o2.
+// the c keys from o1 and o2 are overwritten by their counterpart in o3.
+
+//If the source value is a reference to an object, it only copies the reference value.
+
+//  2. Javascript Object.create()
+
+{
+  let student ={
+    name: "Lisa",
+    age: 24,
+    marks:78.9,
+    display()
+    {
+      console.log("Name:" ,this.name)
+    }
+  };
+
+  let std1 =Object.create(student)
+  let std2 =Object.assign(std1 , student)
+
+  std1.name = "Sheeran"
+
+  console.log(std2)
+  console.log(std1)
+  std1.display()
+  console.log(student)
+}
+// 3.  JavaScript Object.entries()
+{
+  const obj={
+    name : "Adam",
+    age :20,
+    location:"nepal"
+  };
+
+  let Obj1 = Object.entries(obj)
+  console.log(Obj1[0])
+}
+{
+  // keys are arranged randomly
+
+  const obj ={42:"a" ,22:"b", 71:"c"}
+
+  console.log(Object.entries(obj))
+}
+
+{
+  const obj ={name:"john ", age:27, location:"nepal"};
+
+  for (const [key,value] of Object.entries(obj))
+  {
+    console.log(`${key}:${value}`)
+  }
 }
