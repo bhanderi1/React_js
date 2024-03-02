@@ -103,7 +103,7 @@
 
 // function time()
 // {
-//    const date = new Date()
+//    const date = new DateTime()
 //    console.log(date.toLocaleDateString())
 // }
 // let date = setInterval(time , 3000)
@@ -112,8 +112,6 @@
 // {
 //    clearInterval(date)
 // }
-
-
 
 
 function currenttime()

@@ -13,7 +13,7 @@
  {
     top: 20px;
  }
- .image-wrapper.bg-overlay:before
+ .bg-overlay
  {
     content: "";
     display: block;
@@ -24,8 +24,18 @@
     width: 100%;
     height: 100%;
     background: rgba(30, 34, 40, .5);
-    overflow: hidden;
  }
+ .nav-link {
+   
+    font-weight:600;
+    color: white;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+.navbar-nav .nav-link.show {
+    color: white;
+}
 
  .li {
      list-style: none;
@@ -46,8 +56,8 @@
  .row>* {
      flex-shrink: 0;
      max-width: auto;
-     padding-right: auto;
-     padding-left: auto;
+     padding-right: 0;
+     padding-left: 0;
  }
 
  .dropdown-item {
@@ -55,13 +65,14 @@
  }
 
  .navbar-expand-lg .navbar-nav .dropdown-menu .drops {
-     top: 30px;
+     top: 20px;
      position: absolute;
      left: -400px;
      display: flex;
      flex-flow: row;
      right: 0;
-     width: 1280px;
+     width: 1230px;
+     padding: 2%;
  }
  .dropdown-menu{
          --bs-dropdown-border-color: none;
@@ -108,15 +119,13 @@
 /* documation */
 .navbar-expand-lg .navbar-nav .dropdown-menu .Documetation
 {
-    top: 30px;
+    /* top: 30px; */
     position: absolute;
-    left: -800px;
-    display: flex;
+   left: -800px;
     flex-flow: row;
-    right: 0;
     width: 1200px;
-    background-color: white;
-    border-radius: 1%;
+    background-color: white; 
+    border-radius: 10px;
 }
 
 .Background-img
@@ -124,16 +133,11 @@
     width:fit-content;
     border-radius: 17px;
 }
-.Background-img img
-{
-    width:100%;
-    height:100%;
-    margin: 0 3%;
-}
 
 .Background-img-round
 {
     top: -50px;
+    z-index: 2;
 }
 .link-purple{
     color:rgb(90, 90, 206);
@@ -144,14 +148,13 @@
 .link-pink{
     color:rgb(178, 85, 101);
 }
-
 .row
 {
-    max-width: 100%;
+    max-width: auto;
     padding-right: calc(var(--bs-gutter-x)* .5);
     padding-left: calc(var(--bs-gutter-x)* .5);
     margin-top: var(--bs-gutter-y);
-    height: 100%;
+    height: auto;
 }
 .accordion-item {
     color: none;
@@ -162,25 +165,7 @@
     margin-bottom: 0px;
 }
 .accordion {
-    --bs-accordion-color: var(--bs-body-color);
-    --bs-accordion-bg: var(--bs-body-bg);
-    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     --bs-accordion-border-color: none;
-    --bs-accordion-border-width: var(--bs-border-width);
-    --bs-accordion-border-radius: var(--bs-border-radius);
-    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
-    --bs-accordion-btn-padding-x: 1.25rem;
-    --bs-accordion-btn-padding-y: 1rem;
-    /* --bs-accordion-btn-color: var(--bs-body-color); */
-    --bs-accordion-btn-bg: var(--bs-accordion-bg);
-    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
-    --bs-accordion-btn-icon-width: 1.25rem;
-    --bs-accordion-btn-icon-transform: rotate(-180deg);
-    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    --bs-accordion-body-padding-x: 1.25rem;
-    --bs-accordion-body-padding-y: 1rem;
     --bs-accordion-active-color: none;
     --bs-accordion-active-bg: none;
 }
@@ -188,4 +173,29 @@
     z-index: 3;
     outline: 0;
     box-shadow: none;
+}
+.accordion-header .accordion-button:focus
+{
+    color: blue;
+}
+.Progressbar img
+{
+    position: relative;
+    top: 50px;
+}
+
+.bi-check::before {
+    content: "\f26e";
+    background: rgb(199, 199, 255);
+    border-radius: 50%;
+}
+.btn-circle i
+{
+    padding: 10px;
+    background-color: #747ed1;
+    border-radius: 50%;
+    color: white;
+}
+nav a i{
+    color: white;
 }
