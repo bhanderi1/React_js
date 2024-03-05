@@ -17,7 +17,7 @@
 //To create a promise object, we use the promise() constructor.
 
 {
-    let promise = new Promise(function (resolve, reject) { });
+    let promise = new Promise(function (resolve, reject) {});
 }
 
 // The Promise() construcor takes a function as an argument. The function also accepts two functions resolve() and reject().

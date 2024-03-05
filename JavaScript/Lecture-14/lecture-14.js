@@ -79,7 +79,7 @@
 // {
 //    console.log(`your name is ${name}  and age ${age}`)
 // }
-// let Id = setInterval(greet ,1000,"ram",Id)
+// let Id = setInterval(greet,1000,"ram", 23 )
 
 // // clearTimeout
 // clearInterval(Id)
@@ -114,14 +114,14 @@
 // }
 
 
-function currenttime()
-{
-   let datetime = new Date()
-   let time = datetime.toLocaleTimeString();
-   console.log(time)
+// function currenttime()
+// {
+//    let datetime = new Date()
+//    let time = datetime.toLocaleTimeString();
+//    console.log(time)
 
-   setTimeout(currenttime,3000);
-} 
+//    setTimeout(currenttime,3000);
+// } 
 
-currenttime()
-setInterval(currenttime,3000)
+// currenttime()
+// setInterval(currenttime,3000)
