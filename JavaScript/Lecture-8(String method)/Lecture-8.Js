@@ -1,3 +1,4 @@
+
 /*---------------------- Javascript string method ----------------------------*/
 
 /* primitive string */

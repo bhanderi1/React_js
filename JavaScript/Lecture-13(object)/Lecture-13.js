@@ -380,7 +380,7 @@ const task = [
 
   console.log(Object.entries(obj))
 }
-
+// entries() to Iterate Through Key-Value Pairs
 {
   const obj ={name:"john ", age:27, location:"nepal"};
 
@@ -388,4 +388,221 @@ const task = [
   {
     console.log(`${key}:${value}`)
   }
+}
+// 4. JavaScript Object.is()
+
+{
+  // The Object.is() method checks if two values are the same.
+
+  // let Obj1 = {Num1:"1" , Num2:"2"} 
+  // let Obj2 = {Num1:"1" , Num2:"2"} 
+
+  // let Obj3 = Object.is(Obj1 , Obj2)
+
+  // console.log(Obj3);
+
+}
+
+{
+  // Javascript Object.is()
+
+  // // objects with same values
+  // console.log(Object.is("JavaScript", "JavaScript")); 
+
+  // // objects with different values
+  // console.log(Object.is("JavaScript", "javascript")); 
+
+  // // compare null values
+  // console.log(Object.is(null, null));
+}
+
+{
+  // is() With Custom Objects
+
+  // create an object
+  // let obj1 = { a: 1 };
+
+  // // create another object
+  // // with identical properties as obj1
+  // let obj2 = { a: 1 };
+
+  // // returns true because both arguments
+  // // have the same reference
+  // console.log(Object.is(obj1, obj1));
+
+  // // returns false because obj1 and
+  // // obj2 have different references
+  // console.log(Object.is(obj1, obj2));
+
+}
+
+{
+  // is() With Special Cases
+
+  // Special Cases
+
+  // console.log(Object.is([], []));
+
+  // console.log(Object.is({}, {}));  
+
+  // console.log(Object.is(0, -0));  
+
+  // console.log(Object.is(-0, -0)); 
+
+  // console.log(Object.is(NaN, 0 / 0));  
+}
+
+
+// 5. JavaScript Object.hasOwnProperty()
+
+// The Object.hasOwnProperty() method checks if the object possesses the given property.
+
+{
+  // const obj = {};
+  // console.log(obj);
+
+  // obj.id = 42;
+
+  // // // check if id is present in obj or not
+  // console.log(obj.hasOwnProperty("id"));
+
+  // console.log(obj);
+}
+
+{
+  // Javascript Object.hasOwnProperty()
+
+  // // create an object with property id
+  // const obj = {id: 42 , toString:10};
+
+  // // check if id exists in obj 
+  // console.log(obj.hasOwnProperty("id")); 
+
+  // // check if name exists in obj 
+  // console.log(obj.hasOwnProperty("name")); 
+
+  // // inherited properties return false
+  // console.log(obj.hasOwnProperty("toString")); 
+
+}
+
+// 6. JavaScript Object.freeze()
+
+{
+  // The Object.freeze() method freezes an object i.e. it prevents the object from being modified.
+
+  // const Obj  = {num:"1" , num2:"2"}
+
+  
+  // Obj.num = "10"
+  
+  // Object.freeze(Obj)
+
+  // Obj.num2="20"
+
+  // console.log(Obj);
+
+}
+
+// 7. JavaScript Object.getOwnPropertyNames()
+
+{
+  // The Object.getOwnPropertyNames() method returns an array of all the properties found in a given object.
+
+  // const obj = {
+  //     name: 'Alexander',
+  //     age: 32,
+  //     address: 'Macedonia',
+  //   };
+    
+  //   // find out the properties present in obj
+  //   const propertyNames = Object.getOwnPropertyNames(obj);
+    
+  //   console.log(propertyNames);
+    
+}
+
+// 8. Javascript Object.setPrototypeOf()
+
+{
+  // The Object.setPrototypeOf() method sets the prototype of the specified object to another object or null.
+
+  // create an empty object
+  // const obj = {};
+
+  // // // create a non-empty object parent
+  // const parent = { foo: 'bar' };
+
+  // // // set parent as the prototype of obj
+  // Object.setPrototypeOf(obj, parent);
+
+  // // // print foo property of parent
+  // // // using the obj object
+  // console.log(obj.foo);
+
+  // console.log(obj);
+
+}
+
+// 9. JavaScript Object.toString()
+
+{
+  // The Object.toString() method returns the given object as a string.
+
+  // create a number with value 10
+  // let num = {10:"obj"};
+
+  // // check the type of num before
+  // // using the toString() method
+  // console.log(typeof num); 
+
+  // // check the type of num after 
+  // //using the toString() method
+  // console.log(typeof num.toString()); 
+}
+
+// 10. JavaScript Object.valueOf()
+
+{
+  // The Object.valueOf() method returns the primitive value of the specified object.
+
+  // create a new Number object with value of 12
+  // let num = new Number(12);
+
+  // console.log(num);
+
+  // console.log(num.valueOf());
+}
+
+// 11. JavaScript Object.values()
+
+{
+  // The Object.values() method returns an array containing the enumerable values of an object.
+
+  // array-like object having integers as key
+  const obj = { 65: "A", 66: "B", 67: "C" };
+
+  // print the enumerable values of obj
+  console.log(Object.values(obj));
+
+}
+
+{
+  // values() With Object Having Random Key Ordering
+
+  // object with random key ordering
+  const obj1 = { 42: "a", 22: "b", 71: "c" };
+
+  // print the enumerable values of obj1
+  console.log(Object.values(obj1));
+
+}
+
+{
+  // JavaScript Object.values() With String
+
+  // const string = "code";
+  // console.log(Object.values(string));
+
+  // values() with string returns an array of characters
 }
