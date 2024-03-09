@@ -19,17 +19,33 @@
   //   const Message =prompt()
   //   document.write(Message)
 }
-/*3.confrm */
+/*3.conifrm */
 {
   //   let message=confirm("this is javascript")
   //   document.write(message)
 }
 
 /************************* javascript map methods  ********************************/
+/*
+
+new Map()	Creates a new Map
+set()	Sets the value for a key in a Map
+get()	Gets the value for a key in a Map
+delete()	Removes a Map element specified by the key
+has()	Returns true if a key exists in a Map
+entries()	Returns an iterator with the [key, value] pairs in a Map
+Property	Description
+size	Returns the number of elements in a Map
+
+*/
+
 
 //methods
+// 1.entries
+/* You can create a Map by passing an Array to the new Map() constructor */
+
 {
-  // 1.entries
+ //1.
   const Data = new Map([
     ["option-1", 20],
     ["option-2", 30],
@@ -40,19 +56,37 @@
   console.log(Data.size);
 }
 
+
+
+
+// 2.set
+ /* The set() method can also be used to change existing Map values */
 {
-  // 2.set
+  //1.
   const newmap = new Map();
   newmap.set("item-1", "car");
   newmap.set("item-2", "bus");
   newmap.set("item-3", "truck");
   newmap.set("item-1", 50); //set
-
   console.log(newmap);
 }
-
 {
-  // 3.get
+  //2.
+  let map = new Map()
+  map.set('1','str1')
+  map.set(1,'num1')
+  map.set(true,'bool1')
+
+  alert(map.get(1))
+  alert(map.get('1'))
+
+  alert(map.size)
+}
+
+
+// 3.get
+ /* The get() method gets the value of a key in a Map */
+{
   const newmap = new Map([
     ["item-1", "car"],
     ["item-2", "bus"],
@@ -65,8 +99,11 @@
   console.log(newmap.get("item-1")); //get  - output only one variable value->car
 }
 
+
+
+// 4.size
+ /* The size property returns the number of elements in a Map */
 {
-  // size
   const Data = new Map([
     ["option-1", 20],
     ["option-2", 40],
@@ -77,7 +114,10 @@
   const sizes = Data.size;
   console.log(sizes);
 }
-// delete()
+
+
+// 5.delete()
+/* The delete() method removes a Map element */
 {
   const newmap = new Map([
     ["item-1", "car"],
@@ -91,7 +131,8 @@
   console.log(newmap);
 }
 
-// has()
+//6. has()
+ /* The has() method returns true if a key exists in a Map */
 {
   const Data = new Map([
     ["option-1", 20],
@@ -120,7 +161,16 @@
   console.log(Data.size); //4
 }
 
-// ******************************** set method ****************************************
+// ******************************** set  method ****************************************
+/*
+new Set()	Creates a new Set
+add()	Adds a new element to the Set
+delete()	Removes an element from a Set
+has()	Returns true if a value exists in the Set
+values()	Returns an iterator with all the values in a Set
+size	Returns the number of elements in a Set
+
+*/
 
 {
   const x = new Set([10, 20, 30]);
@@ -129,7 +179,7 @@
   //3
 }
 
-// new set
+//1. new set
 {
   const x = new Set();
 
@@ -142,7 +192,9 @@
   console.log(x.size);
 }
 
+//2.add
 {
+
   const newset = new Set();
 
   const a = "a";
@@ -156,7 +208,7 @@
   console.log(newset);
   console.log(newset.size);
 }
-//   delete
+//  3. delete
 {
   const x = new Set(["a", "b", "c"]);
 
@@ -165,7 +217,7 @@
   console.log(x);
   console.log(x.size);
 }
-//has
+//4.has
 {
   const x = new Set(["a", "b", "c"]);
 
@@ -174,7 +226,7 @@
   console.log(y);
 }
 
-
+//5.values
 {
     const x = new Set(["a" , "b" , "c"]);
     
@@ -183,6 +235,7 @@
     console.log(y);
   }
   
+  //6.size
   {
     const x = new Set(["a" , "b" , "c"]);
     
