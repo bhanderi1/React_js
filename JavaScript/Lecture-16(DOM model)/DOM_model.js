@@ -138,20 +138,20 @@
 // *****************Javascript remove attributes**********************
 
 {
-    // const elemenet =document.getElementById('demo')
-    // function checkattr()
-    // {
-    //     alert(elemenet.hasAttribute('class'))
-    // }
-    // function remove()
-    // {
-    //     elemenet.removeAttribute("class")
-    //     elemenet.removeAttribute("name")
-    //     elemenet.removeAttribute("id")
-    // }
-    // function addattr(){
-    //     console.log(elemenet.getAttribute("class"))
-    // }
+    const elemenet =document.getElementById('demo')
+    function checkattr()
+    {
+        alert(elemenet.hasAttribute('class'))
+    }
+    function remove()
+    {
+        elemenet.removeAttribute("class")
+        elemenet.removeAttribute("name")
+        elemenet.removeAttribute("id")
+    }
+    function addattr(){
+        console.log(elemenet.setAttribute("class", "javascript"))
+    }
 }
 
 /* Html Object Accessible */
@@ -207,8 +207,7 @@ document.title
 //3.document.forms
 {
 
-    // document.getElementById("demo").innerHTML = document.forms.length;
-
+    document.getElementById("demo").innerHTML = document.forms.length;
 }
 
 //head tag
@@ -222,12 +221,12 @@ document.title
 }
 
 //5.link tag
-// {
-//     document.getElementById("demo").innerHTML =document.links.length;
-// }
+{
+    // document.getElementById("demo").innerHTML =document.links.length;
+}
 //6.document.scripts
 {
-      document.getElementById("demo").innerHTML =document.scripts.length;
+    //   document.getElementById("demo").innerHTML =document.scripts.length;
 }
 
 //7.document.title

@@ -12,6 +12,12 @@ The basic rules of naming a function are similar to naming a variable. It is bet
         console.log(2*2)//4
     }
 }
+{
+    function print()
+    {
+        console.log(5*6+9)
+    }
+}
 /* Function Parameters */
 
 // A function can also be declared with parameters. A parameter is a value that is passed when declaring a function.

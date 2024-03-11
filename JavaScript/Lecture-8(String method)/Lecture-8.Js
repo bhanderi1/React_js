@@ -69,7 +69,7 @@
 {
     let string7 = "hello world  f  ";
     let string8 = string7.charAt(6)
-    console.log(string8);
+    console.log(string8);//w
 }
 
 
@@ -184,6 +184,17 @@
     let string2 = string.concat(string1)
     console.log(string2)
 }
+{
+    let string34 = "hello ";
+    let string35 = "world ";
+    let string36 = "this is";
+    let string37 = " javascrpit ";
+    let string38 = string34.concat( string35 + string36+ string37);
+    console.log(string38);
+}
+
+
+
 /******  String trim() ******/
 {
     let string38 = "     this is most common lecture    ";
@@ -211,7 +222,7 @@
     console.log(string41.length);//31
 }
 {
-    let string = "  Hello  "
+    let string = "    Hello  "
     let string1 = string.trimStart()
     console.log(string1)
     console.log(string1.length)//7
@@ -222,10 +233,10 @@
 {
     let string42 = "  this is most coomon lecture!  ";
     console.log(string42);
-    console.log(string42.length);//33
+    console.log(string42.length);//32
     let string43 = string42.trimEnd();
     console.log(string43);
-    console.log(string43.length);//31
+    console.log(string43.length);//30
 }
 {
     let string = "  Hello  "
@@ -266,7 +277,16 @@
     let string47 = string46.charCodeAt(15);
     console.log(string47); //109  = s value  
 }
-
+{
+    let string46 = "this is most commom!";
+    let string47 = string46.charCodeAt(1);
+    console.log(string47); //104
+}
+{
+    let string46 = "this is most commom!";
+    let string47 = string46.charCodeAt(5);
+    console.log(string47); //105 
+}
 /****** String split() ******/
 {
     let string48 = "wow! what a place";
@@ -274,15 +294,39 @@
     let string49 = string48.split("");
     console.log(string49); //convert to the array
 }
+{
+    let string48 = "hello";
+    console.log(string48);
+    let string49 = string48.split("");
+    console.log(string49);
+}
+
+{
+    let string48 = "world";
+    console.log(string48);
+    let string49 = string48.split("");
+    console.log(string49); 
+}
 
 /******  String includes() , true and false ******/
+{
+    let string50 = "hello world";
+    console.log(string50);
+    let string51 = string50.includes("z");
+    console.log(string51); //false
+}
+{
+    let string50 = "world is beautiful";
+    console.log(string50);
+    let string51 = string50.includes("i");
+    console.log(string51); //true
+}
 {
     let string50 = "wow!whataplace";
     console.log(string50);
     let string51 = string50.includes("!");
     console.log(string51); //true
 }
-
 
 /* JAVASCRIPT STRING METHOD */       //this is searching methode
 
@@ -302,6 +346,18 @@
     let string53 = string52.indexOf("a", 8)
     console.log(string53)                            //10
 }
+{
+    let string52 = "hello"
+    console.log(string52)
+    let string53 = string52.indexOf("o", 8)
+    console.log(string53)                            //-1
+}
+{
+    let string52 = "how are you ?"
+    console.log(string52)
+    let string53 = string52.indexOf("?", 8)
+    console.log(string53)                            //12
+}
 
 /******   String lastIndexOf() ******/
 {
@@ -309,6 +365,18 @@
     console.log(string52)
     let string53 = string52.lastIndexOf("a", 7)
     console.log(string53)                         //7
+}
+{
+    let string52 = "hello"
+    console.log(string52)
+    let string53 = string52.lastIndexOf("a", 2)
+    console.log(string53)                         //-1
+}
+{
+    let string52 = "How are you ? my frinds"
+    console.log(string52)
+    let string53 = string52.lastIndexOf("a", 7)
+    console.log(string53)                         //4
 }
 
 
