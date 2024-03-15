@@ -284,13 +284,21 @@ const task = [
 // sources - the source object(s) whose properties we want to copy.
 
 {
-  const obj1 = {num1:"1" , num2 : "2"}
-  const obj2 = {num1:"3" , num2 : "4"}
-  const obj3 = {num1:"5" , num2 : "6"}
+  const obj1 = { num1: "1", num2: "2" }
+  const obj2 = { num1: "3", num2: "4" }
+  const obj3 = { num1: "5", num2: "6" }
 
-  const obj4 =Object.assign(obj1 ,obj1)
+  const obj4 = Object.assign(obj1, obj1)
   console.log(obj1)
   console.log(obj2)
+}
+
+{
+  const obj1 = { student: "jasmi", marks: "95" }
+  const obj2 = { student: "ashiti", marks: "96" }
+  const obj3 = { student: "vishva", marks: "97" }
+  const obj4 = Object.assign(obj1, obj2)
+  console.log(obj2);
 }
 
 // -----------------------------------------------------------------------------------------
@@ -300,26 +308,34 @@ const task = [
 
 {
   //create source object
-  let obj1 = {num:"1" , num2:"2"}
-  let obj2 ={num3:"3"}
-  let object3 = Object.assign(obj2 , obj1)
+  let obj1 = { num: "1", num2: "2" }
+  let obj2 = { num3: "3" }
+  let object3 = Object.assign(obj2, obj1)
   let Allobj = obj1 = obj2
-  
+
+  console.log(object3)
+  console.log(Allobj)
+}
+{
+  let obj1 = { name: "ram", num2: "laxman" }
+  let obj2 = { num3: "sita" }
+  let object3 = Object.assign(obj2, obj1)
+  let Allobj = obj1 = obj2
+
   console.log(object3)
   console.log(Allobj)
 }
 // ---------------------------------------------------------------------------------------
 {
   // assign ( to merge objects)
-  const obj1 = {num1:"1" , num2 : "2"}
-  const obj2 = {num3:"3" , num4 : "4"}
-  const obj3 = {num5:"5" , num6 : "6"}
+  const obj1 = { num1: "1", num2: "2" }
+  const obj2 = { num3: "3", num4: "4" }
+  const obj3 = { num5: "5", num6: "6" }
 
   // Object To Merge In Another Object
-
-  const object4 = Object.assign({},obj1 ,obj2 ,obj3)
+  const object4 = Object.assign({}, obj1, obj2, obj3)
   const Array = object4.num1
-    console.log(Array)
+  console.log(Array)
   console.log(object4);
 }
 
@@ -342,18 +358,17 @@ const task = [
 //  2. Javascript Object.create()
 
 {
-  let student ={
+  let student = {
     name: "Lisa",
     age: 24,
-    marks:78.9,
-    display()
-    {
-      console.log("Name:" ,this.name)
+    marks: 78.9,
+    display() {
+      console.log("Name:", this.name)
     }
   };
 
-  let std1 =Object.create(student)
-  let std2 =Object.assign(std1 , student)
+  let std1 = Object.create(student)
+  let std2 = Object.assign(std1, student)
 
   std1.name = "Sheeran"
 
@@ -364,10 +379,10 @@ const task = [
 }
 // 3.  JavaScript Object.entries()
 {
-  const obj={
-    name : "Adam",
-    age :20,
-    location:"nepal"
+  const obj = {
+    name: "Adam",
+    age: 20,
+    location: "nepal"
   };
 
   let Obj1 = Object.entries(obj)
@@ -376,16 +391,15 @@ const task = [
 {
   // keys are arranged randomly
 
-  const obj ={42:"a" ,22:"b", 71:"c"}
+  const obj = { 42: "a", 22: "b", 71: "c" }
 
   console.log(Object.entries(obj))
 }
 // entries() to Iterate Through Key-Value Pairs
 {
-  const obj ={name:"john ", age:27, location:"nepal"};
+  const obj = { name: "john ", age: 27, location: "nepal" };
 
-  for (const [key,value] of Object.entries(obj))
-  {
+  for (const [key, value] of Object.entries(obj)) {
     console.log(`${key}:${value}`)
   }
 }
@@ -394,12 +408,12 @@ const task = [
 {
   // The Object.is() method checks if two values are the same.
 
-  // let Obj1 = {Num1:"1" , Num2:"2"} 
-  // let Obj2 = {Num1:"1" , Num2:"2"} 
+  let Obj1 = { Num1: "1", Num2: "2" }
+  let Obj2 = { Num1: "1", Num2: "2" }
 
-  // let Obj3 = Object.is(Obj1 , Obj2)
+  let Obj3 = Object.is(Obj1, Obj2)
 
-  // console.log(Obj3);
+  console.log(Obj3);//false
 
 }
 
@@ -407,32 +421,32 @@ const task = [
   // Javascript Object.is()
 
   // // objects with same values
-  // console.log(Object.is("JavaScript", "JavaScript")); 
+  console.log(Object.is("JavaScript", "JavaScript")); //true
 
   // // objects with different values
-  // console.log(Object.is("JavaScript", "javascript")); 
+  console.log(Object.is("JavaScript", "javascript")); ///false
 
   // // compare null values
-  // console.log(Object.is(null, null));
+  console.log(Object.is(null, null)); //true
 }
 
 {
   // is() With Custom Objects
 
   // create an object
-  // let obj1 = { a: 1 };
+  let obj1 = { a: 1 };
 
   // // create another object
   // // with identical properties as obj1
-  // let obj2 = { a: 1 };
+  let obj2 = { a: 1 };
 
   // // returns true because both arguments
   // // have the same reference
-  // console.log(Object.is(obj1, obj1));
+  console.log(Object.is(obj1, obj1)); //true
 
   // // returns false because obj1 and
   // // obj2 have different references
-  // console.log(Object.is(obj1, obj2));
+  console.log(Object.is(obj1, obj2));//false
 
 }
 
@@ -441,15 +455,15 @@ const task = [
 
   // Special Cases
 
-  // console.log(Object.is([], []));
+  console.log(Object.is([], []));//false
 
-  // console.log(Object.is({}, {}));  
+  console.log(Object.is({}, {}));  //false
 
-  // console.log(Object.is(0, -0));  
+  console.log(Object.is(0, -0));  //false
 
-  // console.log(Object.is(-0, -0)); 
+  console.log(Object.is(-0, -0)); //true
 
-  // console.log(Object.is(NaN, 0 / 0));  
+  console.log(Object.is(NaN, 0 / 0));  //true
 }
 
 
@@ -458,31 +472,31 @@ const task = [
 // The Object.hasOwnProperty() method checks if the object possesses the given property.
 
 {
-  // const obj = {};
-  // console.log(obj);
+  const obj = {};
+  console.log(obj);
 
-  // obj.id = 42;
+  obj.id = 42;
 
-  // // // check if id is present in obj or not
-  // console.log(obj.hasOwnProperty("id"));
+  // // check if id is present in obj or not
+  console.log(obj.hasOwnProperty("id"));
 
-  // console.log(obj);
+  console.log(obj);
 }
 
 {
   // Javascript Object.hasOwnProperty()
 
   // // create an object with property id
-  // const obj = {id: 42 , toString:10};
+  const obj = { id: 42, toString: 10 };
 
   // // check if id exists in obj 
-  // console.log(obj.hasOwnProperty("id")); 
+  console.log(obj.hasOwnProperty("id")); //true
 
   // // check if name exists in obj 
-  // console.log(obj.hasOwnProperty("name")); 
+  console.log(obj.hasOwnProperty("name")); //false
 
   // // inherited properties return false
-  // console.log(obj.hasOwnProperty("toString")); 
+  console.log(obj.hasOwnProperty("toString")); //true
 
 }
 
@@ -491,16 +505,15 @@ const task = [
 {
   // The Object.freeze() method freezes an object i.e. it prevents the object from being modified.
 
-  // const Obj  = {num:"1" , num2:"2"}
+  const Obj = { num: "1", num2: "2" }
 
-  
-  // Obj.num = "10"
-  
-  // Object.freeze(Obj)
+  Obj.num = "10"
 
-  // Obj.num2="20"
+  Object.freeze(Obj)
 
-  // console.log(Obj);
+  Obj.num2 = "20"
+
+  console.log(Obj);
 
 }
 
@@ -509,17 +522,17 @@ const task = [
 {
   // The Object.getOwnPropertyNames() method returns an array of all the properties found in a given object.
 
-  // const obj = {
-  //     name: 'Alexander',
-  //     age: 32,
-  //     address: 'Macedonia',
-  //   };
-    
-  //   // find out the properties present in obj
-  //   const propertyNames = Object.getOwnPropertyNames(obj);
-    
-  //   console.log(propertyNames);
-    
+  const obj = {
+    name: 'Alexander',
+    age: 32,
+    address: 'Macedonia',
+  };
+
+  // find out the properties present in obj
+  const propertyNames = Object.getOwnPropertyNames(obj);
+
+  console.log(propertyNames);
+
 }
 
 // 8. Javascript Object.setPrototypeOf()
@@ -528,19 +541,19 @@ const task = [
   // The Object.setPrototypeOf() method sets the prototype of the specified object to another object or null.
 
   // create an empty object
-  // const obj = {};
+  const obj = {};
 
-  // // // create a non-empty object parent
-  // const parent = { foo: 'bar' };
+  // create a non-empty object parent
+  const parent = { foo: 'bar' };
 
-  // // // set parent as the prototype of obj
-  // Object.setPrototypeOf(obj, parent);
+  // set parent as the prototype of obj
+  Object.setPrototypeOf(obj, parent);
 
-  // // // print foo property of parent
-  // // // using the obj object
-  // console.log(obj.foo);
+  // print foo property of parent
+  // using the obj object
+  console.log(obj.foo);//bar
 
-  // console.log(obj);
+  console.log(obj);
 
 }
 
@@ -550,15 +563,21 @@ const task = [
   // The Object.toString() method returns the given object as a string.
 
   // create a number with value 10
-  // let num = {10:"obj"};
+  let num = { 10: "obj" };
 
-  // // check the type of num before
-  // // using the toString() method
-  // console.log(typeof num); 
+  // check the type of num before
+  // using the toString() method
+  console.log(typeof num);
 
-  // // check the type of num after 
-  // //using the toString() method
-  // console.log(typeof num.toString()); 
+  // check the type of num after 
+  //using the toString() method
+  console.log(typeof num.toString());
+}
+
+{
+  let rollnum = { 15: "pass" }
+  console.log(typeof rollnum);
+  console.log(typeof rollnum.toString());
 }
 
 // 10. JavaScript Object.valueOf()
@@ -567,11 +586,14 @@ const task = [
   // The Object.valueOf() method returns the primitive value of the specified object.
 
   // create a new Number object with value of 12
-  // let num = new Number(12);
-
-  // console.log(num);
-
-  // console.log(num.valueOf());
+  let num = new Number(12);
+  console.log(num);
+  console.log(num.valueOf());//12
+}
+{
+  let name = new String('hyy')
+  console.log(name);
+  console.log(name.valueOf());
 }
 
 // 11. JavaScript Object.values()
@@ -601,8 +623,8 @@ const task = [
 {
   // JavaScript Object.values() With String
 
-  // const string = "code";
-  // console.log(Object.values(string));
+  const string = "code";
+  console.log(Object.values(string));
 
   // values() with string returns an array of characters
 }

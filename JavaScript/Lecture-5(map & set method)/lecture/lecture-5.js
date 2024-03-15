@@ -45,7 +45,7 @@ size	Returns the number of elements in a Map
 /* You can create a Map by passing an Array to the new Map() constructor */
 
 {
- //1.
+  //1.
   const Data = new Map([
     ["option-1", 20],
     ["option-2", 30],
@@ -60,7 +60,7 @@ size	Returns the number of elements in a Map
 
 
 // 2.set
- /* The set() method can also be used to change existing Map values */
+/* The set() method can also be used to change existing Map values */
 {
   //1.
   const newmap = new Map();
@@ -73,9 +73,9 @@ size	Returns the number of elements in a Map
 {
   //2.
   let map = new Map()
-  map.set('1','str1')
-  map.set(1,'num1')
-  map.set(true,'bool1')
+  map.set('1', 'str1')
+  map.set(1, 'num1')
+  map.set(true, 'bool1')
 
   alert(map.get(1))
   alert(map.get('1'))
@@ -85,7 +85,7 @@ size	Returns the number of elements in a Map
 
 
 // 3.get
- /* The get() method gets the value of a key in a Map */
+/* The get() method gets the value of a key in a Map */
 {
   const newmap = new Map([
     ["item-1", "car"],
@@ -102,7 +102,7 @@ size	Returns the number of elements in a Map
 
 
 // 4.size
- /* The size property returns the number of elements in a Map */
+/* The size property returns the number of elements in a Map */
 {
   const Data = new Map([
     ["option-1", 20],
@@ -132,7 +132,7 @@ size	Returns the number of elements in a Map
 }
 
 //6. has()
- /* The has() method returns true if a key exists in a Map */
+/* The has() method returns true if a key exists in a Map */
 {
   const Data = new Map([
     ["option-1", 20],
@@ -208,14 +208,19 @@ size	Returns the number of elements in a Set
   console.log(newset);
   console.log(newset.size);
 }
+
 //  3. delete
 {
   const x = new Set(["a", "b", "c"]);
-
   x.delete("a");
-
   console.log(x);
   console.log(x.size);
+}
+{
+  const a = new Set(['1', '2', '3', '4'])
+  a.delete("1")
+  console.log(a);
+  console.log(a.size);
 }
 //4.has
 {
@@ -228,19 +233,30 @@ size	Returns the number of elements in a Set
 
 //5.values
 {
-    const x = new Set(["a" , "b" , "c"]);
-    
-    let y = x.values();
-  
-    console.log(y);
-  }
-  
-  //6.size
-  {
-    const x = new Set(["a" , "b" , "c"]);
-    
-    let y = x.delete("a");
-  
-    console.log(y);
-    console.log(x);
-  }
+  const x = new Set(["a", "b", "c"]);
+
+  let y = x.values();
+
+  console.log(y);
+}
+{
+  const a = new Set(['1', '2', '3', '4'])
+  let b = a.values();
+  console.log(b);
+}
+
+//6.size
+{
+  const x = new Set(["a", "b", "c"]);
+
+  let y = x.delete("a");
+
+  console.log(y);
+  console.log(x);
+}
+{
+  const a = new Set(['1', '2', '3', '4'])
+  let b = a.delete('1')
+  console.log(a);
+
+}

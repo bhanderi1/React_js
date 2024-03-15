@@ -200,9 +200,13 @@ Array indexes start with 0:
   // array[array.length]="8"
   // document.getElementById("demo-1").innerHTML=array//x,y,z,a,b,c,8
 }
+//;1100010101111
+
+
 
 //------------------------ merging(concatenating) arrys------------------------
 {
+
   let array1 = ["1","2","3","4","5","6","7"]
   let array2 = ["8","9","10","11","12","13"]
   let array3 = ["14","15","16","17","18","19"]

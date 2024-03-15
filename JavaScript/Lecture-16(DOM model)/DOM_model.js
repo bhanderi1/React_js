@@ -34,8 +34,8 @@
 {
     //    document.getElementById('para-1').innerHTML="Hello Dom!"
     //    document.getElementById('box-1').innerHTML="this is div tag"
-    //    const model =document.getElementsByClassName('box')
-    //    console.log(model)
+       const model =document.getElementsByClassName('box')
+       console.log(model)
 
     //    const elemenet =document.getElementsByTagName('h1')
     //    function addText(){
@@ -137,22 +137,22 @@
 
 // *****************Javascript remove attributes**********************
 
-{
-    const elemenet =document.getElementById('demo')
-    function checkattr()
-    {
-        alert(elemenet.hasAttribute('class'))
-    }
-    function remove()
-    {
-        elemenet.removeAttribute("class")
-        elemenet.removeAttribute("name")
-        elemenet.removeAttribute("id")
-    }
-    function addattr(){
-        console.log(elemenet.setAttribute("class", "javascript"))
-    }
-}
+// {
+//     const elemenet =document.getElementById('demo')
+//     function checkattr()
+//     {
+//         alert(elemenet.hasAttribute('class'))
+//     }
+//     function remove()
+//     {
+//         elemenet.removeAttribute("class")
+//         elemenet.removeAttribute("name")
+//         elemenet.removeAttribute("id")
+//     }
+//     function addattr(){
+//         console.log(elemenet.setAttribute("class", "javascript"))
+//     }
+// }
 
 /* Html Object Accessible */
 
@@ -205,10 +205,10 @@ document.title
 }
 
 //3.document.forms
-{
+// {
 
-    document.getElementById("demo").innerHTML = document.forms.length;
-}
+//     document.getElementById("demo").innerHTML = document.forms.length;
+// }
 
 //head tag
 {
@@ -230,6 +230,6 @@ document.title
 }
 
 //7.document.title
-{
-    document.getElementById("title").innerHTML =  document.title;
-}
+// {
+//     document.getElementById("title").innerHTML =  document.title;
+// }
