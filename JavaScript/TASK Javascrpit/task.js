@@ -3,6 +3,7 @@
     // alert("This is javascript")
 }
 
+
 //2.Display Confirmation box using JavaScript
 {
     // if(confirm("your select option is right!"))
@@ -14,6 +15,7 @@
     // }
 }
 
+
 //3. Display Prompt box using JavaScript
 {
     // const Message = prompt()
@@ -23,6 +25,7 @@
     // const Message = prompt()
     // alert(Message)
 }
+
 
 // 4. mouseover and mouseout in javascript
 {
@@ -34,12 +37,14 @@
     }
 }
 
+
 // 5. Use keypress In JavaScript to Display Alerts
 {
     function keypress() {
         alert("submit user value")
     }
 }
+
 // 6. JavaScript Validation Examples
 // 7. Textbox required validation in javascript
 // 8. Email validation in JavaScript
@@ -55,6 +60,7 @@
     console.log(date);
 }
 
+
 // 14. Reverse array javascript
 {
     let num = ["1", "2", "3", "4", "5"]
@@ -62,6 +68,7 @@
     let Reverse_num = num.reverse()
     console.log(Reverse_num)
 }
+
 
 //15.JavaScript concate or merge two Arrays
 {
@@ -71,6 +78,7 @@
     let array3 = array1.concat(array2)
     console.log(array3)
 }
+
 
 // 16. Reverse String in JavaScript
 {
@@ -89,6 +97,7 @@ function opennewwindow() {
     window.open("http://127.0.0.1:5500/Task.html")
 }
 
+
 //18.if else statement in JavaScript
 {
     let age = 85;
@@ -99,6 +108,7 @@ function opennewwindow() {
         console.log("Not Aligible");
     }
 }
+
 
 //19. Insert element in array javascript
 {
@@ -121,15 +131,19 @@ function opennewwindow() {
     console.log(array)
 }
 
+
 //20.get current url javascript
 {
     document.getElementById("demo").innerHTML = "current Url this page :" + window.location.href
 }
 
+
 //21. getElementsByClassName() method in JavaScript
 {
-    // const elemenet =document.getElementsByClassName('className')
+    const elemenet =document.getElementsByClassName('className')
+    elemenet[0].innerHTML = "This is class name dom method"
 }
+
 
 //22. getElementByTagName() method in JavaScript
 {
@@ -144,9 +158,16 @@ function opennewwindow() {
     addText();
 }
 
+
 // 23. Disable Browser back and forward button in browser using JavaScript
-{
-}
+// {
+//     function preventBack() 
+//     { window.history.forward(); }  
+//     setTimeout("preventBack()", 0);  
+//     window.onunload = function () { null };  
+// }
+
+
 // 24. Disable back button in browser using javascript
 // 25. Disable Forward button in browser using JavaScript:
 // 26. Disable Forward button in browser using JavaScript:
@@ -162,6 +183,8 @@ function opennewwindow() {
 // 35. Set radio button value using JavaScript
 // 36. JavaScript screen height
 // 37. auto refresh page javascript
+
+
 // 38. Convert Celsius Value to Farenheit Value in JavaScript
 {
    function CelsiusFarenheit(n)
@@ -171,28 +194,82 @@ function opennewwindow() {
    CelsiusFarenheit(45)//113
 }
 
+
 // 39. javascript get today’s date
 {
     const date = new Date()
     console.log(date);
 }
+
+
 // 40. Scroll Down Event in JavaScript
+{
+//html fill
+}
+
+
 // 41. JavaScript Animation example
 // 42. Play and Pause video in JavaScript
 // 43. Change background colour of div javascript
+
 // 44. Change the page colour in Every 5 sec in JavaScript
+{
+    let i=0
+    let j=0
+    function divcolor(){
+        let divtag=document.getElementById("div1")
+        let bgcolor=["yellow","purple","blue","brown"]
+        let textcolor = ["red","white","gray","black"]
+        divtag.style.backgroundColor = bgcolor[i]
+        divtag.style.color =textcolor[j]
+        i = (i+1)%bgcolor.length
+        j = (j+1)%textcolor.length
+    }
+    setInterval(divcolor,5000)
+}
 // 45. Display Message every 3 second using Javascript
+{
+    setInterval(
+        function greet(){
+            console.log("hello");
+        },3000
+    )
+}
 // 46. JavaScript get max value in array of objects
 // 47. Sort and Reverse an array of Objects using JavaScript
 {
     
 }
+
+
 // 48. Find index of Largest value in An Array in JavaScript
 {
     const array = [1 , 5 ,9 , 2 , 0]
 }
+
+
 // 49. Try and Catch in JavaScript
+
+{try{
+    eval("alert('hello)")
+}
+catch(err)
+{
+    document.getElementById("try").innerHTML=err.name
+}
+}
+
 // 50. Return Boolean value of an Integer In JavaScript
+{
+    let boolean =1
+    function value(){
+        let i = boolean ? true :false
+        document.getElementById('result').innerHTML =i
+    }
+    value()
+}
+
+
 // 51. JavaScript Check an object is an array or not
 // 52. Display Table Number in JavaScript
 // 53. Reload page JavaScript
@@ -203,7 +280,8 @@ function opennewwindow() {
 // 58. JavaScript Set dropdown value on Button Click
 // 59. Display Images Based on User Selection
 // 60. JavaScript Bind Arrays Value into Dropdown list
-// 61. javascript browser detection
+// 61. javascript browser detection 
+
 
 // 62. How to sort array value using sort() method in JavaScript
 {

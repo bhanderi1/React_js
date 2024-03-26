@@ -21,7 +21,6 @@
 </Html> */}
 
 // in this dom TreeWalker, the documnet is the root node. the root node has one child node which is the <html> element. the<html> element is called the documnet element.
-
 // each documnet can have only one documnet elemnet. in an html documnet the documnet element is the <html> elemnet. each markup can be represented by a node in hte tree.
 
 //  slecting elemenets

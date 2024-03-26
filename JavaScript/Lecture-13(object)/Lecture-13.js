@@ -498,6 +498,9 @@ const task = [
   // // inherited properties return false
   console.log(obj.hasOwnProperty("toString")); //true
 
+  3++
+  +
+  9
 }
 
 // 6. JavaScript Object.freeze()
@@ -526,7 +529,7 @@ const task = [
     name: 'Alexander',
     age: 32,
     address: 'Macedonia',
-  };
+    };
 
   // find out the properties present in obj
   const propertyNames = Object.getOwnPropertyNames(obj);

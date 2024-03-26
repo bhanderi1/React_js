@@ -24,18 +24,18 @@
 
 // Program with promise
 
-// {
-//     const count = false;
+{
+    // const count = true;
 
-//     let conutvalue = new Promise(function (resolve, reject) {
-//         if (count) {
-//             resolve("there is a count value");
-//         } else {
-//             reject("there is no count value");
-//         }
-//     });
-//     console.log(conutvalue);
-// }
+    // let conutvalue = new Promise(function (resolve, reject) {
+    //     if (count) {
+    //         resolve("there is a count value");
+    //     } else {
+    //         reject("there is no count value");
+    //     }
+    // });
+    // console.log(conutvalue);
+}
 
 // Javascript Promise Chining
 
@@ -55,11 +55,9 @@
 
 // {
 //     let conutvalue = new Promise(function (resolve, reject) {
-//         reject("promise is not resolved");
+//         resolve("promise is not resolved");
 //     });
-// }
-
-// conutvalue
+// conutvaluel
 //     .then(function successvalue(result) {
 //         console.log(result);
 //     })
@@ -67,7 +65,7 @@
 //     .then(function successvalue1() {
 //         console.log("you can call multipale functions this way.");
 //     });
-
+// }
 //the then() method is used to chin the functions to the promise. the then() method is called when the promise is resolved successfully.
 //you can chain multiple then() method with the promise.
 
@@ -100,7 +98,7 @@
 //Error handling is eassier to mange.
 
 // {
-//  api().then(function(reslut){
+//  api().then(function(reslut){00000000
 //     return api2()
 // }).then(function(reslut){
 //     return api2()

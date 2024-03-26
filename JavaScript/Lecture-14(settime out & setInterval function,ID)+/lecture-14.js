@@ -45,7 +45,7 @@
 // {
 //    console.log(`your name is ${name} and age ${age}`);
 // }
-// setTimeout(greet , 1000 , "jasmin" ,52)
+// setTimeout(greet , 1000 , "srushti" ,52)
 
 
 

@@ -47,6 +47,8 @@ for(const keys of output){
 }
 // console.log(NewArray);
 
+
+
 //  -----------------------------------for Each-----------------------
 const NewArray1 = ["india","Austrlia","canada" , "brazil"]
 const NewArray2 = [12,5 ,5 ,10]
