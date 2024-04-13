@@ -3,7 +3,9 @@
      list-style: none;
      display: block;
  } */
-
+a{
+    text-decoration: none;
+}
  .dropdown-menu {
      --bs-dropdown-padding-y: 0rem;
      --bs-dropdown-spacer: 0rem;
@@ -131,9 +133,8 @@
 /* documation */
 .navbar-expand-lg .navbar-nav .dropdown-menu .Documetation
 {
-    /* top: 30px; */
     position: absolute;
-   left: -800px;
+    left: -800px;
     flex-flow: row;
     width: 1200px;
     background-color: white; 
@@ -144,9 +145,7 @@
 {
     width:fit-content;
     border-radius: 17px;
-    /* background-position: center center; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: scroll !important; */
+   
 }
 
 .Background-img-round
@@ -166,10 +165,11 @@
 .row
 {
     max-width: auto;
-    padding-right: calc(var(--bs-gutter-x)* .5);
-    padding-left: calc(var(--bs-gutter-x)* .5);
+    padding-right: 0;
+    padding-left: 0;
     margin-top: var(--bs-gutter-y);
     height: auto;
+   margin-left: 0; 
 }
 .accordion-item {
     color: none;
@@ -213,4 +213,53 @@
 }
 nav a i{
     color: white;
+}
+.bg-opacity-25 {
+    --bs-bg-opacity: 0.10;
+}
+
+h5{
+    color: rgb(167, 157, 157);
+}
+.text-section{
+margin-top: 50px;
+}
+.social a:not(.btn-circle) {
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+    transform: translateY(0);
+}
+.social a:not(.btn-circle):hover {
+    transform: translateY(-.15rem);
+}
+.text-color{
+    color: rgb(200, 194, 194);
+}
+.mail:hover
+{
+  color: rgb(77, 77, 211);
+}
+
+.hover li span:hover{
+    color: rgb(77, 77, 211);
+}
+.text-section{
+    
+}
+.join-btn{
+    font-size: 20px;
+    font-weight: 500;
+text-wrap:  nowrap;
+height:50px;
+}.form-control {
+    border: 1px solid gray;
+    border-radius: 10px;
+    opacity: 1;
+}
+.card{
+   position: relative;
+   top: -50px;
+}
+footer{
+    padding-top: 500px;
 }

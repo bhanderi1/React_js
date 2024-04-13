@@ -1333,7 +1333,7 @@
 .wrap_contain {
    width: 25%;
    height: auto;
-   padding-bottom: 43px;
+   padding-bottom: 28px;
 }
 
 .sticky {
@@ -1435,7 +1435,7 @@ li:hover {
 }
 
 .part-3-fix {
-   width: 70%;
+   width: 65%;
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
