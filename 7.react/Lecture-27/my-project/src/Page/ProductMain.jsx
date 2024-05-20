@@ -39,7 +39,7 @@ const ProductMain = () => {
                   <img src={item.image} className="w-[250px] h-[320px] mb-[20px]"></img>
                 </div>
                   <p className="font-bold text-[19px]">{item.title}</p>
-                  <sapn className='text-red-600 text-[17px] font-bold'>${item.price}</sapn>
+                  <span className='text-red-600 text-[17px] font-bold'>${item.price}</span>
                   <div className="flex items-end justify-between">
                   <button
                     className="px-[20px] py-[7px] bg-blue-500 border-solid border-2 border-black"

@@ -7,10 +7,10 @@ import Login4 from './Pages/Login4'
 const App = () => {
   return (
     <div>
-      {/* <Login/> */}
+      <Login/>
       <Login2/>
-      {/* <Login3/> */}
-      {/* <Login4/> */}
+      <Login3/>
+      <Login4/>
     </div>
   )
 }

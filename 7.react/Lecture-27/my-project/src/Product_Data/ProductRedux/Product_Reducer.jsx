@@ -1,4 +1,5 @@
-import {PRODUCT_LIST,  PRODUCT_SET } from "./Product_Constant";
+// import {PRODUCT_LIST,  PRODUCT_SET } from "./Product_Constant";
+import { PRODUCT_LIST ,PRODUCT_SET } from "../Redux/Constant";
 
 const ProductReducer = (data = [], action) => {
     switch (action.type) {
