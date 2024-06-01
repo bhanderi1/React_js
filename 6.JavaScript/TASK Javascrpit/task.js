@@ -250,23 +250,23 @@ function opennewwindow() {
 
 // 49. Try and Catch in JavaScript
 
-{try{
-    eval("alert('hello)")
-}
-catch(err)
-{
-    document.getElementById("try").innerHTML=err.name
-}
-}
+// {try{
+//     eval("alert('hello)")
+// }
+// catch(err)
+// {
+//     document.getElementById("try").innerHTML=err.name
+// }
+// }
 
 // 50. Return Boolean value of an Integer In JavaScript
 {
-    let boolean =1
-    function value(){
-        let i = boolean ? true :false
-        document.getElementById('result').innerHTML =i
-    }
-    value()
+    // let boolean =1
+    // function value(){
+    //     let i = boolean ? true :false
+    //     document.getElementById('result').innerHTML =i
+    // }
+    // value()
 }
 
 

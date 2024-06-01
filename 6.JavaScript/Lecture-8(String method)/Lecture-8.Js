@@ -44,7 +44,7 @@
 
 
 
-/******  String length. ******/
+/******  String length ******/
 {
     let string6 = "This is javascript";
     console.log(string6.length); //18

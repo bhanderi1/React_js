@@ -7,7 +7,7 @@ const Navbar = () => {
       <header className='bg-gray-500 flex items-center justify-around p-[10px] border-3 border-black font-semibold'>
         <div className='w-[70px]'>
             <Link href="/">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKJoBr94Ojcv3eAwIksAZiVjrWwex0IHMcafwSqknUg&s" alt=""  className='logo' width={70}/>
+                <h1 className='font-bold text-[30px] text-white'>LOGO</h1>
             </Link>
         </div>
         <nav className='nav-link'>

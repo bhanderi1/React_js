@@ -23,7 +23,6 @@ const validationSchema = yup.object({
 })
 
 const Login4 = () => {
-
     return (
         <div>
             <h1>Login Page 4</h1>
