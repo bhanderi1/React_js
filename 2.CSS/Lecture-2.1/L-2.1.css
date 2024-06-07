@@ -29,7 +29,7 @@ CSS VISIBIKITY
  .font-family{
     font-family:'Courier New', Courier, monospace; 
     font-size: 5px;
-    font-style: oblique;
+    font-style:oblique;
     font-variant:unset;
     font-weight:lighter;
     line-height: 30px; 
@@ -50,20 +50,20 @@ CSS VISIBIKITY
  
  */
 
- p{
+ .text{
     color: brown;
     font-size: 20px;
     text-align:initial;
 
-    /* text-decoration:overline line-through red; 
-     text-decoration: none;
-    text-transform: uppercase;
-    text-indent: 100px;
-    letter-spacing: 0px;
-    word-spacing: 10px;
-    direction: ltr;
-    unicode-bidi:plaintext;
-    text-shadow: 5px 5px 1px green; */
+    text-decoration:overline line-through red; 
+     /* text-decoration: none; */
+    /* text-transform: uppercase; */
+    /* text-indent: 100px; */
+    /* letter-spacing: 0px; */
+    /* word-spacing: 10px; */
+    /* direction: ltr; */
+    /* unicode-bidi:plaintext; */
+    /* text-shadow: 5px 5px 1px green; */ 
  }
 
  /* 3.CSS verticle alignment */

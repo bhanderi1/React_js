@@ -17,7 +17,7 @@ function App() {
          <Route path="/about" element={<About/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="add" element={<Add/>}/>
-      <Route path="/EditUser" element={<EditUser/>}/>
+      <Route path="/EditUser/:id" element={<EditUser/>}/>
       <Route path="/*" element={<Error/>}/>
       
     </Routes>

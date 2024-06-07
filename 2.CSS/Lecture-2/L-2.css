@@ -35,7 +35,7 @@ body{
 {
    background-image: url('image/big.jpg'); 
    background-color: blue;
-   background-repeat:no-repeat;
+   background-repeat:repeat-x;
    border: 50px solid transparent;
    padding: 50px;
    background-size: cover;
@@ -119,9 +119,9 @@ body{
 {
     height: 200px;
     width: 200px;
-    border: 20px outset black; 
+    border: 20px ridge black; 
     margin: 50px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 /* 4.Border radius */
@@ -136,13 +136,13 @@ body{
     border: 10px solid black;
     outline: 10px dotted blue;
     margin: 100px;
-    outline-offset: 50px;
+    outline-offset: 10px;
 }
 
 /* 6.CSS opacity */
 
 .opacity{
-    opacity: 90%;
+    opacity: 100%;
     background-color: green;
     height: 200px;
     width: 200px;

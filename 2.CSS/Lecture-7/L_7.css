@@ -30,7 +30,7 @@ body{
      /* transform: scale(1.2);   */
      /* small and big  */
 
-     transform: rotateY(120deg); 
+     /* transform: rotateY(120deg);  */
      /* round roted */
 
      /* transform: skewX(360deg);
@@ -88,12 +88,6 @@ body{
     transition-timing-function: ease-out;
 }
 
-
-
-
-
-
-
 /* ============================== */
 
 /* CSS FILTER */
@@ -109,9 +103,6 @@ body{
    filter :sepia(1);
    filter :none;
    filter :drop-shadow(10px -20px 1px rgb(70, 15 ,62))
-
-
-
 */
 
 
@@ -128,7 +119,6 @@ body{
     /* filter: sepia(50%); */
     /* filter: none; */
     filter: drop-shadow(40px 40px 5px gray);
-
 }
 
 

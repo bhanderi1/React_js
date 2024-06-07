@@ -1,6 +1,6 @@
 import React from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
+// import { useFormik } from 'formik';
+// import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
@@ -9,13 +9,9 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 
 
-
-
-
 const Add = () => {
 
   const navigate = useNavigate()
-
 
   const [user, setuser] = useState({
     firstname: "",
@@ -33,7 +29,6 @@ const Add = () => {
       reader.onloadend = () => {
 
         setuser({ ...user, image: reader.result })
-
       }
       reader.readAsDataURL(file)
     }
@@ -41,8 +36,8 @@ const Add = () => {
   }
 
 
-  const onSubmitUser = (e) => {
-    e.prevantDeafult();
+  const OnSubmitUser = (e) => {
+    e.preventDefault();
     axios.post('http://localhost:3000/User', user)
       .then(() => {
         navigate("/")
@@ -76,7 +71,7 @@ const Add = () => {
   // });
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <form className="bg-white p-6 rounded shadow-md w-full max-w-sm" onSubmit={onSubmitUser}>
+      <form className="bg-white p-6 rounded shadow-md w-full max-w-sm" onSubmit={OnSubmitUser}>
         <h1 className="text-2xl font-bold mb-4 text-center">Add User</h1>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstname">
@@ -86,7 +81,7 @@ const Add = () => {
             type="text"
             id="firstname"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, firstname: e.target.value })}
+            onChange={(e) => setuser({ ...user, firstname:e.target.value })}
           />
           {/* {...formik.getFieldProps('firstname')} */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (
@@ -101,7 +96,7 @@ const Add = () => {
             type="text"
             id="lastname"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, lastname: e.target.value })}
+            onChange={(e) => setuser({ ...user, lastname:e.target.value })}
           />
           {/* {...formik.getFieldProps('lastname')} */}
           {/* {formik.touched.lastname && formik.errors.lastname ? (
@@ -116,7 +111,7 @@ const Add = () => {
             type="number"
             id="age"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, age: e.target.value })}
+            onChange={(e) => setuser({ ...user, age:e.target.value })}
           />
           {/* {...formik.getFieldProps('age')} */}
           {/* {formik.touched.age && formik.errors.age ? (
@@ -131,7 +126,7 @@ const Add = () => {
             type="text"
             id="profession"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, profession: e.target.value })}
+            onChange={(e) => setuser({ ...user, profession:e.target.value })}
           />
           {/* {...formik.getFieldProps('profession')} */}
           {/* {formik.touched.profession && formik.errors.profession ? (
@@ -146,7 +141,7 @@ const Add = () => {
             type="tel"
             id="mobile"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, mobile: e.target.value })}
+            onChange={(e) => setuser({ ...user, number:e.target.value })}
           />
           {/* {...formik.getFieldProps('mobile')} */}
           {/* {formik.touched.mobile && formik.errors.mobile ? (
