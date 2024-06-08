@@ -20,25 +20,23 @@
 
 // javascript language case-sensitive 
 
-/**************** variable useing var() in javascript *************************/
+/**************** variable using var() in javascript *************************/
 {
-  var box = "Livescript";
+    var box = "Livescript";
 
-  var box_1 = "javascript";
+    var box_1 = "javascript";
 
-  var box_2 = 10;
+    var box_2 = 10;
 
-  var box_3 = 20;
+    var box_3 = 20;
 
-  var box_4 = box_2 + box_3;
+    var box_4 = box_2 + box_3;
 
-  //   console.log(box_4);
-  //   ****************** type of run *****************//
-  console.log(box);
-  document.write(box_1);
-  document.getElementById("demo1").innerHTML = box_2;
-
-
+    //   console.log(box_4);
+    //   ****************** type of run *****************//
+    console.log(box);
+    document.write(box_1);
+    document.getElementById("demo1").innerHTML = box_2;
 }
 {
     var Names = "1.Names";
@@ -48,43 +46,43 @@
 
 }
 {
-    var number1=15;
-    var number2 =2;
-    console.log(number1 **number2);
+    var number1 = 15;
+    var number2 = 2;
+    console.log(number1 ** number2);
 
     // 15*15=225
 }
 {
     // var -> same variable name define
-    var box1="toys";
-    var box1=45;
-    var box1='cloths';
+    var box1 = "toys";
+    var box1 = 45;
+    var box1 = 'cloths';
     console.log(box1);
-    
+
 }
 {
     //  not used keyword
-    box ="apple"
-    box1="45"
+    box = "apple"
+    box1 = "45"
     console.log(box);
 }
 
 // /*******New Html Element Add In Though Javascript *********/
-// {
-// var newlement = document.createElement("h1");
-// newlement.textContent="hello world";
-// document.body.appendChild(newlement);
+{
+var newlement = document.createElement("h1");
+newlement.textContent="hello world";
+document.body.appendChild(newlement);
 
-// var newlement = document.createElement("marquee", "option");
-// newlement.textContent="hello";
-// document.body.appendChild(newlement);
+var newlement = document.createElement("marquee", "option");
+newlement.textContent="hello";
+document.body.appendChild(newlement);
 
-// var newlement = document.createElement("pre");
-// newlement.textContent="How are you!";
-// document.body.appendChild(newlement);
-// }
+var newlement = document.createElement("pre");
+newlement.textContent="How are you!";
+document.body.appendChild(newlement);
+}
 
-// document.write('hello javascript!');
+document.write('hello javascript!');
 
 // // js comments
 
@@ -94,16 +92,16 @@
 
 // //  Template literals
 {
-var _nameone ="5";
-var name20 ='5';
+    var _nameone = "5";
+    var name20 = '5';
 
-console.log(_nameone);
-console.log(typeof(_nameone));   //string  "" ''
+    console.log(_nameone);
+    console.log(typeof (_nameone));   //string  "" ''
 }
 
 {
-    // alert("_nameone + ${name20}")
-    // alert(`${_nameone}+${name20}`);u
+    alert("_nameone + ${name20}")
+    alert(`${_nameone}+${name20}`);
 
 }
 
@@ -134,7 +132,5 @@ console.log(typeof(_nameone));   //string  "" ''
 }
 
 /*  
-
 Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign. After first letter we can use digits (0 to 9), for example value1. JavaScript variables are case sensitive, for example x and X are different variables.
-
 */
