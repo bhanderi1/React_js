@@ -11,15 +11,16 @@ export function Home1() {
   const [data, setData] = useState([])
 
   const [searchTerm, setSearchTerm] = useState('')
-
   const [currentPage, setCurrentPage] = useState(1)
-  const [perPage, serPerPage] = useState(2)
+  const [perPage, serPerPage] = useState(1)
 
+  const filterData = data.filter(user => user.firstname.toLowerCase().includes(searchTerm.toLowerCase()) || user.lastname.toLowerCase().includes(searchTerm.toLowerCase())
+  )
   const totalpages = Math.ceil(data.length / perPage)
 
-  const indexOfLastData = currentPage + perPage
+  const indexOfLastData = currentPage * perPage
   const indexOfFirstData = indexOfLastData - perPage
-  const currentData = data.slice(indexOfFirstData, indexOfLastData)
+  const currentData = filterData.slice(indexOfFirstData, indexOfLastData)
 
   const peginate = (pagenumber) => {
     setCurrentPage(pagenumber)
@@ -43,8 +44,7 @@ export function Home1() {
     setData(res.data)
   }
 
-  const filterData = data.filter(user => user.firstname.toLowerCase().includes(searchTerm.toLowerCase()) || user.lastname.toLowerCase().includes(searchTerm.toLowerCase())
-  )
+
 
 
   const onDelete = (id) => {
@@ -59,7 +59,7 @@ export function Home1() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <section className="mx-auto w-full max-w-7xl px-4 py-4">
         <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
           <div>
@@ -125,8 +125,7 @@ export function Home1() {
                     </tr>
                   </thead>
                   {
-                    filterData.map((value) => {
-                      
+                    currentData.map((value) => {
                       return (
                         <tbody className="divide-y divide-gray-200 bg-white" key={value.id}>
                           <tr>
@@ -161,7 +160,6 @@ export function Home1() {
                             <td></td>
                             <td className="whitespace-nowrap px-4 py-4">
                               <span className="text-sm">
-
                                 {value.number}
                               </span>
                             </td>
@@ -186,35 +184,42 @@ export function Home1() {
             </div>
           </div>
         </div>
-      </section>
-      <div className='flex items-center justify-center pt-6'>
-        <Link className='mx-2 text-sm font-semibold text-gray-900'>
-          <button onClick={prevpage} disabled={currentPage === 1}>
-            <span>&larr;</span>
-            <span>
-              Previous
-            </span>
-          </button>
-        </Link>
 
         {
-          Array.from({length: totalpages}, (_, i) => (
-            <NavLink className={`mx-1 flex justify-center items-center rounded-md border border-gray-400 px-3 py-2 text-gray-300 hover:scale-105 hover:bg-black hover:text-white`} style={{
-              backgroundColor: currentPage == i + 1 ? 'black' : 'transparent', color: currentPage == i + 1 ? 'white' : 'inherit'
-            }}>
-              <button key={i} onClick={() => peginate(i + 1)}>
-                {i + 1}
+          currentData.length == 0 ? null : (
+            <div className='flex items-center justify-center pt-6'>
+              <Link className='mx-2 text-sm font-semibold text-gray-900'>
+                <button onClick={prevpage} disabled={currentPage === 1}>
+                  <span>&larr;</span>
+                  <span>
+                    Previous
+                  </span>
+                </button>
+              </Link>
+
+              {
+                Array.from({ length: totalpages }, (_, i) => (
+                  <NavLink className={`mx-1 flex justify-center items-center rounded-md border border-gray-400 px-3 py-2 text-gray-300 hover:scale-105 hover:bg-black hover:text-white`} style={{
+                    backgroundColor: currentPage == i + 1 ? 'black' : 'transparent', color: currentPage == i + 1 ? 'white' : 'inherit'
+                  }}>
+                    <button key={i} onClick={() => peginate(i + 1)}>
+                      {i + 1}
+                    </button>
+                  </NavLink>
+                )
+                )
+              }
+
+              <Link className='mx-2 text-sm font-semibold text-gray-900'>
+              <button onClick={nextpage}>
+                <span>Next</span>
+                <span>&rarr;</span>
               </button>
-            </NavLink>
-          )
+              </Link>
+            </div>
           )
         }
-
-        <Link className='mx-2 text-sm font-semibold text-gray-900'>
-          <span>Next</span>
-          <span>&rarr;</span>
-        </Link>
-      </div>
+      </section>
     </div>
   )
 }

@@ -21,10 +21,10 @@ const Cart = () => {
               <tbody key={item.id}>
                 <tr>
                   <td className="border-2 border-black ">
-                    <img className="h-28 mx-auto" src={item.image} alt="" />
+                    <img className="h-28 mx-auto" src={item.img} alt="" />
                   </td>
-                  <td className="border-2 border-black font-bold">{item.title}</td>
-                  <td className="border-2 border-black ">{item.price}</td>
+                  <td className="border-2 border-black font-bold">{item.name}</td>
+                  <td className="border-2 border-black ">{item.d_price}</td>
                 </tr>
               </tbody>
             );
