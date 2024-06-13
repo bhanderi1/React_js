@@ -21,7 +21,7 @@ const Use_Ref = () => {
   function ApplyBgColor() {
     NewRefElement.current.style.backgroundColor = "Orange"
   }
-
+  
   return (
     <div>
       <div className='flex justify-center'>

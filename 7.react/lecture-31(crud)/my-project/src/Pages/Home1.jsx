@@ -27,7 +27,7 @@ export function Home1() {
   }
 
   const nextpage = () => {
-    setCurrentPage((prevpage) => prevpage + 1)
+    setCurrentPage((prevpage) => Math.min(prevpage + 1 , totalpages))
   }
 
   const prevpage = () => {
