@@ -348,6 +348,12 @@ Array indexes start with 0:
   console.log(flatmap1)  //2,2,1,1,2
 }
 
+{
+  let flatmap=[5,2,9,6,7,8,]
+  let flatmap1 = flatmap.flatMap((num)=>num === 3 ? [1,1]:2)
+  console.log(flatmap1)  //2,2,1,1,2
+}
+
 /* Javascript Array flat() */
 {
   let flatarray = [10, 20, [22, 33, [44, 55, [66, 77]]]]
@@ -372,8 +378,6 @@ Array indexes start with 0:
   console.log(filterarry3);
 }
 
-
-
 // -----------------------------javascript array fill method---------------------
 {
   let fillarray = [46,89,101,122,45]
@@ -392,12 +396,15 @@ Array indexes start with 0:
   const newcopy = abc.copyWithin(1,3)
   console.log(newcopy)// ['A', 'D', 'E', 'F', 'E', 'F']
 }
+
 {
   const num = [1,2,3,4,5,6,7,8,9]
   const newcopy = num.copyWithin(1,4)
   console.log(newcopy);//[1, 5, 6, 7, 8, 9, 7, 8, 9]
 }
+
 /*----------------------------javascript valueof() method--------------------- */
+
 {
   let array = [1,2,3,4,5,6,7,8,9]
   console.log(array.valueOf())
@@ -413,13 +420,11 @@ Array indexes start with 0:
   console.log(data1)   //3
 }
 
-
-
 /* Add an Element to a Multidimensional Array */
 {
   // Adding Element to the Outer Array
 
-   let studentsData = [['Jack', 24], ['Sara', 23]];
+   let studentsData = [['Jack', 24] , ['Sara', 23]];
    studentsData.push(['Peter', 24]);
    let data = studentsData[1][1]
 
@@ -438,7 +443,7 @@ Array indexes start with 0:
 
 {
   // // using push()
-  let studentsData = [['Jack', 24], ['Sara', 23],];
+  let studentsData = [['Jack', 24], ['Sara', 23]];
   studentsData[1].push('hello');
 
   console.log(studentsData);
@@ -446,7 +451,7 @@ Array indexes start with 0:
 
 {
   // the Array's splice() method to add an element at a specified index.0+
-  let studentsData = [['Jack', 24], ['Sara', 23],];
+  let studentsData = [['Jack', 24], ['Sara', 23]];
 
   // adding element at 1 index
   studentsData.splice(0, 2, ["peter", 58]);
@@ -456,7 +461,7 @@ Array indexes start with 0:
 /*  Remove an Element from a Multidimensional Array */
 {
   // remove the array element from outer array
-  let studentsData = [['Jack', 24], ['Sara', 23],];
+  let studentsData = [['Jack', 24], ['Sara', 23]];
   studentsData.pop();
 
   console.log(studentsData);
@@ -471,7 +476,7 @@ Array indexes start with 0:
 }
 {
   //  // the splice() method to remove an element at a specified index.
-  let studentsData = [['Jack', 24], ['Sara', 23],];
+  let studentsData = [['Jack', 24], ['Sara', 23]];
 
   // removing 1 index array item
   studentsData.splice(0, 1);

@@ -21,7 +21,6 @@ The basic rules of naming a function are similar to naming a variable. It is bet
 /* Function Parameters */
 
 // A function can also be declared with parameters. A parameter is a value that is passed when declaring a function.
-
 {
     function multiply(a,b){
     console.log(a)
@@ -33,10 +32,9 @@ The basic rules of naming a function are similar to naming a variable. It is bet
 /* Function Return */
 
 // The return statement can be used to return the value to a function call.
-
 // The return statement denotes that the function has ended. Any code after return is not executed.
-
 // If nothing is returned, the function returns an undefined value.
+
 
 /*   Benefits of Using a Function   */
 
@@ -68,8 +66,7 @@ The basic rules of naming a function are similar to naming a variable. It is bet
     let y=x(3)
     console.log(y)
 
-     // variable x is used to store the function. Here the function is treated as an expression. And the function is called using the variable name.
-
+    // variable x is used to store the function. Here the function is treated as an expression. And the function is called using the variable name.
     // The function above is called an anonymous function.
 }
 
@@ -93,7 +90,7 @@ y()
 // Arrow Function as an Expression
 {
     let gender  ="female"
-    let x=(gender =="male")?()=>console.log("you are male"):()=>console.log("you are female")
+    let x=(gender =="male")?() => console.log("you are male") : () => console.log("you are female")
     x()
 }
 
@@ -105,7 +102,8 @@ y()
     function callme(){
         console.log('I am first callback function')
     }
-    // function
+
+    // function syntext
     function greet(name,callback)
     {
         console.log('hi'+''+name)
