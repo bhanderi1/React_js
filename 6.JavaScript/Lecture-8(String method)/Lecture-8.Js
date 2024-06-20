@@ -270,7 +270,6 @@
     console.log(typeof number5); //number
 }
 
-
 /******  String charCodeAt() ******/
 {
     let string46 = "this is most commom!";
@@ -294,6 +293,7 @@
     let string49 = string48.split("");
     console.log(string49); //convert to the array
 }
+
 {
     let string48 = "hello";
     console.log(string48);
@@ -315,12 +315,14 @@
     let string51 = string50.includes("z");
     console.log(string51); //false
 }
+
 {
     let string50 = "world is beautiful";
     console.log(string50);
     let string51 = string50.includes("i");
     console.log(string51); //true
 }
+
 {
     let string50 = "wow!whataplace";
     console.log(string50);
