@@ -5,9 +5,8 @@ import Navbar from '../Componets/Navbar'
 const About = () => {
   return (
     <div>
-      <Navbar/>
-                  <h1 className='text-3xl font-normal text-center'>This is About Page</h1>
-
+      <Navbar />
+      <h1 className='text-3xl font-normal text-center'>This is About Page</h1>
     </div>
   )
 }
